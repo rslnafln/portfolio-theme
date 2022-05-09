@@ -1,0 +1,40 @@
+/* COLORS */ 
+
+$dark_pink: #ad1f3e;
+$pink: #e07086;
+$light_pink: #f4bfc8;
+
+$gray: #7d8285; 
+$gray_text: #737277;
+
+$blue_gray: #8496a5;
+$blue_darkgray: #5c7287;
+
+$blue_water: #72a7e1;
+$blue_sky: #70a9dd;
+$blue: #2d425a;
+$darkblue : #30415a;
+$blueverydark: #02101B;
+
+$black_brown: #343434;
+
+/* DEGRADEE */ 
+
+$gray_to_white: linear-gradient(70deg, #e4e4eb, #ffffff);
+$blue_to_white: linear-gradient(70deg, #c8ddf2, #e5f3fc, #ffffff);
+$dark_to_blue: linear-gradient(70deg, #02101B, #2c425A);
+$blue_to_dark: linear-gradient(-360deg, #02101B, #2c425A, #2c425A);
+$pink_to_white: linear-gradient(70deg, $light_pink, #ffffff);
+
+/* OPACITY*/
+
+$black_opacity: rgba(0, 0, 0, 0.5);
+
+/* FONT */ 
+
+$poppins: 'Poppins', sans-serif;
+$lora: 'Lora', serif;
+
+/* OMBRES */ 
+
+$ombre001 : rgba(0, 0, 0, 0.24) 0px 3px 8px;

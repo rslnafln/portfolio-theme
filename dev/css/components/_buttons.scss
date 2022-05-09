@@ -1,0 +1,20 @@
+.button {
+    border-radius: 40px;
+    border-color: transparent;
+    padding:8px 20px;
+    font-size: 16px;
+    font-family: $poppins;
+    margin-top:20px;
+    a {
+        color: white;
+    }
+    &--pink {
+        background-color: $pink;
+    }
+    &--blue {
+        background-color: $blue_sky;
+    }
+    &--darkblue{
+        background-color: $darkblue;
+    }
+}

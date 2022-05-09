@@ -1,0 +1,185 @@
+/***************** GENERAL RULES OF SECTION ***************/
+/* fond degradé gris / bleu, une section sur 2 */ 
+
+section {
+    height:100%;
+    padding:40px 0;
+    background: $gray_to_white;
+}
+
+section:nth-of-type(2n) {
+    background: $blue_to_white;
+}
+
+/****************** GENERAL RULES FONT ******************/
+/* tout ce qui concerne : font family, font size, font-weight, text-decoration, box-shadow, color, line-height, etc... */
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: $poppins;
+    font-weight: 400;
+    color: $black_brown;
+    span {
+        font-weight: 600;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    text-align: left;
+    font-family: $poppins;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 13px;
+    border-left: 5px solid $darkblue;
+    padding-left:10px;
+    color: $darkblue;
+    font-family: $poppins;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 50px;
+    text-align: center;
+    margin:0;
+}
+
+h5 {
+    text-align: left;
+    font-family: $poppins;
+    font-weight: 400;
+    color: $blue_darkgray;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $poppins;
+    margin:45px 0 15px;
+}
+
+p {
+    font-family: $lora;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: $gray_text;
+    line-height: 20px;
+}
+
+/* section experience */ 
+
+.exp__title {
+    font-size: 25px;
+    font-family: $poppins;
+    font-weight: 400;
+    color: $black_brown;
+    .exp__span {
+        color: $blue_gray;
+    }
+}
+
+.tag  {
+    box-shadow: $ombre001;
+    a {
+        color:white;
+        font-family: $poppins;
+        font-size: 13px;
+    }
+}
+
+/* section skills */ 
+
+.percentage__block {
+    p {
+        text-align: center;
+        span {
+            color: $black_brown
+        }
+    }
+}
+
+.percentage__number {
+    font-family: $poppins;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.coding__name {
+    font-family: $poppins;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* section services */ 
+
+.services__marketing {
+    h6 {
+        margin: 0
+    }
+    p {
+        line-height: 15px;
+        letter-spacing: normal;
+        text-align: left;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+}
+
+/* feedback section*/
+
+.feedback {
+    .feedback__subtitle {
+        font-family: $poppins;
+        font-size: 14px;
+    }
+    span {
+        font-weight: 600;
+        font-family: $poppins;
+        font-size: 14px;
+    }
+}
+
+/* footer */
+
+.footer {
+    p, a {
+        color:white;
+    }
+    a {
+        font-family: $poppins;
+    }
+    &--title {
+        color:white;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom:30px;
+    }
+    &--search {
+        font-family: $poppins;
+        color: $gray;
+        font-size:13px;
+    }
+    .info {
+        color:white;
+        font-family: $poppins;
+        font-size: 14px;
+    }
+}
+
+.footer__pink {
+    .copyright {
+        color: $darkblue;
+        font-family: $poppins;
+        font-size: 14px;
+    }
+    a {
+        color:black;
+    }
+}
