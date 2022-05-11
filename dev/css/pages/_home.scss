@@ -1,11 +1,18 @@
-/****************** EN TÊTE DES SECTIONS ******************/ 
+/****************** HEADING OF SECTIONS ******************/ 
 
-/* en-tête*/ 
-.en_tête  {
+/* heading */ 
+.heading  {
     width: 650px;
     margin:0 auto;
+    @include iphone12 {
+        width:390px;
+        margin:0 40px;
+    }
     h1 {
         width:67%;
+        @include iphone12 {
+            width:100%;
+        }
     } 
     &--white {
         text-align: center;
@@ -42,8 +49,6 @@
     }
 }
 
-
-
 /****************** ABOUT US ******************/ 
 
 .about {
@@ -52,6 +57,10 @@
     align-items: center;
     gap: 0 60px;
     margin:50px 60px;
+    @include iphone12 {
+        flex-direction: column;
+        margin:10px 40px;
+    }
 }
 
 .about__image {
@@ -61,10 +70,20 @@
         object-fit: cover;
         border-radius: 40px;
         box-shadow: $ombre001;
+        @include iphone12 {
+            width: 335px;
+            height: 200px;
+            margin-bottom:20px;
+        }
     }
 }
 .about__text {
     width:50%;
+    @include iphone12 {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
     h1 {
         width:100%;
     }
@@ -83,6 +102,11 @@
     justify-content: center;
     align-items: flex-start;
     height:200px;
+    @include iphone12 {
+        height: 100%;
+        flex-direction: column;
+        margin: 0 40px 40px;
+    }
     > * {
         padding: 0 20px;
     }
@@ -93,6 +117,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @include iphone12 {
+        width:100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    > * {
+        @include iphone12 {
+            margin:20px;
+        }
+    }
     h5 {
         margin: 0;
     }
@@ -105,6 +140,9 @@
         align-items: center;
         box-shadow: $ombre001;
         margin-top:30px;
+        @include iphone12 {
+            margin-top:0px;
+        }
         img {
             width:80%;
             height:80%;
@@ -117,6 +155,9 @@
 .exp__timeline {
     height:100%;
     position: relative;
+    @include iphone12 {
+        display: none;
+    }
     .exp__line {
         border: 1px solid $blue;
         height:100%;
@@ -138,6 +179,9 @@
 /* colonne 003 */ 
 .exp__text {
     width:40%;
+    @include iphone12 {
+        width:100%;
+    }
     :first-child {
         margin: 0px;
     }
@@ -155,6 +199,9 @@
     flex-wrap: wrap;
     width:350px;
     gap:10px;
+    @include iphone12 {
+        width:100%;
+    }
     .tag {
         background-color: $blue_water;
         border-radius: 20px;
@@ -173,6 +220,10 @@
 .skills__block {
     width: 50%;
     margin: 100px auto 40px;
+    @include iphone12 {
+        margin: 0 40px;
+        width:100%;
+    }
 }
 
 /* percentage */ 
@@ -183,6 +234,9 @@
     align-items: center;
     gap: 0 30px;
     margin:30px 0;
+    @include iphone12 {
+        gap: 0 20px;
+    }
     .percentage__block {
         display: flex;
         flex-direction: column;
@@ -194,6 +248,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include iphone12 {
+                width: 100px;
+                height: 100px;
+            }
         } 
     }
 }
@@ -218,13 +276,23 @@
     align-items: center;
     width:1000px;
     margin:0 auto;
+    @include iphone12 {
+        flex-direction: column;
+        width:100%;
+    }
 }
 
 .skills__left, .skills__right {
-    width:50%;    
+    width:50%;   
+    @include iphone12 {
+        width:100%;
+    } 
     .skills__title {
         margin:0 auto;
         width:350px;
+        @include iphone12 {
+            width:275px;
+        }
     }
 }
 
@@ -264,6 +332,10 @@
     align-items: center;
     margin:50px 60px;
     gap: 0 50px;
+    @include iphone12 {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 }
 
 /* colonne de gauche */
@@ -274,6 +346,13 @@
     "marketing__block marketing__block";
     width:45%;
     gap:20px 0;
+    @include iphone12 {
+        grid-template-areas: "marketing__block"
+        "marketing__block"
+        "marketing__block"
+        "marketing__block";
+        width:100%;
+    }
 }
 
 .marketing__block {
@@ -289,6 +368,9 @@
     overflow: hidden;
     width: 280px;
     box-shadow: $ombre001;
+    @include iphone12 {
+        margin:20px 0 0;
+    }
     .marketing__image {
         width: 225px;
         object-fit: cover;
@@ -309,12 +391,12 @@
     }
 }
 
-/* colonne de droite */
-
-.services__text {
-    width:45%;
-    h1 {
-        width:60%;
+.services .heading {
+    @include iphone12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:10px;
     }
 }
 
@@ -339,25 +421,19 @@
     width: 100%;
     margin:50px 0;
     overflow: hidden;
+    @include iphone12 {
+        flex-direction: column;
+    }
     .work__single {
         width:25%;
         height:550px;
         position: relative;
-        .singlework__text {
-            position: absolute;
-            bottom:0%;
-            background-color: $black_opacity;
+        @include iphone12 {
             width:100%;
-            left:50%;
-            transform: translate(-50%, -0%);
-            z-index: 1;
-            padding:10px 20px;
-            h1 {
-                color: white;
-            }
-            p {
-                color: white;
-            }
+        }
+        .singlework__text {
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
         }
         img {
             object-fit: cover;
@@ -366,6 +442,26 @@
             position:absolute;
             top:50%;
             transform: translate(0%, -50%);
+            @include iphone12 {
+                border: none;
+            }
+        }
+    }
+    .work__single:hover .singlework__text {
+        opacity: 100%;
+        position: absolute;
+        bottom:0%;
+        background-color: $black_opacity;
+        width:100%;
+        left:50%;
+        transform: translate(-50%, -0%);
+        z-index: 1;
+        padding:10px 20px;
+        h1 {
+            color: white;
+        }
+        p {
+            color: white;
         }
     }
 }
@@ -382,10 +478,17 @@
     justify-content: flex-end;
     padding:0 100px;
     margin-bottom:150px;
+    @include iphone12 {
+        padding:0;
+        margin: 0 40px 150px;
+    }
 }
 
 .feedback__block {
     width:40%; 
+    @include iphone12 {
+        width:100%;
+    }
     p {
         font-size: 20px;
     }
@@ -413,6 +516,9 @@
     margin:0 auto;
     display: flex;
     justify-content: space-around;
+    @include iphone12 {
+        flex-wrap: wrap;
+    }
     .clients__logos {
         margin:20px 0;
         overflow: hidden;
@@ -431,7 +537,7 @@
 /****************** TALK ******************/ 
 
 .talk {
-    background-image: url(../../img/contact-me-launch.jpg);
+    background-image: url(../img/contact-me-launch.jpg);
     background-position: center;
     background-size: cover;
     padding: 0;
@@ -462,6 +568,10 @@
     justify-content: center;
     margin:0 40px;
     gap:0 40px;
+    @include iphone12 {
+        flex-direction: column;
+        gap: 40px;
+    }
     .blog__block {
         width:400px;
         border-radius: 40px;
@@ -471,6 +581,9 @@
         background-color: white;
         padding:20px;
         box-shadow: $ombre001;
+        @include iphone12 {
+            width: 100%;
+        }
         .blog__image {
             width: 850px;
             height:90%;

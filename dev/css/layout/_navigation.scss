@@ -9,6 +9,14 @@
     font-size: 18px;
     position: sticky;
     border-bottom:1px solid white;
+    .nav__logo {
+        img {
+            @include iphone12 {
+              width:200%;
+            }
+        }
+      
+    }
     .nav__menu {
         a {
             padding: 0 10px;

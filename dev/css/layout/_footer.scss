@@ -11,12 +11,20 @@ footer {
     justify-content: center;
     gap:0 80px;
     padding:80px;
+    @include iphone12 {
+        flex-direction: column;
+        padding: 20px 40px;
+    }
     .footer {
-        width:100%;
+        width:25%;
         height:200px;
         padding:20px;
         display: flex;
         flex-direction: column;
+        @include iphone12 {
+            width:100%;
+            height: 100%;
+        }
         &--links a {
             margin: 2px 0;
         }
@@ -31,9 +39,6 @@ footer {
         .info {
             display: flex;
             align-items: center;
-            .fa-location-dot {
-                width:12%;
-            }
             div {
                 margin-left:15px;
             }
@@ -43,6 +48,11 @@ footer {
         }
         .button {
             box-shadow: $ombre001;
+        }
+    }
+    .footer--search {
+        @include iphone12 {
+            margin-bottom: 20px;
         }
     }
 }
@@ -55,6 +65,16 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include iphone12 {
+        flex-direction: column;
+        padding: 20px 0;
+        height:100%;
+    }
+    .footer--icone {
+       @include iphone12 {
+        margin-top: 15px;
+       }
+    }
     a {
         margin:0 5px;
     }

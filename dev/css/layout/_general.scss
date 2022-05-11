@@ -14,12 +14,21 @@ section:nth-of-type(2n) {
 /****************** GENERAL RULES FONT ******************/
 /* tout ce qui concerne : font family, font size, font-weight, text-decoration, box-shadow, color, line-height, etc... */
 
+body {
+    @include iphone12 {
+        width:390px;
+    }
+}
+
 a {
     text-decoration: none;
 }
 
 h1 {
     font-size: 40px;
+    @include iphone12 {
+        font-size: 30px;
+    }
     font-family: $poppins;
     font-weight: 400;
     color: $black_brown;

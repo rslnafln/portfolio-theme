@@ -1,0 +1,9 @@
+// ********************** RESPONSIVE ************************** // 
+
+$iphone12: 390px; 
+
+@mixin iphone12 {
+    @media (max-width: $iphone12) {
+        @content;
+    }
+}
