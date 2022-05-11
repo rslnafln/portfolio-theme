@@ -1,0 +1,39 @@
+/****************** ABOUT US ******************/ 
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 60px;
+    margin:50px 60px;
+    @include iphone12 {
+        flex-direction: column;
+        margin:10px 40px;
+    }
+}
+
+.about__image {
+    img {
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 40px;
+        box-shadow: $ombre001;
+        @include iphone12 {
+            width: 335px;
+            height: 200px;
+            margin-bottom:20px;
+        }
+    }
+}
+.about__text {
+    width:50%;
+    @include iphone12 {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        width:100%;
+    }
+}

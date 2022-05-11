@@ -1,0 +1,119 @@
+/****************** EXPERIENCES ******************/ 
+
+/* toutes les expériences */ 
+.experiences__all {
+    padding: 40px 0;
+}
+
+/* une expérience */
+.exp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height:200px;
+    @include iphone12 {
+        height: 100%;
+        flex-direction: column;
+        margin: 0 40px 40px;
+    }
+    > * {
+        padding: 0 20px;
+    }
+}
+
+/* colonne 001 */
+.exp__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include iphone12 {
+        width:100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    > * {
+        @include iphone12 {
+            margin:20px;
+        }
+    }
+    h5 {
+        margin: 0;
+    }
+    .exp__logo__img {
+        background-color: white;
+        width:80px;
+        height:80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $ombre001;
+        margin-top:30px;
+        @include iphone12 {
+            margin-top:0px;
+        }
+        img {
+            width:80%;
+            height:80%;
+            object-fit: cover;
+        }
+    }
+}
+
+/* colonne 002 */
+.exp__timeline {
+    height:100%;
+    position: relative;
+    @include iphone12 {
+        display: none;
+    }
+    .exp__line {
+        border: 1px solid $blue;
+        height:100%;
+        display: inline-block;
+    }
+    .exp__block {
+        background-color: $blue;
+        width:20px;
+        height:20px;
+        border-radius: 20px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,-0%);
+        
+    }
+}
+
+/* colonne 003 */ 
+.exp__text {
+    width:40%;
+    @include iphone12 {
+        width:100%;
+    }
+    :first-child {
+        margin: 0px;
+    }
+    p {
+        span {
+            font-weight: 600;
+            color: $black_brown;
+        }
+    }
+}
+
+/* colonne 004*/ 
+.exp__tag {
+    display: flex;
+    flex-wrap: wrap;
+    width:350px;
+    gap:10px;
+    @include iphone12 {
+        width:100%;
+    }
+    .tag {
+        background-color: $blue_water;
+        border-radius: 20px;
+        padding:5px 10px;
+    }
+}

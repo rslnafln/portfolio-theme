@@ -1,0 +1,50 @@
+/****************** HEADING OF SECTIONS ******************/ 
+
+/* heading */ 
+.heading  {
+    width: 650px;
+    margin:0 auto;
+    @include iphone12 {
+        width:390px;
+        margin:0 40px;
+    }
+    h1 {
+        width:67%;
+        @include iphone12 {
+            width:100%;
+        }
+    } 
+    &--white {
+        text-align: center;
+        h3 {
+            color:white;
+            border-left:none;
+        }
+        .border__bottom {
+            margin:0 auto;
+            border-bottom: 5px solid white;
+            width:5%;
+        }
+        h1 {
+            color:white;
+            width:100%;
+        }
+        p {
+            color:white;
+        }
+    }
+    &--middle {
+        text-align: center;
+        h3 {
+            border-left:none;
+        }
+        .border__bottom {
+            margin:0 auto;
+            border-bottom: 5px solid black;
+            width:5%;
+        }
+        h1 {
+            width:100%;
+        }
+    }
+}

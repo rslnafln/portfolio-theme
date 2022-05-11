@@ -1,0 +1,65 @@
+/****************** FEATURED WORK ******************/
+
+.work {
+    height:100%;
+    padding:40px 0;
+    background: $dark_to_blue;
+    display: flex;
+    flex-direction: column;
+    .button {
+        margin: 0 auto;
+    }
+}
+
+.work__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin:50px 0;
+    overflow: hidden;
+    @include iphone12 {
+        flex-direction: column;
+    }
+    .work__single {
+        width:25%;
+        height:550px;
+        position: relative;
+        @include iphone12 {
+            width:100%;
+        }
+        .singlework__text {
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+        img {
+            object-fit: cover;
+            margin: 0 auto;
+            border:4px solid black;
+            position:absolute;
+            top:50%;
+            transform: translate(0%, -50%);
+            @include iphone12 {
+                border: none;
+            }
+        }
+    }
+    .work__single:hover .singlework__text {
+        opacity: 100%;
+        position: absolute;
+        bottom:0%;
+        background-color: $black_opacity;
+        width:100%;
+        left:50%;
+        transform: translate(-50%, -0%);
+        z-index: 1;
+        padding:10px 20px;
+        h1 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    }
+}

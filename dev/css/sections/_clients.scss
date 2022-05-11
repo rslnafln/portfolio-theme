@@ -1,0 +1,25 @@
+/****************** CLIENTS ******************/ 
+
+.clients__block {
+    height:100%;
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    @include iphone12 {
+        flex-wrap: wrap;
+    }
+    .clients__logos {
+        margin:20px 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        width:100%;
+        height:100px;
+        position: relative;
+        img {
+            object-fit: cover;
+            margin: 0 auto;
+        }
+    }
+}

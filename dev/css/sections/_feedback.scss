@@ -1,0 +1,41 @@
+/****************** FEED BACK ******************/ 
+
+.feedback {
+    padding-top:  100px;
+}
+
+.feedback__all {
+    width:100%; 
+    display: flex;
+    justify-content: flex-end;
+    padding:0 100px;
+    margin-bottom:150px;
+    @include iphone12 {
+        padding:0;
+        margin: 0 40px 150px;
+    }
+}
+
+.feedback__block {
+    width:40%; 
+    @include iphone12 {
+        width:100%;
+    }
+    p {
+        font-size: 20px;
+    }
+    .feedback__subtitle {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        .feedback__star {
+            i {
+                color: $pink;
+                padding:0 5px;
+            }
+            i:nth-of-type(-n+3) {
+                color: $dark_pink;
+            }
+        }
+    }
+}
