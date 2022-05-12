@@ -81,9 +81,10 @@
     } 
     .skills__title {
         margin:0 auto;
-        width:350px;
-        @include minitablette {
-            width:275px;
+        width:450px;
+        @include tablette {
+            width:100%;
+            margin:0 40px;
         }
     }
 }
