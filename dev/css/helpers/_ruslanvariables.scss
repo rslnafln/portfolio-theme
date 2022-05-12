@@ -4,7 +4,7 @@ $littlepad: 15px;
 $aboutresp: 530px; 
 
 @mixin aboutresp {
-  @media (max-width: $tablette) {
+  @media (max-width: $aboutresp) {
       @content;
   }
 }
