@@ -5,6 +5,7 @@
 @import "helpers/mixins";
 
 @import "components/buttons";
+@import "components/heading";
 
 @import "layout/general";
 @import "layout/header";
@@ -12,3 +13,13 @@
 @import "layout/navigation";
 
 @import "pages/home";
+
+@import "sections/aboutus";
+@import "sections/blog";
+@import "sections/clients";
+@import "sections/experiences";
+@import "sections/featuredwork";
+@import "sections/feedback";
+@import "sections/myservices";
+@import "sections/skills";
+@import "sections/talk";
