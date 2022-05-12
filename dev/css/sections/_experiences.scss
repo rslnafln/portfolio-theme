@@ -10,10 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height:200px;
-    @include iphone12 {
+    height: 200px;
+    @include tablette {
         height: 100%;
         flex-direction: column;
+        align-items: center;
         margin: 0 40px 40px;
     }
     > * {
@@ -26,14 +27,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    @include iphone12 {
+    @include tablette {
         width:100%;
         align-items: center;
         flex-direction: row;
+        justify-content: flex-start;
+    }
+    @include iphone12 {
         justify-content: center;
     }
     > * {
-        @include iphone12 {
+        @include tablette {
             margin:20px;
         }
     }
@@ -49,7 +53,7 @@
         align-items: center;
         box-shadow: $ombre001;
         margin-top:30px;
-        @include iphone12 {
+        @include tablette {
             margin-top:0px;
         }
         img {
@@ -64,12 +68,13 @@
 .exp__timeline {
     height:100%;
     position: relative;
-    @include iphone12 {
+    @include tablette {
         display: none;
     }
     .exp__line {
         border: 1px solid $blue;
         height:100%;
+        overflow: hidden;
         display: inline-block;
     }
     .exp__block {
@@ -88,13 +93,15 @@
 /* colonne 003 */ 
 .exp__text {
     width:40%;
-    @include iphone12 {
+    @include tablette {
         width:100%;
+        margin:0 40px;
     }
     :first-child {
         margin: 0px;
     }
     p {
+        width: 100%;
         span {
             font-weight: 600;
             color: $black_brown;
@@ -108,7 +115,7 @@
     flex-wrap: wrap;
     width:350px;
     gap:10px;
-    @include iphone12 {
+    @include tablette {
         width:100%;
     }
     .tag {
