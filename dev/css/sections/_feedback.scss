@@ -10,15 +10,16 @@
     justify-content: flex-end;
     padding:0 100px;
     margin-bottom:150px;
-    @include iphone12 {
+    @include tablette {
         padding:0;
         margin:0 40px;
+        justify-content: center;
     }
 }
 
 .feedback__block {
     width:40%; 
-    @include iphone12 {
+    @include tablette {
         width:100%;
     }
     p {

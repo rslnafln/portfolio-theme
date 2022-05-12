@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin:50px 60px;
+    margin:50px 40px;
     gap: 0 50px;
     @include tablette {
         flex-direction: column-reverse;
@@ -45,6 +45,10 @@
     overflow: hidden;
     width: 280px;
     box-shadow: $ombre001;
+    @include minitablette {
+        width:100%;
+        margin:0 auto;
+    }
     @include iphone12 {
         margin:20px 0 0;
     }
