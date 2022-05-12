@@ -1,0 +1,103 @@
+.page-about {
+  // GENERAL
+  header {
+    max-width: 100%;
+    height:70px;
+    position: relative;
+    background-image: none;
+    @include iphone12 {
+      height:500px;
+      width:390px;
+    }
+  }
+
+  .nav {
+    border-bottom:1px solid black;
+  }
+
+  // PARTS
+
+  // TOP PART
+  .top {
+    .__txts {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+    }
+
+  }
+
+  // CARDS PART
+  .__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 2rem;
+  }
+
+  .__singlecard {
+    width: 250px;
+    background-color: white;
+    box-shadow: $ombre001;
+    border-radius: 40px;
+
+    .__icon {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .__title {
+      h5 {
+        font-weight: bold;
+      }
+      
+    }
+
+    .__text {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  // MODIFIERS
+  .--toppad {
+    padding-top: 100px;
+  }
+
+  .--lilpadtop {
+    padding-top: $littlepad;
+  }
+
+  .--lilpadbot {
+    padding-bottom: $littlepad;
+  }
+
+  .--bigtitle {
+    font-size: 42px;
+    margin: 20px 0px;
+  }
+
+  .--largerimg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0px 65%;
+  }
+
+  .--2col {
+    width: 50%;
+  }
+
+  .--txtcenter {
+    text-align: center;
+  }
+
+  .--txtwrap {
+    margin: 0 10px;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
