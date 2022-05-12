@@ -1,5 +1,4 @@
 /****************** MY SERVICES ******************/ 
-
 .services {
     display: flex;
     justify-content: space-around;
@@ -11,9 +10,7 @@
         max-width: 100%;
     }
 }
-
 /* colonne de gauche */
-
 .services__marketing {
     display: grid;
     grid-template-areas: "marketing__block marketing__block"
@@ -31,7 +28,6 @@
         "marketing__block";
     }
 }
-
 .marketing__block {
     display: flex;
     align-items: center;
@@ -59,7 +55,6 @@
         border-radius: 15px;
     }
 }
-
 .marketing__title {
     display: flex;
     justify-content: space-between;
@@ -70,6 +65,7 @@
         width:30px;
         height:30px;
     }
+
 }
 
 .services .heading {
@@ -79,4 +75,5 @@
         justify-content: center;
         margin-bottom:10px;
     }
+
 }

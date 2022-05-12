@@ -10,9 +10,9 @@ let ignoreClickOnMeElement = document.querySelector(".nav");
 
 document.addEventListener('click', function(event) {
     let isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
-    
+
     if(Burger.classList.contains("active")){
-        
+
         if (!isClickInsideElement) {
             Burger.classList.toggle("active");
             Main_nav.classList.toggle("active");
