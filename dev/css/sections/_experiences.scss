@@ -88,6 +88,9 @@
 /* colonne 003 */ 
 .exp__text {
     width:40%;
+    @include tablette {
+        width:50%;
+    }
     @include iphone12 {
         width:100%;
     }
@@ -108,6 +111,9 @@
     flex-wrap: wrap;
     width:350px;
     gap:10px;
+    @include tablette {
+        width:20%;
+    }
     @include iphone12 {
         width:100%;
     }

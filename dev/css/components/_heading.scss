@@ -5,6 +5,7 @@
     width: 650px;
     margin:0 auto;
     @include iphone12 {
+        max-width: 100%;
         width:390px;
         margin:0 40px;
     }

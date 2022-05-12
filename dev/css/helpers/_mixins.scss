@@ -1,6 +1,13 @@
 // ********************** RESPONSIVE ************************** // 
 
+$tablette: 1250px;
 $iphone12: 390px; 
+
+@mixin tablette {
+    @media (max-width: $tablette) {
+        @content;
+    }
+}
 
 @mixin iphone12 {
     @media (max-width: $iphone12) {
