@@ -1,19 +1,16 @@
 /****************** MY SERVICES ******************/ 
-
 .services {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin:50px 60px;
+    margin:50px 40px;
     gap: 0 50px;
     @include tablette {
         flex-direction: column-reverse;
         max-width: 100%;
     }
 }
-
 /* colonne de gauche */
-
 .services__marketing {
     display: grid;
     grid-template-areas: "marketing__block marketing__block"
@@ -31,7 +28,6 @@
         "marketing__block";
     }
 }
-
 .marketing__block {
     display: flex;
     align-items: center;
@@ -45,6 +41,10 @@
     overflow: hidden;
     width: 280px;
     box-shadow: $ombre001;
+    @include minitablette {
+        width:100%;
+        margin:0 auto;
+    }
     @include iphone12 {
         margin:20px 0 0;
     }
@@ -55,7 +55,6 @@
         border-radius: 15px;
     }
 }
-
 .marketing__title {
     display: flex;
     justify-content: space-between;
@@ -66,6 +65,7 @@
         width:30px;
         height:30px;
     }
+
 }
 
 .services .heading {
@@ -75,4 +75,5 @@
         justify-content: center;
         margin-bottom:10px;
     }
+
 }
