@@ -1,13 +1,17 @@
 /****************** MY SERVICES ******************/ 
+.our-services {
+    width:100%;
+}
+
 .services {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin:50px 40px;
     gap: 0 50px;
+    max-width: 100%;
     @include tablette {
         flex-direction: column-reverse;
-        max-width: 100%;
     }
 }
 /* colonne de gauche */

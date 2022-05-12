@@ -3,6 +3,9 @@
 /* toutes les expériences */ 
 .experiences__all {
     padding: 40px 0;
+    @include tablette {
+        margin:0 40px;
+    }
 }
 
 /* une expérience */
