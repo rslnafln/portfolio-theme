@@ -65,4 +65,15 @@
         width:30px;
         height:30px;
     }
+
+}
+
+.services .heading {
+    @include iphone12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:10px;
+    }
+
 }
