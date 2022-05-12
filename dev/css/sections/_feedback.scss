@@ -5,14 +5,14 @@
 }
 
 .feedback__all {
-    width:100%; 
+    max-width:100%; 
     display: flex;
     justify-content: flex-end;
     padding:0 100px;
     margin-bottom:150px;
     @include iphone12 {
         padding:0;
-        margin: 0 40px 150px;
+        margin:0 40px;
     }
 }
 

@@ -28,6 +28,9 @@
         @include tablette {
             width:50%;
         }
+        @include minitablette {
+            width:80%;
+        }
         @include iphone12 {
             width: 100%;
         }

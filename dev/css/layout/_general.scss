@@ -10,12 +10,18 @@ section:nth-of-type(2n) {
     background: $blue_to_white;
 }
 
+/* wrapper */ 
+
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
     .work &, .talk & {
         max-width: 100%;
         margin:0;
+    }
+    .work & {
+        display: flex;
+        flex-direction: column;
     }
 }
 
