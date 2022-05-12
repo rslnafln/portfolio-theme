@@ -13,6 +13,7 @@
     justify-content: center;
     gap:0 40px;
     width: 100%;
+    flex-wrap: wrap;
     @include tablette {
         flex-direction: column;
         gap: 40px;
