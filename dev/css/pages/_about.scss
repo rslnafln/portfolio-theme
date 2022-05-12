@@ -25,6 +25,7 @@
     .__txts {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       align-content: center;
     }
 
@@ -38,6 +39,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     row-gap: 2rem;
+
+    @include phone {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include aboutresp {
+      grid-template-columns: 1fr;
+    }
   }
 
   .__singlecard {
@@ -101,6 +110,10 @@
 
   .--2col {
     width: 50%;
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   .--txtcenter {
@@ -121,10 +134,14 @@
 
   .--bgreplacer {
     background-image: url('../img/new-heights.jpeg');
-    background-position: center;
-    background-size: cover;
-    padding: 0;
-    height:500px;
+  }
+
+  .--overlayfix {
+    height: 600px;
+  }
+
+  .--respmargin {
+    margin: 0 40px;
   }
 
   .wrapper {

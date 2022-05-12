@@ -1,1 +1,10 @@
 $littlepad: 15px;
+
+// Special Responsive
+$aboutresp: 530px; 
+
+@mixin aboutresp {
+  @media (max-width: $tablette) {
+      @content;
+  }
+}
