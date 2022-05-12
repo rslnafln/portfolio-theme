@@ -10,6 +10,15 @@ section:nth-of-type(2n) {
     background: $blue_to_white;
 }
 
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    .work &, .talk & {
+        max-width: 100%;
+        margin:0;
+    }
+}
+
 /****************** GENERAL RULES FONT ******************/
 /* tout ce qui concerne : font family, font size, font-weight, text-decoration, box-shadow, color, line-height, etc... */
 

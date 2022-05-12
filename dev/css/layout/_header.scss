@@ -7,7 +7,6 @@ header {
     background-image: url(../img/bg-home.png);
     @include iphone12 {
        height:500px;
-       width:390px;
     }
 }
 
