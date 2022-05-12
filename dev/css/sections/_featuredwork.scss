@@ -19,14 +19,15 @@
     width: 100%;
     margin:50px 0;
     overflow: hidden;
-    @include iphone12 {
+    @include phone {
         flex-direction: column;
     }
     .work__single {
         width:25%;
         height:550px;
         position: relative;
-        @include iphone12 {
+        overflow: hidden;
+        @include phone {
             width:100%;
         }
         .singlework__text {
@@ -40,8 +41,10 @@
             position:absolute;
             top:50%;
             transform: translate(0%, -50%);
-            @include iphone12 {
+            @include phone {
                 border: none;
+                height:100%;
+                width: 100%;
             }
         }
     }

@@ -2,7 +2,6 @@
 /* fond degradé gris / bleu, une section sur 2 */ 
 
 section {
-    height:100%;
     padding:40px 0;
     background: $gray_to_white;
 }
@@ -11,14 +10,17 @@ section:nth-of-type(2n) {
     background: $blue_to_white;
 }
 
-/****************** GENERAL RULES FONT ******************/
-/* tout ce qui concerne : font family, font size, font-weight, text-decoration, box-shadow, color, line-height, etc... */
-
-body {
-    @include iphone12 {
-        width:390px;
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    .work &, .talk & {
+        max-width: 100%;
+        margin:0;
     }
 }
+
+/****************** GENERAL RULES FONT ******************/
+/* tout ce qui concerne : font family, font size, font-weight, text-decoration, box-shadow, color, line-height, etc... */
 
 a {
     text-decoration: none;

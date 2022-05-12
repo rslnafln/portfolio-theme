@@ -1,6 +1,7 @@
 /****************** SKILLS ******************/ 
 
 .skills {
+    width: 100%;
     span {
         font-weight: bold;
     }
@@ -30,6 +31,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include iphone12 {
+            width:25%;
+        }
         .percentage__number {
             width:125px;
             height:125px;

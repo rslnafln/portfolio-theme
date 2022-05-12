@@ -2,18 +2,15 @@
 
 /* heading */ 
 .heading  {
-    width: 650px;
-    margin:0 auto;
-    @include iphone12 {
-        width:390px;
-        margin:0 40px;
-    }
-    h1 {
-        width:67%;
-        @include iphone12 {
-            width:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablette {
+        h1 {
+            text-align: center;
         }
-    } 
+    }
     &--white {
         text-align: center;
         h3 {
@@ -31,6 +28,7 @@
         }
         p {
             color:white;
+            width:60%;
         }
     }
     &--middle {
