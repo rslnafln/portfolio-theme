@@ -13,12 +13,15 @@
 
   .nav {
     border-bottom:1px solid black;
+    background: none;
   }
 
   // PARTS
 
   // TOP PART
   .top {
+    transform: translate(0, 100px);
+
     .__txts {
       display: flex;
       flex-direction: row;
@@ -28,6 +31,8 @@
   }
 
   // CARDS PART
+  
+
   .__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -49,6 +54,8 @@
     .__title {
       h5 {
         font-weight: bold;
+        font-size: 1em;
+        margin: 2px;
       }
       
     }
@@ -56,12 +63,20 @@
     .__text {
       width: 80%;
       margin: 0 auto;
+      p {
+        line-height: 13px;
+      }
+      
     }
   }
 
   // MODIFIERS
   .--toppad {
     padding-top: 100px;
+  }
+
+  .--botpad {
+    padding-bottom: 100px;
   }
 
   .--lilpadtop {
@@ -94,6 +109,22 @@
 
   .--txtwrap {
     margin: 0 10px;
+  }
+
+  .--bluebg {
+    background: $blue_to_white;
+  }
+
+  .--graybg {
+    background: $gray_to_white;
+  }
+
+  .--bgreplacer {
+    background-image: url('../img/new-heights.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    height:500px;
   }
 
   .wrapper {
