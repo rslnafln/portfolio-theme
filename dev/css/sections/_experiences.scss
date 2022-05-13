@@ -2,10 +2,7 @@
 
 /* toutes les expériences */ 
 .experiences__all {
-    padding: 40px 0;
-    @include tablette {
-        margin:0 40px;
-    }
+    padding: $pad2 0;
 }
 
 /* une expérience */
@@ -14,14 +11,15 @@
     justify-content: center;
     align-items: flex-start;
     height: 200px;
+    margin: $pad2;
     @include tablette {
         height: 100%;
         flex-direction: column;
         align-items: center;
-        margin: 0 40px 40px; // source du bug ?
+        // margin: 0 $pad2 $pad2; // source du bug ?
     }
     > * {
-        padding: 0 20px;
+        padding: 0 $pad1;
     }
 }
 
@@ -33,19 +31,17 @@
     @include tablette {
         width:100%;
         align-items: center;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: $pad2;
     }
     @include iphone12 {
         justify-content: center;
     }
     > * {
         @include tablette {
-            // margin:20px; // source du bug
+            margin-top: $pad1 0;
         }
-    }
-    h5 {
-        // margin: 0;
     }
     .exp__logo__img {
         background-color: white;
@@ -82,9 +78,9 @@
     }
     .exp__block {
         background-color: $blue;
-        width:20px;
-        height:20px;
-        border-radius: 20px;
+        width:$pad1;
+        height:$pad1;
+        border-radius: $pad1;
         position: absolute;
         top: 0%;
         left: 50%;
@@ -98,10 +94,9 @@
     width:40%;
     @include tablette {
         width:100%;
-        margin:0 40px;
     }
     :first-child {
-        margin: 0px;
+        margin-top: $pad1;
     }
     p {
         width: 100%;
@@ -117,13 +112,13 @@
     display: flex;
     flex-wrap: wrap;
     width:350px;
-    gap:10px;
+    gap:calc($pad1 / 2);
     @include tablette {
         width:100%;
     }
     .tag {
         background-color: $blue_water;
-        border-radius: 20px;
-        padding:5px 10px;
+        border-radius: $pad1;
+        padding:5px calc($pad1 / 2);
     }
 }

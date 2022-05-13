@@ -8,19 +8,19 @@
     margin:50px 60px;
     @include iphone12 {
         flex-direction: column;
-        margin:10px 40px;
+        margin:calc($pad1 / 2) $pad2;
     }
     &__image {
         img {
             width: 400px;
             height: 500px;
             object-fit: cover;
-            border-radius: 40px;
+            border-radius: $pad2;
             box-shadow: $ombre001;
             @include iphone12 {
                 width: 335px;
                 height: 200px;
-                margin-bottom:20px;
+                margin-bottom:$pad1;
             }
         }
     }

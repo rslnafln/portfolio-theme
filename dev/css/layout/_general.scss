@@ -2,7 +2,7 @@
 /* fond degradé gris / bleu, une section sur 2 */ 
 
 section {
-    padding:40px 0;
+    padding:$pad2 0;
     background: $gray_to_white;
 }
 
@@ -17,10 +17,12 @@ section:nth-of-type(2n) {
     max-width: 1280px;
     @include tablette {
         max-width: 100%;
+        padding: $pad1;
     }
     .work &, .talk & {
         max-width: 100%;
         margin:0;
+        padding: 0;
     }
     .work & {
         display: flex;
@@ -36,7 +38,7 @@ a {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: $pad2;
     @include iphone12 {
         font-size: 30px;
     }
@@ -58,7 +60,7 @@ h2 {
 h3 {
     font-size: 13px;
     border-left: 5px solid $darkblue;
-    padding-left:10px;
+    padding-left:calc($pad1 / 2);
     color: $darkblue;
     font-family: $poppins;
     font-weight: 400;
@@ -89,7 +91,7 @@ p {
     letter-spacing: 1px;
     font-size: 13px;
     color: $gray_text;
-    line-height: 20px;
+    line-height: $pad1;
 }
 
 /* section experience */ 
@@ -178,7 +180,7 @@ p {
         color:white;
         font-family: $poppins;
         font-weight: 600;
-        font-size: 20px;
+        font-size: $pad1;
         // margin-bottom:30px;
     }
     &--search {

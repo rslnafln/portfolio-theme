@@ -5,10 +5,10 @@
     justify-content: space-around;
     align-items: center;
     gap: 0 60px;
-    margin:50px 40px;
+    margin:50px $pad2;
     @include minitablette {
         flex-direction: column;
-        margin:10px 40px;
+        margin:calc($pad1 / 2) $pad2;
     }
 }
 
@@ -23,7 +23,7 @@
         width: 100%;
         height: 500px;
         object-fit: cover;
-        border-radius: 40px;
+        border-radius: $pad2;
         box-shadow: $ombre001;
         object-position: 0px 65%;
         @include minitablette {
@@ -36,7 +36,7 @@
 /* le text */
 
 .about .about__text {
-    margin-top:20px;
+    margin-top:$pad1;
 }
 
 .about__text {

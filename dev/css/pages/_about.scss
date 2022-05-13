@@ -53,7 +53,7 @@
     width: 250px;
     background-color: white;
     box-shadow: $ombre001;
-    border-radius: 40px;
+    border-radius: $pad2;
 
     .__icon {
       width: 50%;
@@ -98,7 +98,7 @@
 
   .--bigtitle {
     font-size: 42px;
-    margin: 20px 0px;
+    margin: $pad1 0px;
   }
 
   .--largerimg {
@@ -121,7 +121,7 @@
   }
 
   .--txtwrap {
-    // margin: 0 10px; // source du bug ?
+    // margin: 0 calc($pad1 / 2); // source du bug ?
   }
 
   .--bluebg {
@@ -141,7 +141,7 @@
   }
 
   .--respmargin {
-    margin: 0 40px;
+    margin: 0 $pad2;
   }
 
   .wrapper {
