@@ -1,11 +1,11 @@
-/******* navigation ***********/ 
+/******* navigation home-page ***********/ 
 
 .nav {
     width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:0 40px;
+    padding:0 $pad2;
     align-items: center;
     height:70px;
     font-size: 18px;
@@ -35,7 +35,7 @@
     }
     .nav__menu {
         a {
-            padding: 0 10px;
+            padding: 0 calc($pad1 / 2);
             color: $gray;
             font-family: $poppins;
             @include tablette {
@@ -50,6 +50,29 @@
     }
 
 }
+
+/************* nav autres pages ************/
+
+  .header__bis {
+    max-width: 100%;
+    height:70px;
+    position: relative;
+    background-image: none;
+    @include iphone12 {
+      height:500px;
+      width:390px;
+    }
+  }
+
+  .nav__bis {
+    border-bottom:1px solid black;
+    background: none;
+  }
+
+  .--graybg {
+    background: $gray_to_white;
+  }
+
 
 /********* menu burger *****************/
 

@@ -18,7 +18,7 @@ $blueverydark: #02101B;
 
 $black_brown: #343434;
 
-/* DEGRADEE */ 
+/* DEGRADES */ 
 
 $gray_to_white: linear-gradient(70deg, #e4e4eb, #ffffff);
 $blue_to_white: linear-gradient(70deg, #c8ddf2, #e5f3fc, #ffffff);
@@ -38,3 +38,7 @@ $lora: 'Lora', serif;
 /* OMBRES */ 
 
 $ombre001 : rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+/* MARGIN PADDING */
+$pad1: 1rem;
+$pad2: 2rem;
