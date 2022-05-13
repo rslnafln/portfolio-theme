@@ -2,6 +2,7 @@
 
 .blog {
     padding:100px 0 150px;
+    width: 100%;
 }
 
 /* les nouvelles */
@@ -10,14 +11,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:0 40px;
     gap:0 40px;
+    width: 100%;
+    flex-wrap: wrap;
     @include tablette {
         flex-direction: column;
         gap: 40px;
     }
     .blog__block {
-        width:400px;
+        width:30%;
         border-radius: 40px;
         height:300px;
         display: flex;
@@ -27,6 +29,9 @@
         box-shadow: $ombre001;
         @include tablette {
             width:50%;
+        }
+        @include minitablette {
+            width:80%;
         }
         @include iphone12 {
             width: 100%;

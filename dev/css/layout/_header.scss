@@ -1,28 +1,39 @@
 /* HEADER GENERAL RULES */ 
-
 header {
     max-width: 100%;
     height:100vh;
     position: relative;
     background-image: url(../img/bg-home.png);
-    @include iphone12 {
-       height:500px;
+    @include tablette {
+    height:500px;
+    }
+    @include phone {
+        height:450px;
     }
 }
 
 .header {
     position: absolute;
-    top: 100%; left: 50%;
+    top: 100%; left: 50%; 
     transform: translate(-50%, -100%);  
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width:600px;
+    width:100%;
     img {
-        width:110%;
-        @include iphone12 {
+        width:48%;
+        @include tablette {
+            width: 40%;
+        }
+        @include minitablette {
+            width: 45%;
+        }
+        @include phone {
             width: 65%;
+        }
+        @include iphone12 {
+            width:100%;
         }
     }
 }

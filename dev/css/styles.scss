@@ -3,9 +3,11 @@
 
 @import "helpers/variables";
 @import "helpers/mixins";
+@import "helpers/ruslanvariables";
 
 @import "components/buttons";
 @import "components/heading";
+@import "components/block-txtimg";
 
 @import "layout/general";
 @import "layout/header";
@@ -13,6 +15,8 @@
 @import "layout/navigation";
 
 @import "pages/home";
+@import "pages/about";
+@import "pages/services";
 
 @import "sections/aboutus";
 @import "sections/blog";
