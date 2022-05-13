@@ -41,7 +41,7 @@ gulp.task('htmlification', function(){
 })
 
 gulp.task('imgification', function(){
-  return gulp.src('dev/img/*')
+  return gulp.src('dev/img/**/*')
   .pipe(imagemin()) // compression des images
   .pipe(gulp.dest('prod/img/'));
 })

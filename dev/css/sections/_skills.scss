@@ -1,0 +1,118 @@
+/****************** SKILLS ******************/ 
+
+.skills {
+    width: 100%;
+    span {
+        font-weight: bold;
+    }
+}
+
+.skills__block {
+    // margin: 100px auto $pad2; // source du bug
+    @include tablette{
+        width: 100%;
+    }
+}
+
+/* percentage */ 
+
+.percentage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0 30px;
+    margin:30px 0;
+    @include iphone12 {
+        gap: 0 $pad1;
+    }
+    .percentage__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include iphone12 {
+            width:25%;
+        }
+        .percentage__number {
+            width:125px;
+            height:125px;
+            border-radius: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include iphone12 {
+                width: 100px;
+                height: 100px;
+            }
+        } 
+    }
+}
+
+/*la couleurs des ronds*/
+.percentage__block:nth-of-type(1) .percentage__number {
+    border: 8px solid $dark_pink;
+}
+.percentage__block:nth-of-type(2) .percentage__number {
+    border: 8px solid $pink;
+}
+.percentage__block:nth-of-type(3) .percentage__number {
+    border: 8px solid $light_pink;
+}
+
+/* les deux colonnes*/
+
+.skills__colonne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin:0 auto;
+    @include minitablette {
+        flex-direction: column;
+        width:100%;
+    }
+}
+
+.skills__left, .skills__right {
+    width:50%;   
+    @include minitablette {
+        width:100%;
+    } 
+    .skills__title {
+        margin:0 auto;
+        width:450px;
+        @include tablette {
+            width:100%;
+            // margin:0 $pad2; // source du bug
+        }
+    }
+}
+
+/* l'intérieur des colonnes */
+
+.coding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:30px 0;
+    p {
+        margin: 0 
+    }
+}
+
+.coding__block {
+    margin: calc($pad1 / 2) 0;
+    width:70%;
+    .coding__rod {
+        background-color: $pink;
+        width:100%;
+        height:calc($pad1 / 2);
+        border-radius: 30px;
+        margin:calc($pad1 / 2) 0;
+    }
+    .coding__text {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,66 @@
+/****************** EN TÊTE DES SECTIONS ******************/
+.page-services{
+    font-weight: 500;
+    //HEADING
+    header{
+        height: 100%;
+        
+    }
+    //SECTION GROW & STAND OUT
+    
+    .grow-and-standout{
+        // padding: 0;
+
+
+            .block-txtimg__image{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 800px;
+                    border-radius: 0 0 0 $pad2;
+                    margin-top: -200px;
+                }
+            }
+            .block-txtimg__text{
+                padding: 0 80px 0 150px;
+                width: 100%;
+            }
+}
+
+    //SECTION MARKETING & CREATIVE
+    .section-even, .section-odd{
+        .heading{
+            align-items: unset;
+        }
+        .block-txtimg{
+
+        // justify-content: center;
+        .block-txtimg__text {
+            width: 60%;
+        }
+        .block-txtimg__image{
+            width: 40%;
+            // aspect-ratio: 3/2;
+            img{
+                width: 100%;
+                height: 600px;
+                aspect-ratio: 3/4;
+            }
+        }
+        
+        
+    }
+    }
+    //CHANGEMENT CONTEXTUELS
+    
+    .section-odd{
+        .block-txtimg{
+
+        flex-direction: row-reverse;
+}
+}
+
+
+}
+
+

@@ -11,12 +11,20 @@ footer {
     justify-content: center;
     gap:0 80px;
     padding:80px;
+    @include minitablette {
+        flex-direction: column;
+        padding: $pad1 $pad2;
+    }
     .footer {
-        width:100%;
+        width:25%;
         height:200px;
-        padding:20px;
+        padding:$pad1;
         display: flex;
         flex-direction: column;
+        @include minitablette {
+            width:100%;
+            height: 100%;
+        }
         &--links a {
             margin: 2px 0;
         }
@@ -31,18 +39,20 @@ footer {
         .info {
             display: flex;
             align-items: center;
-            .fa-location-dot {
-                width:12%;
-            }
             div {
                 margin-left:15px;
             }
             i {
-                margin:10px 0;
+                margin:calc($pad1 / 2) 0;
             }
         }
         .button {
             box-shadow: $ombre001;
+        }
+    }
+    .footer--search {
+        @include minitablette {
+            margin-bottom: $pad1;
         }
     }
 }
@@ -55,6 +65,16 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include minitablette {
+        flex-direction: column;
+        padding: $pad1 0;
+        height:100%;
+    }
+    .footer--icone {
+       @include minitablette {
+        margin-top: 15px;
+       }
+    }
     a {
         margin:0 5px;
     }
