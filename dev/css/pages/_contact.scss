@@ -1,0 +1,99 @@
+.page-contact {
+  // GENERAL
+  header {
+    max-width: 100%;
+    height:70px;
+    position: relative;
+    background-image: none;
+    @include iphone12 {
+      height:500px;
+      width:390px;
+    }
+  }
+
+  .nav {
+    border-bottom:1px solid black;
+    background: none;
+  }
+
+  // PARTS
+  .theform {
+    max-width: 500px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: $ombre001;
+    border-radius: 40px;
+
+    form {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 20px;
+    }
+
+    .__infos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .__input {
+        width: 50%;
+        
+      }
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgb(226, 226, 226);
+      height: 40px;
+      &::placeholder {
+        color: rgb(196, 196, 196);
+      }
+    }
+
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgb(226, 226, 226);
+      height: 30px;
+
+      &::placeholder {
+        color: rgb(196, 196, 196);
+      }
+    }
+
+    
+
+    .__input {
+      // padding-bottom: 10px;
+      padding: 10px 20px;
+    }
+  }
+
+  // MODIFIERS
+  .--graybg {
+    background: $gray_to_white;
+  }
+
+  .--centralizer {
+    text-align: center;
+  }
+
+  .--toppad {
+    padding-top: 100px;
+  }
+
+  .--botpad {
+    padding-bottom: 100px;
+  }
+
+  .--bigtitle {
+    font-size: 64px;
+    margin: 20px 0px;
+    text-align: center;
+  }
+
+  .--shadow {
+    box-shadow: $ombre001;
+  }
+}
