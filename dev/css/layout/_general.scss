@@ -2,7 +2,7 @@
 /* fond degradé gris / bleu, une section sur 2 */ 
 
 section {
-    padding:40px 0;
+    padding:$pad2 0;
     background: $gray_to_white;
 }
 
@@ -15,9 +15,14 @@ section:nth-of-type(2n) {
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
+    @include tablette {
+        max-width: 100%;
+        padding: $pad1;
+    }
     .work &, .talk & {
         max-width: 100%;
         margin:0;
+        padding: 0;
     }
     .work & {
         display: flex;
@@ -41,7 +46,7 @@ a {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: $pad2;
     @include iphone12 {
         font-size: 30px;
     }
@@ -63,7 +68,7 @@ h2 {
 h3 {
     font-size: 13px;
     border-left: 5px solid $darkblue;
-    padding-left:10px;
+    padding-left:calc($pad1 / 2);
     color: $darkblue;
     font-family: $poppins;
     font-weight: 400;
@@ -86,7 +91,7 @@ h6 {
     font-size: 18px;
     font-weight: 400;
     font-family: $poppins;
-    margin:45px 0 15px;
+    // margin: 45px 0 15px;
 }
 
 p {
@@ -94,7 +99,7 @@ p {
     letter-spacing: 1px;
     font-size: 13px;
     color: $gray_text;
-    line-height: 20px;
+    line-height: $pad1;
 }
 
 /* section experience */ 
@@ -152,7 +157,7 @@ p {
         letter-spacing: normal;
         text-align: left;
         font-size: 12px;
-        margin: 5px 0;
+        // margin: 5px 0;
     }
 }
 
@@ -192,8 +197,8 @@ p {
         color:white;
         font-family: $poppins;
         font-weight: 600;
-        font-size: 20px;
-        margin-bottom:30px;
+        font-size: $pad1;
+        // margin-bottom:30px;
     }
     &--search {
         font-family: $poppins;

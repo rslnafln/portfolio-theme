@@ -4,11 +4,8 @@ header {
     height:100vh;
     position: relative;
     background-image: url(../img/bg-home.png);
-    @include tablette {
-    height:500px;
-    }
-    @include phone {
-        height:450px;
+    @media screen and (orientation:portrait) {
+        height:50vh;
     }
 }
 
