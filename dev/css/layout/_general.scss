@@ -10,7 +10,7 @@ section:nth-of-type(2n) {
     background: $blue_to_white;
 }
 
-/* wrapper */ 
+/* wrapper */
 
 .wrapper {
     margin: 0 auto;
@@ -22,6 +22,14 @@ section:nth-of-type(2n) {
     .work & {
         display: flex;
         flex-direction: column;
+    }
+}
+
+// Un display flex pleine largeur avant wrapper
+.wide{
+    display: flex;
+    &--inverse{
+        flex-direction: row-reverse;
     }
 }
 
@@ -159,6 +167,15 @@ p {
         font-weight: 600;
         font-family: $poppins;
         font-size: 14px;
+    }
+}
+
+// COLUMNS
+.clmn-2{
+    column-count: 2;
+    column-gap: 40px;
+    p:first-child{
+        margin-top: 0;
     }
 }
 
