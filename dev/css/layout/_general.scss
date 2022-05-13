@@ -15,6 +15,9 @@ section:nth-of-type(2n) {
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
+    @include tablette {
+        max-width: 100%;
+    }
     .work &, .talk & {
         max-width: 100%;
         margin:0;
@@ -78,7 +81,7 @@ h6 {
     font-size: 18px;
     font-weight: 400;
     font-family: $poppins;
-    margin:45px 0 15px;
+    // margin: 45px 0 15px;
 }
 
 p {
@@ -144,7 +147,7 @@ p {
         letter-spacing: normal;
         text-align: left;
         font-size: 12px;
-        margin: 5px 0;
+        // margin: 5px 0;
     }
 }
 
@@ -176,7 +179,7 @@ p {
         font-family: $poppins;
         font-weight: 600;
         font-size: 20px;
-        margin-bottom:30px;
+        // margin-bottom:30px;
     }
     &--search {
         font-family: $poppins;

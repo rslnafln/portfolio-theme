@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin:50px 40px;
+    // margin:50px 40px;
     gap: 0 50px;
     max-width: 100%;
     @include tablette {
@@ -50,7 +50,7 @@
         margin:0 auto;
     }
     @include iphone12 {
-        margin:20px 0 0;
+        // margin:20px 0 0;
     }
     .marketing__image {
         width: 95%;
@@ -64,7 +64,7 @@
     justify-content: space-between;
     align-items: center;
     width:95%;
-    margin: 10px 0;
+    // margin: 10px 0;
     img {
         width:30px;
         height:30px;

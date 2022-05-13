@@ -18,7 +18,7 @@
         height: 100%;
         flex-direction: column;
         align-items: center;
-        margin: 0 40px 40px;
+        margin: 0 40px 40px; // source du bug ?
     }
     > * {
         padding: 0 20px;
@@ -41,11 +41,11 @@
     }
     > * {
         @include tablette {
-            margin:20px;
+            // margin:20px; // source du bug
         }
     }
     h5 {
-        margin: 0;
+        // margin: 0;
     }
     .exp__logo__img {
         background-color: white;
