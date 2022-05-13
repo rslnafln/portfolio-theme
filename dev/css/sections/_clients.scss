@@ -1,5 +1,9 @@
 /****************** CLIENTS ******************/ 
 
+.clients {
+    width:100%;
+}
+
 .clients__block {
     height:100%;
     width:100%;
@@ -10,7 +14,7 @@
         flex-wrap: wrap;
     }
     .clients__logos {
-        margin:20px 0;
+        margin:$pad1 0;
         overflow: hidden;
         display: flex;
         justify-content: center;

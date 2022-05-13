@@ -4,11 +4,8 @@ header {
     height:100vh;
     position: relative;
     background-image: url(../img/bg-home.png);
-    @include tablette {
-    height:500px;
-    }
-    @include phone {
-        height:450px;
+    @media screen and (orientation:portrait) {
+        height:50vh;
     }
 }
 
@@ -22,12 +19,15 @@ header {
     align-items: center;
     width:100%;
     img {
-        width:65%;
+        width:48%;
         @include tablette {
             width: 40%;
         }
+        @include minitablette {
+            width: 45%;
+        }
         @include phone {
-            width: 60%;
+            width: 65%;
         }
         @include iphone12 {
             width:100%;

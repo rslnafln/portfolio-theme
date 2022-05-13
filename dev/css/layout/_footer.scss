@@ -13,12 +13,12 @@ footer {
     padding:80px;
     @include minitablette {
         flex-direction: column;
-        padding: 20px 40px;
+        padding: $pad1 $pad2;
     }
     .footer {
         width:25%;
         height:200px;
-        padding:20px;
+        padding:$pad1;
         display: flex;
         flex-direction: column;
         @include minitablette {
@@ -43,7 +43,7 @@ footer {
                 margin-left:15px;
             }
             i {
-                margin:10px 0;
+                margin:calc($pad1 / 2) 0;
             }
         }
         .button {
@@ -52,7 +52,7 @@ footer {
     }
     .footer--search {
         @include minitablette {
-            margin-bottom: 20px;
+            margin-bottom: $pad1;
         }
     }
 }
@@ -67,7 +67,7 @@ footer {
     align-items: center;
     @include minitablette {
         flex-direction: column;
-        padding: 20px 0;
+        padding: $pad1 0;
         height:100%;
     }
     .footer--icone {

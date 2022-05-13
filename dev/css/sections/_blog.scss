@@ -2,6 +2,7 @@
 
 .blog {
     padding:100px 0 150px;
+    width: 100%;
 }
 
 /* les nouvelles */
@@ -10,20 +11,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:0 40px;
-    gap:0 40px;
+    gap:0 $pad2;
+    width: 100%;
+    flex-wrap: wrap;
     @include tablette {
         flex-direction: column;
-        gap: 40px;
+        gap: $pad2;
     }
     .blog__block {
-        width:400px;
-        border-radius: 40px;
+        width:30%;
+        border-radius: $pad2;
         height:300px;
         display: flex;
         align-items: center;
         background-color: white;
-        padding:20px;
+        padding:$pad1;
         box-shadow: $ombre001;
         @include tablette {
             width:50%;
@@ -39,13 +41,13 @@
             height:90%;
             img {
                 width:100%;
-                border-radius: 20px;
+                border-radius: $pad1;
                 height:100%;
                 object-fit: cover;
             }
         }
         .blog__text {
-            margin: 0 20px;
+            margin: 0 $pad1;
             h6 {
                 margin:0;
             }
@@ -56,7 +58,7 @@
     }
     .blog__block:nth-of-type(1) {
         @include tablette {
-            margin-top: 20px;
+            margin-top: $pad1;
         }
     }
 }
