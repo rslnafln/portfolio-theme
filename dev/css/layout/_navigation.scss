@@ -11,6 +11,7 @@
     font-size: 18px;
     position: sticky;
     border-bottom:1px solid white;
+    z-index: 999;
     @include tablette {
         transition: 0.8s all ease-in-out;
         position: fixed;
@@ -20,7 +21,6 @@
         // width: 390px !important;
         height: 100vh;
         opacity: 0.9;
-        z-index: 999;
     }
     .nav__logo {
         @include tablette {

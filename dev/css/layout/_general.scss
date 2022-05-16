@@ -4,6 +4,11 @@
 section {
     padding:$pad2 0;
     background: $gray_to_white;
+    position: relative; // pour les backgrounds .wave
+    * {
+        z-index: 1;
+    }
+    overflow: hidden;
 }
 
 section:nth-of-type(2n) {
