@@ -8,16 +8,18 @@
     .blog__news {
         display: grid;
         padding:calc($pad1 / 2) $pad1;
+        grid-template-areas: "block__full blog__block"
+        "block__full blog__block-bis";
         grid-template-columns: 60% 30%;
-        grid-template-rows: 18% 18%;
+        align-items: flex-start;
         gap: $pad2;
         
         // GENERAL FOR BLOCK
         
         .blog__block {
-            width:100%;
-            height:100%;
-        }
+           width:100%;
+           // height:100%;
+         }
         
         // ELEMENT INSIDE
         
@@ -33,10 +35,6 @@
         // BLOCK NUMERO 1
         
         .block__full {
-            /* colonne 1 - largeur 1 */
-            grid-column: 1 ;
-            /* ligne 1 - largeur 3 */
-            grid-row: 1 / 3 ;
             flex-direction: column;
             padding:0;
             .blog__image {
@@ -125,3 +123,6 @@
         padding-right: 10px;
     }
 }
+
+// SECTION CATEGORY
+

@@ -31,7 +31,7 @@ section:nth-of-type(2n) {
 }
 
 // Un display flex pleine largeur avant wrapper
-.wide{
+.wide {
     display: flex;
     &--inverse{
         flex-direction: row-reverse;
@@ -101,6 +101,7 @@ p {
     color: $gray_text;
     line-height: $pad1;
 }
+
 
 /* section experience */ 
 
@@ -184,7 +185,7 @@ p {
     }
 }
 
-/* section lastest post */ 
+/* section lastest post (blog page) */ 
 
 .read-more {
     a {
@@ -193,6 +194,12 @@ p {
         text-transform: uppercase;
         padding: 10px 0;
     }
+}
+
+/* section category (blog page) */
+.category 
+    .--title {
+    font-size: 24px;
 }
 
 /* footer */
