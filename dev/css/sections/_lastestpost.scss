@@ -98,11 +98,30 @@
     margin-right: $pad2;
     box-shadow: $ombre001;
     border: 1px solid white;
+    width: fit-content;
     border-radius: 20px;
     i {
         padding-right: 10px;
     }
     .full__category {
         font-family: $poppins;
+    }
+}
+
+// DATE
+
+.blog__date {
+    position: absolute;
+    display: flex;
+    top:0;
+    left:100%;
+    transform: translate(-100%, -0%);
+    background-color: $white_opacity;
+    border-radius: 0 $pad1 0 $pad1;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: $poppins;
+    i {
+        padding-right: 10px;
     }
 }
