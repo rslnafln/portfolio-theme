@@ -10,7 +10,7 @@
     margin-bottom:150px;
     @include tablette {
         padding:0;
-        margin:0 40px;
+        margin:0 $pad2;
         justify-content: center;
     }
 }
@@ -21,12 +21,12 @@
         width:100%;
     }
     p {
-        font-size: 20px;
+        font-size: $pad1;
     }
     .feedback__subtitle {
         display: flex;
         justify-content: space-between;
-        margin: 10px 0;
+        margin: calc($pad1 / 2) 0;
         .feedback__star {
             i {
                 color: $pink;
