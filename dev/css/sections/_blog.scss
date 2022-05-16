@@ -17,6 +17,7 @@
     @include tablette {
         flex-direction: column;
         gap: $pad2;
+        padding: $pad2;
     }
     .blog__block {
         width:30%;
@@ -28,13 +29,7 @@
         padding:$pad1;
         box-shadow: $ombre001;
         @include tablette {
-            width:50%;
-        }
-        @include minitablette {
-            width:80%;
-        }
-        @include iphone12 {
-            width: 100%;
+            width:100%;
         }
         .blog__image {
             width: 55%;

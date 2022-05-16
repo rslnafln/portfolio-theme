@@ -7,19 +7,25 @@
     
     .blog__news {
         display: grid;
-        padding:calc($pad1 / 2) $pad1;
+        padding:calc($pad1 / 2) $pad2;
         grid-template-areas: "block__full blog__block"
         "block__full blog__block-bis";
-        grid-template-columns: 60% 30%;
-        align-items: flex-start;
+        grid-template-columns: 60% 36%;
+        align-items: center;
+        justify-content: space-between;
         gap: $pad2;
+        @include tablette {
+            display: flex;
+            flex-direction: column;
+            padding: $pad2;
+        }
         
         // GENERAL FOR BLOCK
         
         .blog__block {
-           width:100%;
-           // height:100%;
-         }
+            width:100%;
+            // height:100%;
+        }
         
         // ELEMENT INSIDE
         
@@ -42,6 +48,7 @@
                 height:60%;
                 img { 
                     width:100%;
+                    border-radius: 1rem 1rem 0 0;
                     object-fit: cover;
                     object-position: 0px 20%;
                 }
@@ -126,3 +133,49 @@
 
 // SECTION CATEGORY
 
+// SECTION 2 4 6 ...
+
+.category {
+    // HEADING
+    .heading {
+        align-items: flex-end;
+        padding:0 $pad2;
+    }
+    // BLOCK TEXTE - IMAGE
+    .blog__full {
+        width: 100%;
+        padding:0 $pad2  $pad2;;
+        .block__full {
+            flex-direction: row;
+            padding: $pad1 $pad1 $pad1 0;
+            width: 100%;
+            .blog__image {
+                height: inherit;
+                overflow: hidden;
+                img {
+                    object-fit: cover;
+                    object-position: 0px 85%;
+                }
+            }
+        }
+    }    
+}
+
+// SECTION 1 3 5 ...
+
+.category:nth-of-type(2n) {
+    // HEADING 
+    .heading {
+        align-items: flex-start;
+    }
+    // BLOCK TEXTE - IMAGE
+    .blog__full {
+        width: 100%;
+        padding:0 $pad2  $pad2;;
+        .block__full {
+            flex-direction: row-reverse;
+            padding: $pad1 0 $pad1 $pad1;
+            width: 100%;
+        }
+    }    
+}
