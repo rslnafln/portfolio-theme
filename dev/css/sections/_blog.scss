@@ -37,9 +37,8 @@
             width: 100%;
         }
         .blog__image {
-            width: 55%;
-            height:100%;
-            position: relative;
+            width: 850px;
+            height:90%;
             img {
                 width:100%;
                 border-radius: $pad1;
@@ -49,7 +48,6 @@
         }
         .blog__text {
             margin: 0 $pad1;
-            width:45%;
             h6 {
                 margin:0;
             }
