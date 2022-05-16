@@ -1,88 +1,3 @@
-<<<<<<< HEAD
-/****************** MY SERVICES ******************/ 
-.our-services {
-    width:100%;
-}
-
-.services {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin:50px 40px;
-    gap: 0 50px;
-    max-width: 100%;
-    @include tablette {
-        flex-direction: column-reverse;
-    }
-}
-/* colonne de gauche */
-.services__marketing {
-    display: grid;
-    grid-template-areas: "marketing__block marketing__block"
-    "marketing__block marketing__block";
-    width:100%;
-    justify-content: center;
-    gap: 20px;
-    @include tablette {
-        margin-top:20px;
-    }
-    @include iphone12 {
-        grid-template-areas: "marketing__block"
-        "marketing__block"
-        "marketing__block"
-        "marketing__block";
-    }
-}
-.marketing__block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 45px;
-    text-align: center;
-    padding: 20px;
-    height: 350px;
-    overflow: hidden;
-    width: 280px;
-    box-shadow: $ombre001;
-    @include minitablette {
-        width:100%;
-        margin:0 auto;
-    }
-    @include iphone12 {
-        margin:20px 0 0;
-    }
-    .marketing__image {
-        width: 95%;
-        object-fit: cover;
-        height:30%;
-        border-radius: 15px;
-    }
-}
-.marketing__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:95%;
-    margin: 10px 0;
-    img {
-        width:30px;
-        height:30px;
-    }
-
-}
-
-.services .heading {
-    @include iphone12 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom:10px;
-    }
-
-}
-=======
 /****************** MY SERVICES ******************/ 
 .our-services {
     width:100%;
@@ -154,7 +69,6 @@
         width:30px;
         height:30px;
     }
-
 }
 
 .services .heading {
@@ -164,6 +78,4 @@
         justify-content: center;
         margin-bottom:calc($pad1 / 2);
     }
-
 }
->>>>>>> origin/test
