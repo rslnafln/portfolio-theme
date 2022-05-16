@@ -1,66 +1,154 @@
 /****************** EN TÊTE DES SECTIONS ******************/
-.page-services{
+.page-services {
     font-weight: 500;
+
     //HEADING
-    header{
+    header {
         height: 100%;
-        
+
     }
+
     //SECTION GROW & STAND OUT
-    
-    .grow-and-standout{
+
+    .grow-and-standout {
+        padding: 0;
+
+        .block-txtimg {
+            margin: 0;
+            padding-bottom: 50px;
+            gap: 0 180px;
+            flex-direction: row-reverse;
+
+            .block-txtimg__image {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: 600px;
+                    border-radius: 0 0 0 40px;
+                }
+            }
+
+            .block-txtimg__text {
+                padding: 0 80px 0 150px;
+            }
+        }
+    }
+
+    //SECTION MARKETING & CREATIVE
+    .section-even,
+    .section-odd {
+        .heading {
+            margin-left: 160px;
+        }
+
+        .block-txtimg {
+
+            justify-content: center;
+
+            .block-txtimg__image {
+                width: 40%;
+                aspect-ratio: 3/2;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .block-txtimg__text {
+                display: flex;
+
+                .txt1,
+                .txt2 {
+                    width: 50%;
+                    padding: 20px;
+                }
+            }
+
+        }
+    }
+
+    //CHANGEMENT CONTEXTUELS
+
+    .section-odd {
+        .block-txtimg {
+
+            flex-direction: row-reverse;
+        }
+    }
+
+
+}
+
+/****************** EN TÊTE DES SECTIONS ******************/
+.page-services {
+    font-weight: 500;
+
+    //HEADING
+    header {
+        height: 100%;
+
+    }
+
+    //SECTION GROW & STAND OUT
+
+    .grow-and-standout {
         // padding: 0;
 
 
-            .block-txtimg__image{
-                width: 50%;
-                img{
-                    width: 100%;
-                    height: 800px;
-                    border-radius: 0 0 0 $pad2;
-                    margin-top: -200px;
-                }
-            }
-            .block-txtimg__text{
-                padding: 0 80px 0 150px;
+        .block-txtimg__image {
+            width: 50%;
+
+            img {
                 width: 100%;
+                height: 800px;
+                border-radius: 0 0 0 $pad2;
+                margin-top: -200px;
             }
-}
+        }
+
+        .block-txtimg__text {
+            padding: 0 80px 0 150px;
+            width: 100%;
+        }
+    }
 
     //SECTION MARKETING & CREATIVE
-    .section-even, .section-odd{
-        .heading{
+    .section-even,
+    .section-odd {
+        .heading {
             align-items: unset;
         }
-        .block-txtimg{
 
-        // justify-content: center;
-        .block-txtimg__text {
-            width: 60%;
-        }
-        .block-txtimg__image{
-            width: 40%;
-            // aspect-ratio: 3/2;
-            img{
-                width: 100%;
-                height: 600px;
-                aspect-ratio: 3/4;
+        .block-txtimg {
+
+            // justify-content: center;
+            .block-txtimg__text {
+                width: 60%;
             }
+
+            .block-txtimg__image {
+                width: 40%;
+
+                // aspect-ratio: 3/2;
+                img {
+                    width: 100%;
+                    height: 600px;
+                    aspect-ratio: 3/4;
+                }
+            }
+
+
         }
-        
-        
     }
-    }
+
     //CHANGEMENT CONTEXTUELS
-    
-    .section-odd{
-        .block-txtimg{
 
-        flex-direction: row-reverse;
+    .section-odd {
+        .block-txtimg {
+
+            flex-direction: row-reverse;
+        }
+    }
 }
-}
-
-
-}
-
-
