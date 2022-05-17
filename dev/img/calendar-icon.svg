@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="calendar_icon_124001.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="11.313709"
+     inkscape:cx="16.130873"
+     inkscape:cy="9.413359"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g26" />
+  <defs
+     id="defs4">
+    <path
+       id="calendar-a"
+       d="M 0,0 H 18 V 2 H 0 Z m 0,11 h 18 v 2 H 0 Z" />
+    <path
+       id="calendar-c"
+       d="M 2,7 H 18 V 4 H 16 V 2 h 2 c 1.104569,0 2,0.8954305 2,2 v 14 c 0,1.104569 -0.895431,2 -2,2 H 2 C 0.8954305,20 0,19.104569 0,18 V 4 C 0,2.8954305 0.8954305,2 2,2 H 4 V 4 H 2 Z m 0,2 v 9 H 18 V 9 Z M 7,4 C 7,4.5522847 6.5522847,5 6,5 5.4477152,5 5,4.5522847 5,4 V 1 C 5,0.44771525 5.4477152,0 6,0 6.5522847,0 7,0.44771525 7,1 Z m 8,0 C 15,4.5522847 14.552285,5 14,5 13.447715,5 13,4.5522847 13,4 V 1 c 0,-0.55228475 0.447715,-1 1,-1 0.552285,0 1,0.44771525 1,1 z M 8,2 h 4 V 4 H 8 Z m -1,8 h 2 v 2 H 7 Z m 4,0 h 2 v 2 h -2 z m 4,0 h 2 v 2 H 15 Z M 3,14 h 2 v 2 H 3 Z m 4,0 h 2 v 2 H 7 Z m 4,0 h 2 v 2 h -2 z m 4,0 h 2 v 2 h -2 z" />
+  </defs>
+  <g
+     fill="none"
+     fill-rule="evenodd"
+     transform="translate(1.3258252,0.26516504)"
+     id="g26"
+     style="fill:#000000">
+    <g
+       transform="translate(-0.32582521,5.734835)"
+       id="g15"
+       style="fill:#000000;fill-opacity:0.424812">
+      <mask
+         id="calendar-b"
+         fill="#ffffff">
+        <use
+           xlink:href="#calendar-a"
+           id="use6"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </mask>
+      <use
+         fill="#d8d8d8"
+         xlink:href="#calendar-a"
+         id="use9"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%"
+         style="fill:#000000;fill-opacity:0.424812" />
+      <g
+         fill="#ffa0a0"
+         mask="url(#calendar-b)"
+         id="g13"
+         style="fill:#000000;fill-opacity:0.424812">
+        <rect
+           width="24"
+           height="24"
+           transform="translate(-3,-8)"
+           id="rect11"
+           x="0"
+           y="0"
+           style="fill:#000000;fill-opacity:0.424812" />
+      </g>
+    </g>
+    <mask
+       id="calendar-d"
+       fill="#ffffff">
+      <use
+         xlink:href="#calendar-c"
+         id="use17"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </mask>
+    <path
+       id="use20"
+       d="M 0.67417479,6.734835 H 16.674175 v -3 h -2 v -2 h 2 c 1.104569,0 2,0.8954305 2,2 v 14 c 0,1.104569 -0.895431,2 -2,2 H 0.67417479 c -1.1045695,0 -1.99999999,-0.895431 -1.99999999,-2 v -14 c 0,-1.1045695 0.89543049,-2 1.99999999,-2 H 2.6741748 v 2 H 0.67417479 Z m 0,2 v 9 H 16.674175 v -9 z m 5.00000001,-5 c 0,0.5522847 -0.4477153,1 -1,1 -0.5522848,0 -1,-0.4477153 -1,-1 V 0.73483496 c 0,-0.55228475 0.4477152,-1 1,-1 0.5522847,0 1,0.44771525 1,1 z m 8.0000002,0 c 0,0.5522847 -0.447715,1 -1,1 -0.552285,0 -1,-0.4477153 -1,-1 V 0.73483496 c 0,-0.55228475 0.447715,-1 1,-1 0.552285,0 1,0.44771525 1,1 z m -7.0000002,-2 h 4.0000002 v 2 H 6.6741748 Z m -1,8 h 2 v 2 h -2 z m 4,0 h 2.0000002 v 2 H 9.6741748 Z m 4.0000002,0 h 2 v 2 h -2 z m -12.0000002,4 h 2 v 2 h -2 z m 4,0 h 2 v 2 h -2 z m 4,0 h 2.0000002 v 2 H 9.6741748 Z m 4.0000002,0 h 2 v 2 h -2 z"
+       style="fill:#000000;fill-rule:nonzero" />
+    <g
+       fill="#7600ff"
+       mask="url(#calendar-d)"
+       id="g24"
+       style="fill:#000000" />
+  </g>
+</svg>
