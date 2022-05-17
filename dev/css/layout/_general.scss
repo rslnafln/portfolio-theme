@@ -28,6 +28,9 @@ section:nth-of-type(2n) {
         display: flex;
         flex-direction: column;
     }
+    .wide &{
+        max-width: 60vw;
+    }
 }
 
 // Un display flex pleine largeur avant wrapper
@@ -36,6 +39,7 @@ section:nth-of-type(2n) {
     &--inverse{
         flex-direction: row-reverse;
     }
+
 }
 
 .df{
@@ -187,6 +191,10 @@ p {
     column-gap: 40px;
     p:first-child{
         margin-top: 0;
+    }
+    @include phone {
+        column-count: 1;
+
     }
 }
 
