@@ -8,8 +8,6 @@
     .blog__news {
         display: grid;
         padding:calc($pad1 / 2) $pad2;
-        grid-template-areas: "block__full blog__block"
-        "block__full blog__block-bis";
         grid-template-columns: 60% 36%;
         align-items: center;
         justify-content: space-between;
@@ -43,6 +41,8 @@
         .block__full {
             flex-direction: column;
             padding:0;
+            grid-row: span 2;
+            height: 40rem;
             .blog__image {
                 width:100%;
                 height:60%;
@@ -62,6 +62,7 @@
         
         // BLOCK NUMERO 2 & 3 
         .blog__block:nth-of-type(2), .blog__block:nth-of-type(3)  {
+            height: 100%;
             .full__tag {
                 margin-top: $pad1
             }
