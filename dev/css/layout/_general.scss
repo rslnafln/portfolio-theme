@@ -48,7 +48,7 @@ a {
 h1 {
     font-size: $pad2;
     @include iphone12 {
-        font-size: 30px;
+        font-size: $title1-elastic;
     }
     font-family: $poppins;
     font-weight: 400;
@@ -59,14 +59,14 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: $title2-elastic;
     text-align: left;
     font-family: $poppins;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 13px;
+    font-size: $small-elastic;
     border-left: 5px solid $darkblue;
     padding-left:calc($pad1 / 2);
     color: $darkblue;
@@ -75,7 +75,7 @@ h3 {
 }
 
 h4 {
-    font-size: 50px;
+    font-size: $big-title-elastic;
     text-align: center;
     margin:0;
 }
@@ -88,7 +88,7 @@ h5 {
 }
 
 h6 {
-    font-size: 18px;
+    font-size: $sub1-elastic;
     font-weight: 400;
     font-family: $poppins;
     // margin: 45px 0 15px;
@@ -97,7 +97,7 @@ h6 {
 p {
     font-family: $lora;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: $small-elastic;
     color: $gray_text;
     line-height: $pad1;
 }
@@ -106,7 +106,7 @@ p {
 /* section experience */ 
 
 .exp__title {
-    font-size: 25px;
+    font-size: $exp-title;
     font-family: $poppins;
     font-weight: 400;
     color: $black_brown;
@@ -120,7 +120,7 @@ p {
     a {
         color:white;
         font-family: $poppins;
-        font-size: 13px;
+        font-size: $small-elastic;
     }
 }
 
@@ -138,13 +138,13 @@ p {
 .percentage__number {
     font-family: $poppins;
     font-weight: 400;
-    font-size: 25px;
+    font-size: $exp-title;
 }
 
 .coding__name {
     font-family: $poppins;
     font-weight: 400;
-    font-size: 16px;
+    font-size: $font-elastic;
 }
 
 /* section services */ 
@@ -157,7 +157,7 @@ p {
         line-height: 15px;
         letter-spacing: normal;
         text-align: left;
-        font-size: 12px;
+        font-size: $very-small-elastic;
         // margin: 5px 0;
     }
 }
@@ -167,12 +167,12 @@ p {
 .feedback {
     .feedback__subtitle {
         font-family: $poppins;
-        font-size: 14px;
+        font-size: $font-mid-elastic;
     }
     span {
         font-weight: 600;
         font-family: $poppins;
-        font-size: 14px;
+        font-size: $font-mid-elastic;
     }
 }
 
@@ -199,7 +199,7 @@ p {
 /* section category (blog page) */
 .category 
     .--title {
-    font-size: 24px;
+    font-size: $title2-elastic;
 }
 
 /* footer */
@@ -226,7 +226,7 @@ p {
     .info {
         color:white;
         font-family: $poppins;
-        font-size: 14px;
+        font-size: $small-elastic;
     }
 }
 
@@ -234,7 +234,7 @@ p {
     .copyright {
         color: $darkblue;
         font-family: $poppins;
-        font-size: 14px;
+        font-size: $font-mid-elastic;
     }
     a {
         color:black;
