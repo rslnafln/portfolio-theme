@@ -9,9 +9,16 @@
     //SECTION GROW & STAND OUT
     
     .work{
-    
+    .singlework__text{
+        margin-left: 0.5vw;
+        @include phone {
+            margin-left: 1.1vw;
+
+        }
+    }
 .work__image{
     flex-wrap: wrap;
+    padding-right: 0.5rem;
     img{
         margin: 0.5rem 0.5rem;
     }
