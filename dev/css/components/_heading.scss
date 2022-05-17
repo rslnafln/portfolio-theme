@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    p {
+        padding: 0 $pad2;
+    }
     @include tablette {
         h1 {
             text-align: center;
