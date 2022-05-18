@@ -16,31 +16,76 @@
         img{
             width: 100%;
             border-radius: $pad2;
+            box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
         }
     }
     // SECTION SINGLE WORK
     .single-work{
-        padding-bottom: 0;
+        padding: 0;
+        .container-sticky{
+            position: relative;
+            height: 160vh;
+    @include tablette {
+        height: 300vh;
+            
+    }
+            .sticky-one{
+                padding-top: 2rem;
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                background: $gray_to_white;
+            }
+            .sticky-one-inside{
+                margin: 0 10vw;
+            }
+            .sticky-two{
+                text-align: center;
+                position: sticky;
+    top: 0;
+    z-index: 0;
+    height: 60%;
+    @include iphone12 {
+        height: 40%;
+
+    }
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+            }
+        }
         .content{
-            background: $dark_to_blue;
             padding-bottom: 4rem;
+            
             p{
                 color: white;
+
             }
         }
         .single-work-inside{
+            background: $dark_to_blue;
+
             .img-top img{
                 border-radius: 0 0 $pad2 $pad2;
             }
             
-            .df img{
-                width: 28%;
+            img{
+                width: 100%;
             }
             .single-work-txt{
                 display: flex;
             padding-bottom: 2rem;
+    @include tablette {
+flex-direction: column;
+    }
                 .block-info, .block-txt{
                     width: 50%;
+                    margin-top: 1vh;
+    @include tablette {
+        width: 100%;
+
+    }
                 }
             }
         }
@@ -57,6 +102,10 @@
             font-size: 2rem;
             font-weight: 600;
             margin-bottom: 0;
+    @include tablette {
+        font-size: 1rem;
+
+    }
         }
         .article-1, .article-2{
             width: 40%;
@@ -74,6 +123,7 @@
                 padding: 3rem;
                 transition: .4s ease-out all;
                 }
+
             }
             .btn-prev{
                 left: 0;
@@ -116,6 +166,16 @@
                 border-left: 5px solid $darkblue;
                 padding-left: $pad1;
                 margin-left: $pad1;
+                @include tablette {
+border-left: unset;
+padding-left: unset;
+                }
+                p{
+                    @include tablette {
+                        display: none;
+                            }
+                }
+
                 h3{
                     border-left: unset;
                     padding-left: unset;
