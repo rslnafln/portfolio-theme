@@ -73,15 +73,14 @@
         height:500px;
         width:390px;
     }
+    .nav__menu a {
+        font-weight: 500;
+    }
 }
 
 .nav__bis {
     border-bottom:1px solid black;
     background: none;
-}
-
-.--graybg {
-    background: $gray_to_white;
 }
 
 
