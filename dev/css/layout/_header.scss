@@ -7,6 +7,9 @@ header {
     @media screen and (orientation:portrait) {
         height:50vh;
     }
+    .nav__menu a {
+        font-weight: 500;
+    }
 }
 
 .header {
@@ -34,3 +37,4 @@ header {
         }
     }
 }
+
