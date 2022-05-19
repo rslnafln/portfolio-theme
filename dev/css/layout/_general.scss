@@ -3,16 +3,14 @@
 
 section {
     padding:$pad2 0;
-    background: $gray_to_white;
     position: relative; // pour les backgrounds .wave
     * {
         z-index: 1;
     }
     overflow: hidden;
-}
-
-section:nth-of-type(2n) {
-    background: $blue_to_white;
+    &.--light1 { background: $gray_to_white; }
+    &.--light2 { background: $blue_to_white; }
+    &.--dark {background: $dark_to_blue;}
 }
 
 /* wrapper */
