@@ -35,17 +35,3 @@ $iphone12: 390px;
         @content;
     }
 }
-
-// responsive font size
-
-$big-title-elastic: calc(50px + .50vw);
-$title1-elastic: calc(30px + .30vw);
-$exp-title: calc(25px + .25vw);
-$title2-elastic: calc(24px + .24vw);
-$title3-elastic: calc(20px + .20vw);
-$sub1-elastic: calc(18px + .18vw);
-$font-elastic: calc(16px + .16vw);
-$littlepad: calc(15px + .15vw);
-$font-mid-elastic: calc(14px + .14vw);
-$small-elastic: calc(13px + .13vw);
-$very-small-elastic: calc(12px + .12vw);
