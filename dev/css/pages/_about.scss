@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    row-gap: 2rem;
+    row-gap: $pad2;
 
     @include phone {
       grid-template-columns: 1fr 1fr;
@@ -59,7 +59,6 @@
       h5 {
         font-weight: bold;
         font-size: 1em;
-        // margin: 2px;
       }
       
     }

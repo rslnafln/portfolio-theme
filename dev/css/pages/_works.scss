@@ -18,9 +18,9 @@
     }
 .work__image{
     flex-wrap: wrap;
-    padding-right: 0.5rem;
+    padding-right: $pad0-5;
     img{
-        margin: 0.5rem 0.5rem;
+        margin: $pad0-5 $pad0-5;
     }
 }
 
