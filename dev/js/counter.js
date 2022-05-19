@@ -1,6 +1,7 @@
 let totalNumber = document.querySelectorAll('.counter-text');
 let getNumber = Array.from(totalNumber)
 
+
 getNumber.map((viewNumber) => {
   console.log(viewNumber.dataset.number)
   let startCount = 0
@@ -15,3 +16,6 @@ getNumber.map((viewNumber) => {
       counterUP()
   },50)
 })
+
+
+
