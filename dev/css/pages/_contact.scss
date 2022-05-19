@@ -71,21 +71,7 @@
   }
 
   // MODIFIERS
-  .--graybg {
-    background: $gray_to_white;
-  }
 
-  .--centralizer {
-    text-align: center;
-  }
-
-  .--toppad {
-    padding-top: 100px;
-  }
-
-  .--botpad {
-    padding-bottom: 100px;
-  }
 
   .--bigtitle {
     font-size: 64px;
@@ -93,7 +79,4 @@
     text-align: center;
   }
 
-  .--shadow {
-    box-shadow: $ombre001;
-  }
 }

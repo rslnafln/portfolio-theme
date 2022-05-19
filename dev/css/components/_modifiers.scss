@@ -1,0 +1,60 @@
+// GENERAL MODIFIERS 
+
+.--lilpadtop {
+    padding-top: $littlepad;
+}
+
+.--lilpadbot {
+    padding-bottom: $littlepad;
+}
+
+.--toppad {
+    padding-top: 100px;
+}
+
+.--botpad {
+    padding-bottom: 100px;
+}
+
+.--centralizer {
+    text-align: center;
+}
+
+.--graybg {
+    background: $gray_to_white;
+}
+
+.--bluebg {
+    background: $blue_to_white;
+}
+
+.--shadow {
+    box-shadow: $ombre001;
+}
+
+.--largerimg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0px 65%;
+}
+
+.--2col {
+    width: 50%;
+    @include phone {
+        width: 100%;
+    }
+}
+
+.--bgreplacer {
+    background-image: url('../img/new-heights.jpeg');
+}
+
+.--overlayfix {
+    height: 600px;
+}
+
+
+.--respmargin {
+    margin: 0 $pad2;
+}
