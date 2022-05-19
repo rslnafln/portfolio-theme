@@ -1,3 +1,9 @@
+/****************** PAGE BLOG ******************/ 
+
+.page-blog header {
+    height: 100%;
+}
+
 /****************** BLOG ******************/ 
 
 .blog {
@@ -86,9 +92,14 @@ hr {
     }
 }
 
-/************   ***********/
+/************ SECTION ***********/
 
-/* CONTENEUR */
+.lastestpost {
+    padding: $pad6 0 $pad2;
+}
+
+/************ CONTENEUR ***********/
+
 .blog__news {
     display: flex;
     align-items: center;
