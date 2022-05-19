@@ -21,6 +21,9 @@ header {
     flex-direction: column;
     align-items: center;
     width:100%;
+    .plongescroll{
+        transition: 2.8s all ease-in-out;
+    }
     img {
         width:48%;
         @include tablette {
