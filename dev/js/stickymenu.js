@@ -1,5 +1,8 @@
 ////////// MENU FIXED //////////
 
+// fenêtre "au scroll", on applique la fonction scrolling
+window.onscroll = function() {Scrolling()};
+
 // on va rechercher la nav
 let nav = document.querySelector('nav');
 
@@ -18,7 +21,5 @@ function Scrolling() {
     }
 }
 
-// fenêtre "au scroll", on applique la fonction scrolling
-window.onscroll = function() {Scrolling()};
 
 
