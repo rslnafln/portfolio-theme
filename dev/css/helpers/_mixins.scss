@@ -3,6 +3,7 @@
 $tablette: 1250px;
 $minitablette: 1010px;
 $phone: 800px;
+$aboutresp: 530px; 
 $iphone12: 390px; 
 
 @mixin tablette {
@@ -22,6 +23,12 @@ $iphone12: 390px;
         @content;
     }
 }
+
+@mixin aboutresp {
+    @media (max-width: $aboutresp) {
+        @content;
+    }
+  }
 
 @mixin iphone12 {
     @media (max-width: $iphone12) {

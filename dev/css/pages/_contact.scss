@@ -54,11 +54,11 @@
     textarea {
       width: 100%;
       border: none;
-      border-bottom: 1px solid rgb(226, 226, 226);
+      border-bottom: 1px solid $light_white;
       height: 30px;
 
       &::placeholder {
-        color: rgb(196, 196, 196);
+        color: $gray_lighter;
       }
     }
 
@@ -71,29 +71,12 @@
   }
 
   // MODIFIERS
-  .--graybg {
-    background: $gray_to_white;
-  }
 
-  .--centralizer {
-    text-align: center;
-  }
-
-  .--toppad {
-    padding-top: 100px;
-  }
-
-  .--botpad {
-    padding-bottom: 100px;
-  }
 
   .--bigtitle {
-    font-size: 64px;
+    font-size: $very-big-title-elastic;
     margin: 20px 0px;
     text-align: center;
   }
 
-  .--shadow {
-    box-shadow: $ombre001;
-  }
 }

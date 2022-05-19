@@ -8,12 +8,12 @@
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
-<body>
+<body class="page-blog">
     
     <!-- HEADER HERE -->
-    <header class="header__bis">
+    <header>
         <!-- NAVIGATION -->
-        <nav class="nav nav__bis --graybg">
+        <nav class="nav --graybg">
             <a href="index.html" class="nav__logo"><img src="img/logosimple-lightbg.png"></a>
             <div class="nav__menu">
                 <a href="index.html">Accueil</a>
@@ -21,48 +21,87 @@
                 <a href="works.html">Projets</a>
                 <a href="blog.html">Blog</a>
                 <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
             </div>
+            
+            <!-- BURGER MENU -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
         </nav>
     </header>
     
     <!-- SECTION LASTEST POST -->
     <section class="lastestpost">
-        <div class="heading">
-            <h1>My latest posts</h1>
-            <p>Check out some of the amazing news i've brought to life</p>
-        </div>
-        <div class="blog__news">
-            <div class="blog__block">
-                <div class="blog__image">
-                    <img src="img/news1.jpeg">
-                </div>
-                <div class="blog__text">
-                    <h6>Title</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
-                    <button class="button button--darkblue"><a href="#">Learn More</a></button>
-                </div>
+        <div class="wrapper">
+            <div class="heading">
+                <h1>My latest posts</h1>
+                <p>Check out some of the amazing news i've brought to life</p>
             </div>
-            <div class="blog__block">
-                <div class="blog__image">
-                    <img src="img/news1.jpeg">
+            <div data-aos="fade-up" data-aos-duration="2600" class="blog__news">
+                <div class="blog__block block__full">
+                    <div class="blog__image">
+                        <img src="img/news1.jpeg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text --textfull">
+                        <div class="full__title">
+                            <h6>Faucibus turpis in eu mi</h6>
+                            <div class="full__tag">
+                                <i class="fa-solid fa-tags"></i>
+                                <div class="full__category">Marketing</div>
+                            </div>
+                        </div>
+                        <p>Sad sed risus pretium quam vulputate dignissim suspendisse in. Tristique senectus et netus et. Leo urna molestie at elementum eu. Nibb sit amet commodo nulla facilisi. Morbi leo urna molestie at. Arcu ac tortorr dignissim convallis aenean et. Urna molestie at elementum eu facilisi sad odio morbi quis. Nullam vehicula ipsum a arcu.</p>
+                        <hr>
+                        <div class="read-more"><a href="single-blog.html">Read More</a></div>
+                    </div>
                 </div>
-                <div class="blog__text">
-                    <h6>Title</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
-                    <button class="button button--darkblue"><a href="#">Learn More</a></button>
+                <div class="blog__block">
+                    <div class="blog__image">
+                        <img src="img/news2.jpg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <div class="full__title"></div>
+                        <h6>Title</h6>
+                        <div class="full__tag --tagged">
+                            <i class="fa-solid fa-tags"></i>
+                            <div class="full__category">Photography</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Read More</a></button>
+                    </div>
                 </div>
+                <div class="blog__block blog__block-bis">
+                    <div class="blog__image">
+                        <img src="img/news3.jpeg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <h6>Title</h6>
+                        <div class="full__tag --tagged">
+                            <i class="fa-solid fa-tags"></i>
+                            <div class="full__category">Design</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Read More</a></button>
+                    </div>
+                </div>
+                
             </div>
-            <div class="blog__block">
-                <div class="blog__image">
-                    <img src="img/news1.jpeg">
-                </div>
-                <div class="blog__text">
-                    <h6>Title</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
-                    <button class="button button--darkblue"><a href="#">Learn More</a></button>
-                </div>
-            </div>
-            
         </div>
         
         
@@ -71,12 +110,164 @@
     <!-- SECTION CATEGORY 01 -->
     
     <section class="category">
-        
+        <div class="wrapper">
+            <div class="heading">
+                <h3 class="--title">Photography</h3>
+            </div>
+            
+            <!-- LE POST FULL -->
+            <div data-aos="fade-up" data-aos-duration="2000" class="blog__news blog__full">
+                <div class="blog__block block__full">
+                    <div class="blog__image">
+                        <img src="img/blog4.jpg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text --textpad">
+                        <div class="full__title">
+                            <h6>Guaranteed No Stress Photo Editing</h6>
+                        </div>
+                        <p>Sad sed risus pretium quam vulputate dignissim suspendisse in. Tristique senectus et netus et. Leo urna molestie at elementum eu. Nibb sit amet commodo nulla facilisi. Morbi leo urna molestie at. Arcu ac tortorr dignissim convallis aenean et. Urna molestie at elementum eu facilisi sad odio morbi quis. Nullam vehicula ipsum a arcu.</p>
+                        <p>Donee pretium vulputate sapien nec sagittis. Nisi est sit amet facilisis magna etiam tempor. Ac orci phasellus egestas tellus rutrum. In ornare quam viverra orci sagittis. </p>
+                        <hr>
+                        <div class="read-more"><a href="single-blog.html">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LES TROIS POSTES -->
+            <div data-aos="fade-up" data-aos-duration="2800" class="blog__news">
+                <!-- BLOG 01 -->
+                <div class="blog__block">
+                    <div class="blog__image">
+                        <img src="img/blog6.jpeg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
+                    </div>
+                </div>
+                <!-- BLOG 02 -->
+                <div class="blog__block">
+                    <div class="blog__image">
+                        <img src="img/news2.jpg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
+                    </div>
+                </div>
+                <!-- BLOG 03 -->
+                <div class="blog__block">
+                    <div class="blog__image">
+                        <img src="img/blog3.jpeg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!-- SECTION CATEGORY 02 -->
     
     <section class="category">
+        <div class="wrapper">
+            
+            <div class="heading">
+                <h3 class="--title">Design</h3>
+            </div>
+            
+            <!-- LE POST FULL -->
+            <div data-aos="fade-up" data-aos-duration="2000" class="blog__news blog__full">
+                <div class="blog__block block__full">
+                    <div class="blog__image">
+                        <img src="img/blog2.jpeg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text --textpad">
+                        <div class="full__title">
+                            <h6>Guaranteed No Stress Photo Editing</h6>
+                        </div>
+                        <p>Sad sed risus pretium quam vulputate dignissim suspendisse in. Tristique senectus et netus et. Leo urna molestie at elementum eu. Nibb sit amet commodo nulla facilisi. Morbi leo urna molestie at. Arcu ac tortorr dignissim convallis aenean et. Urna molestie at elementum eu facilisi sad odio morbi quis. Nullam vehicula ipsum a arcu.</p>
+                        <p>Donee pretium vulputate sapien nec sagittis. Nisi est sit amet facilisis magna etiam tempor. Ac orci phasellus egestas tellus rutrum. In ornare quam viverra orci sagittis. </p>
+                        <hr>
+                        <div class="read-more"><a href="single-blog.html">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LES TROIS POSTES -->
+            <div data-aos="fade-up" data-aos-duration="2800" class="blog__news">
+                <!-- BLOG 01 -->
+                <div class="blog__block">
+                    <div class="blog__image">
+                        <img src="img/news1.jpeg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
+                    </div>
+                </div>
+                <!-- BLOG 02 -->
+                <div class="blog__block">
+                    <div class="blog__image">
+                        <img src="img/news2.jpg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
+                    </div>
+                </div>
+                <!-- BLOG 03 -->
+                <div class="blog__block">
+                    <div class="blog__image">
+                        <img src="img/news3.jpeg">
+                        <div class="blog__date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>10/05/2022</div>
+                        </div>
+                    </div>
+                    <div class="blog__text">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
+                        <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </section>
     
@@ -121,7 +312,7 @@
                 <div class="footer--title">Join my newsletter</div>
                 <p>Lorem Impsum dolor sit amet, consectetur adipiscing elit, sed do eludsomod tempor, incididunt.</p>
                 <div class="footer--search">tiffany.milan@email.com</div>
-                <button class="button button--pink"><a href="#">Subscribe</a></button>
+                <button data-aos="fade-up" data-aos-duration="2600" class="button button--pink"><a href="#">Subscribe</a></button>
             </div>    
         </div>
         <div class="footer__pink">
@@ -136,5 +327,10 @@
     </footer>
     <script src="js/main.min.js"></script>
     <script src="js/burger.min.js"></script>
+    <script src="js/stickymenu.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

@@ -1,34 +1,47 @@
-/* COLORS */ 
+/*********** COLORS ************/ 
 
+/* pink */
 $dark_pink: #ad1f3e;
 $pink: #e07086;
 $light_pink: #f4bfc8;
 
+/* gray */
+$light_gray: #e4e4eb;
 $gray: #7d8285; 
 $gray_text: #737277;
+$gray_bis: #e5f3fc;
+$gray_lighter: #c4c4c4;
 
+/* blue */
 $blue_gray: #8496a5;
+$blue_lightgray: #c8ddf2;
 $blue_darkgray: #5c7287;
-
 $blue_water: #72a7e1;
 $blue_sky: #70a9dd;
 $blue: #2d425a;
 $darkblue : #30415a;
 $blueverydark: #02101B;
 
+/* brown*/ 
 $black_brown: #343434;
+
+/* white */
+$white: #ffffff;
+$light_white: #e2e2e2;
 
 /* DEGRADES */ 
 
-$gray_to_white: linear-gradient(70deg, #e4e4eb, #ffffff);
-$blue_to_white: linear-gradient(70deg, #c8ddf2, #e5f3fc, #ffffff);
-$dark_to_blue: linear-gradient(70deg, #02101B, #2c425A);
-$blue_to_dark: linear-gradient(-360deg, #02101B, #2c425A, #2c425A);
-$pink_to_white: linear-gradient(70deg, $light_pink, #ffffff);
+$gray_to_white: linear-gradient(70deg, $light_gray, $white);
+$blue_to_white: linear-gradient(70deg, $blue_lightgray, $gray_bis, $white);
+$dark_to_blue: linear-gradient(70deg, $blueverydark, $blue);
+$blue_to_dark: linear-gradient(-360deg, $blueverydark, $blue, $blue);
+$pink_to_white: linear-gradient(70deg, $light_pink, $white);
 
 /* OPACITY*/
 
 $black_opacity: rgba(0, 0, 0, 0.5);
+$white_opacity: rgba(255, 255, 255, 0.5);
+$gray_red_opacity:rgba(255, 255, 255, 0.523);
 
 /* FONT */ 
 
@@ -38,7 +51,26 @@ $lora: 'Lora', serif;
 /* OMBRES */ 
 
 $ombre001 : rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$ombre002: 0 20px 20px rgb(0 0 0 / 20%);
 
 /* MARGIN PADDING */
+$pad0-5: 0.5rem;
 $pad1: 1rem;
+$pad1-5: 1.5rem;
 $pad2: 2rem;
+$pad3: 3rem;
+
+// responsive font size
+
+$very-big-title-elastic: calc(64px + .64vw);
+$big-title-elastic: calc(50px + .50vw);
+$title1-elastic: calc(30px + .30vw);
+$exp-title: calc(25px + .25vw);
+$title2-elastic: calc(24px + .24vw);
+$title3-elastic: calc(20px + .20vw);
+$sub1-elastic: calc(18px + .18vw);
+$font-elastic: calc(16px + .16vw);
+$littlepad: calc(15px + .15vw);
+$font-mid-elastic: calc(14px + .14vw);
+$small-elastic: calc(13px + .13vw);
+$very-small-elastic: calc(12px + .12vw);

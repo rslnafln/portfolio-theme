@@ -7,6 +7,9 @@ header {
     @media screen and (orientation:portrait) {
         height:50vh;
     }
+    .nav__menu a {
+        font-weight: 500;
+    }
 }
 
 .header {
@@ -18,7 +21,10 @@ header {
     flex-direction: column;
     align-items: center;
     width:100%;
-    z-index: 1;
+    z-index: 2;
+    .plongescroll{
+        transition: 2.8s all ease-in-out;
+    }
     img {
         width:48%;
         @include tablette {
@@ -35,3 +41,4 @@ header {
         }
     }
 }
+

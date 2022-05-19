@@ -2,11 +2,11 @@
 .feedback {
     padding-top:  100px;
 }
-.feedback__all {
-    max-width:100%; 
+.swiper {
+    max-width:50%!important; 
     display: flex;
     justify-content: flex-end;
-    padding:0 100px;
+    margin-right: unset;
     margin-bottom:150px;
     @include tablette {
         padding:0;
@@ -15,8 +15,10 @@
     }
 }
 
-.feedback__block {
-    width:40%; 
+
+.swiper-slide {
+    width:100%!important; 
+    padding: 0 4rem;
     @include tablette {
         width:100%;
     }
@@ -38,3 +40,19 @@
         }
     }
 }
+
+/* prev / next */
+
+
+.swiper-button-next, .swiper-button-prev {
+    color: $white;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: $ombre001;
+}
+
+
+
