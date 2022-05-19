@@ -4,7 +4,9 @@
 section {
     padding:$pad2 0;
     background: $gray_to_white;
-    overflow: hidden;
+    &:not(.single-work){
+        overflow: hidden;
+    }
 }
 
 section:nth-of-type(2n) {
