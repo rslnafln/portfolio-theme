@@ -30,6 +30,8 @@
     "gifsicle": "^7.0.0",
     "imagemin": "^8.0.1",
     "install": "^0.13.0",
-    "rename": "^1.0.4"
+    "rename": "^1.0.4",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.1.5"
   }
 }

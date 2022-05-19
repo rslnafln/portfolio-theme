@@ -22,14 +22,14 @@
         <a href="about.html">À propos</a>
         <a href="contact.html">Contact</a>
       </div>
-
+      
       <!-- BURGER MENU -->
       <div class="burger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-
+      
     </nav>
     <!-- HEADER CONTENT -->
     <div class="header">
@@ -37,7 +37,7 @@
     </div>
   </header>
   <!-- SECTION ABOUT US -->
-  <section class="about-us">
+  <section class="about-us" id="anchor">
     <div class="wrapper">
       <div class="about">
         <div class="about__image">
@@ -144,8 +144,8 @@
         </div>
         <!-- fin des single expériences -->
       </div>
-        </div>
     </div>
+  </div>
 </section>
 <!-- SECTION SKILLS -->
 <section class="skills">
@@ -256,8 +256,8 @@
         </div>
       </div>
     </div>
-    </div>
   </div>
+</div>
 </section>
 <!-- SECTION OUR SERVICES -->
 <section class="our-services">
@@ -368,21 +368,44 @@
       <h3>Client feedback</h3>
       <h1>Don't just take my word for it.</h1>
     </div>
-    <div class="feedback__all">
-      <!-- FEEDBACK 01 -->
-      <div class="feedback__block">
-        <p>Marketing is both an art and a science, and younic is a master from both sides. Without their help, our marketing campaigns could not have reached the levels we have seen.</p>
-        <div class="feedback__subtitle">
-          <div>Shiv Krauss, Marketing Director</div>
-          <div class="feedback__star">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+    <div class="swiper">
+      <!-- swiper wrapper -->
+      <div class="swiper-wrapper">
+        <!-- FEEDBACK 01 -->
+        <div class="swiper-slide">
+          <p>Marketing is both an art and a science, and younic is a master from both sides. Without their help, our marketing campaigns could not have reached the levels we have seen.</p>
+          <div class="feedback__subtitle">
+            <div>Shiv Krauss, Marketing Director</div>
+            <div class="feedback__star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
           </div>
+          <span>Bueno</span>
         </div>
-        <span>Bueno</span>
+        <!-- FEEDBACK 02 -->
+        <div class="swiper-slide">
+          <p>Marketing is both an art and a science, and younic is a master from both sides. Without their help, our marketing campaigns could not have reached the levels we have seen.</p>
+          <div class="feedback__subtitle">
+            <div>Shiv Krauss, Marketing Director</div>
+            <div class="feedback__star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <span>Blabla</span>
+        </div>
+      </div>
+      <!-- navigation buttons -->
+      <div class="button-slider">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </div>
@@ -458,7 +481,7 @@
           <div class="blog__date">
             <i class="fa-solid fa-calendar-days"></i>
             <div>10/05/2022</div>
-        </div>
+          </div>
         </div>
         <div class="blog__text">
           <h6>Title</h6>
@@ -473,7 +496,7 @@
           <div class="blog__date">
             <i class="fa-solid fa-calendar-days"></i>
             <div>10/05/2022</div>
-        </div>
+          </div>
         </div>
         <div class="blog__text">
           <h6>Title</h6>
@@ -488,7 +511,7 @@
           <div class="blog__date">
             <i class="fa-solid fa-calendar-days"></i>
             <div>10/05/2022</div>
-        </div>
+          </div>
         </div>
         <div class="blog__text">
           <h6>Title</h6>
@@ -556,9 +579,13 @@
 <script src="js/main.min.js"></script>
 <script src="js/burger.min.js"></script>
 <script src="js/stickymenu.min.js"></script>
+<!-- SWIPER  -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<!-- AOS-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-AOS.init();
+  AOS.init();
 </script>
 </body>
 </html>
