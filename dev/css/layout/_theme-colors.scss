@@ -1,11 +1,12 @@
 main, section {
     &.--airbg, &.section-even {
         background: $gray_to_white;
-        &--dark {background: $dark_to_blue;}
     }
     &.--waterbg, &.section-odd {
         background: $blue_to_white;
-        &--dark {background: $dark_to_blue;}
+    }
+    &.--darkbg {
+        background: $dark_to_blue;
     }
 }
 
