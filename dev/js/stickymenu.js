@@ -1,5 +1,8 @@
 ////////// MENU FIXED //////////
 
+// fenêtre "au scroll", on applique la fonction scrolling
+window.onscroll = function() {navscrolling()};
+
 // on va rechercher la nav
 let nav = document.querySelector('nav');
 
@@ -7,7 +10,7 @@ let nav = document.querySelector('nav');
 let sticky = nav.offsetTop; 
 
 // fonction scrolling
-function Scrolling() {
+function navscrolling() {
     // si on scroll verticalement, quand on arrive sur la nav, on appel le class sticky 
     if (window.pageYOffset >= sticky) { 
         nav.classList.add ('sticky');
@@ -18,7 +21,5 @@ function Scrolling() {
     }
 }
 
-// fenêtre "au scroll", on applique la fonction scrolling
-window.onscroll = function() {Scrolling()};
 
 

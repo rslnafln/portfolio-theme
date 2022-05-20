@@ -36,7 +36,6 @@ function addNavClassFromSection(nthSection) {
 }
 
 // établit l'emplacement des limites des sections
-// (à fixer : ne se réinitialise pas si on redimensionne la fenêtre)
 function refreshSectionsLimitsArray() {
     let refreshSectionsLimits = []
     Array.from(sectionsArray).forEach(section => {
