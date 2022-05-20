@@ -43,7 +43,6 @@ let jauge45 = document.querySelector('.coding-45');
 let jauge60 = document.querySelector('.coding-60');
 let jauge75 = document.querySelector('.coding-75');
 let jauge80 = document.querySelector('.coding-80');
-let number = document.querySelectorAll('.coding__rod')
 let pourcentage = 0;
 let addition = 0.3;
 jauge25.style.width= '0%'
@@ -98,7 +97,7 @@ setInterval (
             jauge80.style.width = `${pourcentage}%`
         }
     },
-    100)
+    70)
     
     
     
