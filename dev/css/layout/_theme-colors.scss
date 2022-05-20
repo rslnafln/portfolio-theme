@@ -1,19 +1,16 @@
 main, section {
     &.--airbg, &.section-even {
         background: $gray_to_white;
+        &.core { background: $ultra_light; }
+        &>aside.widgets {background: $blue_to_white}
     }
     &.--waterbg, &.section-odd {
         background: $blue_to_white;
+        &.core { background: $ultra_light; }
+        &>aside.widgets {background: $gray_to_white}
     }
     &.--darkbg {
         background: $dark_to_blue;
+        &>aside.widgets {background: $gray_to_white}
     }
-}
-
-// single-blog
-.core {
-    background: $ultra_light;
-}
-.widgets {
-    background: $gray_to_white;
 }
