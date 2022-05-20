@@ -1,4 +1,5 @@
-main, section {
+main, section, nav {
+    transition: all .3s ease-in-out;
     &.--airbg, &.section-even {
         background: $gray_to_white;
         &.core { background: $ultra_light; }
