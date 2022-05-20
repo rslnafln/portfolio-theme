@@ -20,9 +20,10 @@
     padding: 5px $pad1;
     margin-right: $pad2;
     box-shadow: $ombre001;
-    border: 1px solid white;
+    border: 1px solid transparent;
     width: fit-content;
     border-radius: 20px;
+    color: $darkblue;
     i {
         padding-right: 10px;
     }
