@@ -69,6 +69,10 @@
 
 .read-more {
     padding: $pad1 0;
+    .block__full & {
+        margin-top: $pad2;
+        border-top: 1px solid $light_gray;
+    }
 }
 
 // HR
