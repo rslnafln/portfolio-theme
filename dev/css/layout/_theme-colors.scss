@@ -1,4 +1,4 @@
-main, section, nav {
+header, main, section, nav {
     transition: all .3s ease-in-out;
     &.--airbg, &.section-even {
         background: $gray_to_white;
@@ -10,7 +10,7 @@ main, section, nav {
         &.core { background: $ultra_light; }
         &>aside.widgets {background: $gray_to_white}
     }
-    &.--darkbg {
+    &.--darkbg:not(.bg) {
         background: $dark_to_blue;
         &>aside.widgets {background: $gray_to_white}
     }

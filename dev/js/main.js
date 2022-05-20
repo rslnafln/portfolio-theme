@@ -1,6 +1,6 @@
 // on a besoin de la nav et des sections
 let navBar = document.querySelector('header nav.nav');
-let sectionsArray = document.getElementsByTagName('section');
+let sectionsArray = document.querySelectorAll('header, main, section');
 
 // [MODIFIABLE] les classes qu'on veut ajouter à la nav depuis les sections
 let adaptiveNavClasses = [
