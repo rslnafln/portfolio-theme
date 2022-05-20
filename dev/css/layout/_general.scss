@@ -8,9 +8,6 @@ section {
         z-index: 1;
     }
     overflow: hidden;
-    &.--light1 { background: $gray_to_white; }
-    &.--light2 { background: $blue_to_white; }
-    &.--dark {background: $dark_to_blue;}
 }
 
 /* wrapper */
