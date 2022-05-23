@@ -51,10 +51,10 @@
       }
       &:focus {
         outline: none;
-        // border-bottom: 3px solid $accent;
-        box-shadow: 0 3px 0 0 $accent;
-        background-color: rgba($color:  $theme--tainted-grey, $alpha: .5);
-        color: $theme--dark;
+        // border-bottom: 3px solid var(--accent--medium);
+        box-shadow: 0 3px 0 0 var(--accent--medium);
+        background-color: rgba($color:  var(--theme--tainted-grey), $alpha: .5);
+        color: var(--theme--dark);
       }
     }
 

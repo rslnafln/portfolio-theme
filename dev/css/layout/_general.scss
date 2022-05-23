@@ -1,11 +1,12 @@
 /***************** GENERAL RULES OF SECTION ***************/
 /* fond degradé gris / bleu, une section sur 2 */ 
 
-section {
+section, main {
     padding:$pad2 0;
     position: relative; // pour les backgrounds .wave
     * {
-        z-index: 1;
+        position: relative;
+        z-index: 2;
     }
     overflow: hidden;
 }
@@ -77,9 +78,9 @@ h2 {
 
 h3 {
     font-size: $small-elastic;
-    border-left: 5px solid $theme--dark;
+    border-left: 5px solid var(--theme--dark);
     padding-left:calc($pad1 / 2);
-    color: $theme--dark;
+    color: var(--theme--dark);
     font-family: $poppins;
     font-weight: 400;
 }
@@ -94,7 +95,7 @@ h5 {
     text-align: left;
     font-family: $poppins;
     font-weight: 400;
-    color: $theme--dull;
+    color: var(--theme--dull);
 }
 
 h6 {
@@ -121,7 +122,7 @@ p {
     font-weight: 400;
     color: $dark_grey;
     .exp__span {
-        color: $theme--dull;
+        color: var(--theme--dull);
     }
 }
 
@@ -203,7 +204,7 @@ p {
 
 .read-more {
     a {
-        color: $theme--dull;
+        color: var(--theme--dull);
         font-family: $poppins;
         text-transform: uppercase;
         padding: 10px 0;
@@ -246,7 +247,7 @@ p {
 
 .footer__pink {
     .copyright {
-        color: $theme--dark;
+        color: var(--theme--dark);
         font-family: $poppins;
         font-size: $font-mid-elastic;
     }

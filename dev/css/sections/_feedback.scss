@@ -31,11 +31,11 @@
         margin: calc($pad1 / 2) 0;
         .feedback__star {
             i {
-                color: $accent;
+                color: var(--accent--medium);
                 padding:0 5px;
             }
             i:nth-of-type(-n+3) {
-                color: $accent--dark;
+                color: var(--accent--dark);
             }
         }
     }

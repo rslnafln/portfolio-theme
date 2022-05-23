@@ -40,7 +40,7 @@
     }
     
     .__date {
-      background: $theme--dull;
+      background: var(--theme--dull);
       color: $white;
       height: 100%;
       width: 150px;

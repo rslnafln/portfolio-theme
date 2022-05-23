@@ -5,28 +5,28 @@
 /* THEME COLOR */
 /* couleur du thème déclinée dans plusieurs
 teintes et nuances */ 
-// $theme--light: #c8ddf2;
-// $theme--vivid: #70a9dd;
-// $theme--dull: #5d81a2;
-// $theme--dark: #30415a;
-// $theme--black: #02101B;
+// var(--theme--light:) #c8ddf2;
+// var(--theme--vivid:) #70a9dd;
+// var(--theme--dull:) #5d81a2;
+// var(--theme--dark:) #30415a;
+// var(--theme--black:) #02101B;
 
 /* ACCENT COLOR */
 /* couleur liée au thème qui met les choses en
 valeur ou en contraste */ 
-// $accent--dark: #ad1f3e;
+// var(--accent--dark:) #ad1f3e;
 // $accent: #e07086;
-// $accent--light: #f4bfc8;
+// var(--accent--light:) #f4bfc8;
 
 /* TAINTED COLORS */
 /* couleur liée au thème marquant une
 transition avec une couleur neutre */
-// $theme--tainted-grey: #e5f3fc;
+// var(--theme--tainted-grey:) #e5f3fc;
 
 
 /* GRADIENTS */
-// $grey_to_white: linear-gradient(70deg, $light_grey, $white);
-// $dark_to_white: linear-gradient(70deg, $theme--light, $theme--tainted-grey, $white);
-// $dark_to_vivid: linear-gradient(70deg, $theme--black, $theme--dark);
-// $black-to-dark: linear-gradient(-360deg, $theme--black, $theme--dark, $theme--dark);
-// $accent_to_white: linear-gradient(70deg, $accent--light, $white);
+// $accent-taint_to_white: linear-gradient(70deg, $light_grey, $white);
+// $theme_to_white: linear-gradient(70deg, var(--theme--light), var(--theme--tainted-grey), $white);
+// $dark_to_vivid: linear-gradient(70deg, var(--theme--black), var(--theme--dark));
+// $black_to_dark: linear-gradient(-360deg, var(--theme--black), var(--theme--dark), var(--theme--dark));
+// $accent_to_white: linear-gradient(70deg, var(--accent--light), $white);

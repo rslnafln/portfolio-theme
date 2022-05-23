@@ -35,12 +35,20 @@
             animation: wavy3 8s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
         }
     }
-    &.blue {
+    &.ripple {
         height: 100%;
-        background-image: url(../img/svg/bluewaves.svg);
+        .theme-color--bulbizarre_green & { background-image: url('../img/svg/bulbizarre-ripple.svg');}
+        .theme-color--carapuce_blue & { background-image: url('../img/svg/carapuce-ripple.svg');}
+        .theme-color--melofee_pink & { background-image: url('../img/svg/melofee-ripple.svg');}
+        .theme-color--pikachu_yellow & { background-image: url('../img/svg/pikachu-ripple.svg');}
+        .theme-color--salameche_red & { background-image: url('../img/svg/salameche-ripple.svg');}
     }
-    &.purple {
+    &.billow {
         height: 100%;
-        background-image: url(../img/svg/purplewaves.svg);
+        .theme-color--bulbizarre_green & { background-image: url('../img/svg/bulbizarre-billow.svg');}
+        .theme-color--carapuce_blue & { background-image: url('../img/svg/carapuce-billow.svg');}
+        .theme-color--melofee_pink & { background-image: url('../img/svg/melofee-billow.svg');}
+        .theme-color--pikachu_yellow & { background-image: url('../img/svg/pikachu-billow.svg');}
+        .theme-color--salameche_red & { background-image: url('../img/svg/salameche-billow.svg');}
     }
 }

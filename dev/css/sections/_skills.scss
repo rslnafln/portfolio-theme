@@ -49,13 +49,13 @@
 
 /*la couleurs des ronds*/
 .percentage__block:nth-of-type(1) .percentage__number {
-    border: 8px solid $accent--dark;
+    border: 8px solid var(--accent--dark);
 }
 .percentage__block:nth-of-type(2) .percentage__number {
-    border: 8px solid $accent;
+    border: 8px solid var(--accent--medium);
 }
 .percentage__block:nth-of-type(3) .percentage__number {
-    border: 8px solid $accent--light;
+    border: 8px solid var(--accent--light);
 }
 
 /* les deux colonnes*/
@@ -107,7 +107,7 @@
     width:100%;
     height:100%;
     .coding__rod {
-        background-color: $accent;
+        background-color: var(--accent--medium);
         height:calc($pad1 / 2);
         border-radius: 30px;
         margin:calc($pad1 / 2) 0;
