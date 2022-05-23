@@ -23,7 +23,7 @@
     border: 1px solid transparent;
     width: fit-content;
     border-radius: 20px;
-    color: $darkblue;
+    color: $theme--dark;
     i {
         padding-right: 10px;
     }
@@ -71,7 +71,7 @@
     padding: $pad1 0;
     .block__full & {
         margin-top: $pad2;
-        border-top: 1px solid $light_gray;
+        border-top: 1px solid $light_grey;
     }
 }
 
@@ -79,7 +79,7 @@
 
 hr {
     .block__full & {
-        color: $gray;
+        color: $grey;
         margin-top: $pad1;
         opacity: 50%;
     }

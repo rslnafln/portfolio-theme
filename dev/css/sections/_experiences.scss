@@ -70,13 +70,13 @@
         display: none;
     }
     .exp__line {
-        border: 1px solid $blue;
+        border: 1px solid $theme--dark;
         height:100%;
         overflow: hidden;
         display: inline-block;
     }
     .exp__block {
-        background-color: $blue;
+        background-color: $theme--dark;
         width:$pad1;
         height:$pad1;
         border-radius: $pad1;
@@ -101,7 +101,7 @@
         width: 100%;
         span {
             font-weight: 600;
-            color: $black_brown;
+            color: $dark_grey;
         }
     }
 }
@@ -117,7 +117,7 @@
         width:100%;
     }
     .tag {
-        background-color: $blue_water;
+        background-color: $theme--vivid;
         border-radius: $pad1;
         padding:5px calc($pad1 / 2);
     }

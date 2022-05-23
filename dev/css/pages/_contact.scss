@@ -47,14 +47,14 @@
       height: 40px;
       padding: .5em;
       &::placeholder {
-        color: $gray_lighter;
+        color: $grey_lighter;
       }
       &:focus {
         outline: none;
-        // border-bottom: 3px solid $pink;
-        box-shadow: 0 3px 0 0 $pink;
-        background-color: rgba($color:  $gray_bis, $alpha: .5);
-        color: $darkblue;
+        // border-bottom: 3px solid $accent;
+        box-shadow: 0 3px 0 0 $accent;
+        background-color: rgba($color:  $theme--tainted-grey, $alpha: .5);
+        color: $theme--dark;
       }
     }
 

@@ -1,0 +1,48 @@
+/* GENERIC COLORS */
+
+/* white */
+$white: #ffffff;
+$ultra_light: #fdfdfd;
+$light_white: #e2e2e2;
+$light_grey: #e4e4eb;
+
+/* medium grey */
+$grey_lighter: #c4c4c4;
+$grey: #7d8285; 
+$grey_text: #737277;
+
+/* dark grey */ 
+$dark_grey: #343434;
+
+
+/* -------------------------------------- */
+/*          CARAPUCE (default)            */
+/* -------------------------------------- */
+/* THEME COLOR */
+/* couleur du thème déclinée dans plusieurs
+teintes et nuances */ 
+$theme--light: #c8ddf2;
+$theme--vivid: #70a9dd;
+$theme--dull: #5d81a2;
+$theme--dark: #30415a;
+$theme--black: #02101B;
+
+/* ACCENT COLOR */
+/* couleur liée au thème qui met les choses en
+valeur ou en contraste */ 
+$accent--dark: #ad1f3e;
+$accent: #e07086;
+$accent--light: #f4bfc8;
+
+/* TAINTED COLORS */
+/* couleur liée au thème marquant une
+transition avec une couleur neutre */
+$theme--tainted-grey: #e5f3fc;
+
+
+/* GRADIENTS */
+$grey_to_white: linear-gradient(70deg, $light_grey, $white);
+$dark_to_white: linear-gradient(70deg, $theme--light, $theme--tainted-grey, $white);
+$dark_to_vivid: linear-gradient(70deg, $theme--black, $theme--dark);
+$black-to-dark: linear-gradient(-360deg, $theme--black, $theme--dark, $theme--dark);
+$accent_to_white: linear-gradient(70deg, $accent--light, $white);

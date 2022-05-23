@@ -10,12 +10,12 @@
         color: white;
     }
     &--pink {
-        background-color: $pink;
+        background-color: $accent;
     }
     &--blue {
-        background-color: $blue_sky;
+        background-color: $theme--vivid;
     }
     &--darkblue{
-        background-color: $darkblue;
+        background-color: $theme--dark;
     }
 }
