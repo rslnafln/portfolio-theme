@@ -1,28 +1,27 @@
 /* -------------------------------------- */
-/*          CARAPUCE (default)            */
-/*       theme-color--carapuce_blue       */
+/*                PIKACHU                 */
+/*       theme-color--pikachu_yellow      */
 /* -------------------------------------- */
 /* THEME COLOR */
 /* couleur du thème déclinée dans plusieurs
 teintes et nuances */ 
-
-$theme--light: #c8ddf2;
-$theme--vivid: #70a9dd;
-$theme--dull: #5d81a2;
-$theme--dark: #30415a;
-$theme--black: #02101b;
+$theme--light: #faf79d;
+$theme--vivid: #f2d200;
+$theme--dull: #f2ba00;
+$theme--dark: #333;
+$theme--black: #111;
 
 /* ACCENT COLOR */
 /* couleur liée au thème qui met les choses en
 valeur ou en contraste */ 
-$accent--dark: #ad1f3e;
-$accent: #e07086;
-$accent--light: #f4bfc8;
+$accent--dark: #833;
+$accent: #b33;
+$accent--light: #f77;
 
 /* TAINTED COLORS */
 /* couleur liée au thème marquant une
 transition avec une couleur neutre */
-$theme--tainted-grey: #e5f3fc;
+$theme--tainted-grey: #fcf9e5;
 
 
 /* GRADIENTS */
