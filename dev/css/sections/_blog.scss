@@ -100,7 +100,7 @@ hr {
 /************ SECTION ***********/
 
 .lastestpost {
-    padding: $pad2 0 $pad2;
+    padding: calc($pad2 + $nav-height) 0 $pad2;
 }
 
 /************ CONTENEUR ***********/

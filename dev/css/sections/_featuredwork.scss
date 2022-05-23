@@ -2,7 +2,7 @@
 
 .work {
     height:100%;
-    padding:$pad2 0;
+    padding: calc($pad2 + $nav-height) 0;
     display: flex;
     flex-direction: column;
     .button {
