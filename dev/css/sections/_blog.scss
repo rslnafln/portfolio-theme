@@ -20,9 +20,10 @@
     padding: 5px $pad1;
     margin-right: $pad2;
     box-shadow: $ombre001;
-    border: 1px solid white;
+    border: 1px solid transparent;
     width: fit-content;
     border-radius: 20px;
+    color: $darkblue;
     i {
         padding-right: 10px;
     }
@@ -68,6 +69,10 @@
 
 .read-more {
     padding: $pad1 0;
+    .block__full & {
+        margin-top: $pad2;
+        border-top: 1px solid $light_gray;
+    }
 }
 
 // HR
@@ -95,7 +100,7 @@ hr {
 /************ SECTION ***********/
 
 .lastestpost {
-    padding: $pad6 0 $pad2;
+    padding: calc($pad2 + $nav-height) 0 $pad2;
 }
 
 /************ CONTENEUR ***********/

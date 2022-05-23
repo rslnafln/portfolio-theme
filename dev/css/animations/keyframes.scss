@@ -1,0 +1,32 @@
+@keyframes wavy1 {
+    0%, 100% {
+        transform: skewY(0) translate(0, 0);
+        height: 100%;
+    }
+    50% {
+        transform: skewY(1deg) translate(0, 1vh);
+        height: 140%;
+    }
+}
+
+@keyframes wavy2 {
+    0%, 100% {
+        transform: translate(0, 1.5vh);
+        height: 100%;
+    }
+    50% {
+        transform: translate(0, -1vh);
+        height: 160%;
+    }
+}
+
+@keyframes wavy3 {
+    0%, 100% {
+        transform: translate(0, 2.5vh);
+        height: 100%;
+    }
+    50% {
+        transform: translate(0, 0px);
+        height: 140%;
+    }
+}

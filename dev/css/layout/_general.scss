@@ -3,14 +3,11 @@
 
 section {
     padding:$pad2 0;
-    background: $gray_to_white;
-    &:not(.single-work){
-        overflow: hidden;
+    position: relative; // pour les backgrounds .wave
+    * {
+        z-index: 1;
     }
-}
-
-section:nth-of-type(2n) {
-    background: $blue_to_white;
+    overflow: hidden;
 }
 
 /* wrapper */

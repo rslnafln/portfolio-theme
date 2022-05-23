@@ -33,8 +33,10 @@
     
     .__text {
       margin-left: 100px;
-      font-weight: bold;
-      font-size: 24px;
+      h1, h2, h3 {
+        font-weight: 600;
+        font-size: 24px;
+      }
     }
     
     .__date {
@@ -55,8 +57,8 @@
   .core {
     display: flex;
     flex-direction: row;
-    
-    
+    padding-top: 0;
+    padding-bottom: 0;
     .article {
       width: 70%;
       margin: 40px 0px;
@@ -80,7 +82,6 @@
     
     .widgets {
       width: 30%;
-      background: $gray_to_white;
       .articles {
         padding: 50px 0;
       }

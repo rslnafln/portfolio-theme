@@ -20,14 +20,6 @@
     text-align: center;
 }
 
-.--graybg {
-    background: $gray_to_white;
-}
-
-.--bluebg {
-    background: $blue_to_white;
-}
-
 .--shadow {
     box-shadow: $ombre001;
 }
@@ -54,7 +46,18 @@
     height: 600px;
 }
 
+.--overflow {
+    overflow: visible;
+    z-index: 2;
+}
 
 .--respmargin {
     margin: 0 $pad2;
+}
+
+.--bigtitle {
+    font-size: $very-big-title-elastic;
+    margin: 20px 0px;
+    text-align: center;
+    color: $darkblue;
 }
