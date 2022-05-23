@@ -60,10 +60,10 @@
         z-index: 1;
         padding:calc($pad1 / 2) $pad1;
         h1 {
-            color: white;
+            color: $white;
         }
         p {
-            color: white;
+            color: $white;
         }
     }
 }

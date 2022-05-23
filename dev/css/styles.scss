@@ -1,9 +1,10 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "helpers/colors";
 @import "helpers/variables";
 @import "helpers/mixins";
+
+@import "settings/carapuce";
 
 @import "components/buttons";
 @import "components/heading";
@@ -16,7 +17,6 @@
 @import "layout/navigation";
 @import "layout/theme-colors";
 
-@import "pages/home";
 @import "pages/about";
 @import "pages/services";
 @import "pages/works";

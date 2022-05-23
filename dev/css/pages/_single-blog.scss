@@ -41,7 +41,7 @@
     
     .__date {
       background: $theme--dull;
-      color: white;
+      color: $white;
       height: 100%;
       width: 150px;
       display: flex;
@@ -134,7 +134,7 @@
     height:300px;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: $white;
     padding:$pad1;
     box-shadow: $ombre001;
     
@@ -162,7 +162,7 @@
   
   // MODIFIERS
   .--whitetxt {
-    color: white;
+    color: $white;
   }
   
   .--marginleft {
