@@ -3,12 +3,17 @@
     font-weight: 500;
     //HEADING
     header{
+        
         height: 100%;
         
     }
     //SECTION GROW & STAND OUT
     
     .work{
+        .wrapper{
+
+            margin-top: 6vh;
+        }
     .singlework__text{
         margin-left: 0.4vw;
         @include phone {
