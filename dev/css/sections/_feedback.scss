@@ -5,7 +5,11 @@
         background-position: unset;
         background-size: unset;
     }
-    
+    h1{
+    @include tablette {
+        width: 90%;
+    }
+    }
 }
 
 .swiper {
@@ -13,10 +17,12 @@
     display: flex;
     justify-content: flex-end;
     margin-right: unset;
-    margin-bottom:150px;
+    margin-bottom: 16vh;
+    margin-top: 10vh;
     @include tablette {
+    max-width:90%!important; 
         padding:0;
-        margin:0 $pad2;
+        margin: 0 auto;
         justify-content: center;
     }
 }
@@ -54,6 +60,9 @@
 
 .swiper-button-next, .swiper-button-prev {
     color: $white;
+    @include tablette {
+display: none;
+    }
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
