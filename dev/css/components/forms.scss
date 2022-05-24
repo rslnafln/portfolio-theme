@@ -1,0 +1,75 @@
+// PARTS
+.theform {
+    max-width: 500px;
+    background-color: $white;
+    margin: 0 auto;
+    box-shadow: $ombre001;
+    border-radius: 40px;
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    .__infos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+
+        .__input {
+            width: 50%;
+            overflow-x: hidden;
+        }
+    }
+
+
+    .__input {
+        // padding-bottom: 10px;
+        padding: 10px 20px 10px 0;
+        overflow: hidden;
+
+        &:nth-last-of-type(2n + 1),
+        &.__message {
+            padding-right: 0;
+        }
+
+        // margin: 0 20px;
+    }
+    input, textarea {
+        &:focus {
+            background-color: rgba($color: $theme--tainted-grey, $alpha: .5);
+        }
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid transparent, 1px solid $light_grey;
+    font-family: $poppins;
+    font-size: $small-elastic;
+    box-shadow: -150px 3px 0 transparent;
+    transition: all .3s ease-in-out;
+    height: 40px;
+    padding: .5em;
+    border-bottom: 1px solid $light_grey;
+
+    &::placeholder {
+        color: $grey_lighter;
+    }
+
+    &:focus {
+        outline: none;
+        // border-bottom: 3px solid $accent;
+        box-shadow: 0 3px 0 0 $accent;
+        border-bottom: 1px solid transparent;
+        color: $theme--dark;
+    }
+}
+
+textarea {
+    resize: vertical;
+}
