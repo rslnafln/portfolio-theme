@@ -1,13 +1,17 @@
 /***************** GENERAL RULES OF SECTION ***************/
 /* fond degradé gris / bleu, une section sur 2 */ 
 
-section:not(.single-work){
+section:not(.single-work, .work){
     padding: $pad2 0;
     position: relative; // pour les backgrounds .wave
     * {
         z-index: 1;
     }
     overflow: hidden;
+}
+
+main {
+    min-height: 100vh;
 }
 
 /* wrapper */
