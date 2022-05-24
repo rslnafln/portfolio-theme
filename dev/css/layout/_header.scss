@@ -1,7 +1,9 @@
 /* HEADER GENERAL RULES */ 
 header {
     max-width: 100%;
-    height:100vh;
+    .page-home & {
+        height:100vh;
+    }
     position: relative;
     overflow: hidden;
     @media screen and (orientation:portrait) {
