@@ -21,6 +21,8 @@
     padding: 0 4rem;
     @include tablette {
         width:100%;
+    padding: unset;
+
     }
     p {
         font-size: $pad1;
