@@ -1,5 +1,5 @@
 /****************** EN TÊTE DES SECTIONS ******************/
-.page-single-work{
+.single-work{
     
     
     //HEADING
@@ -37,7 +37,8 @@
                 background: $grey_to_white;
             }
             .sticky-one-inside{
-                margin: 0 10vw;
+                margin: 8vh 10vw 0 10vw;
+                
             }
             .sticky-two{
                 text-align: center;

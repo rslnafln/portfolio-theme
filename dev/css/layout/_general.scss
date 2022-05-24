@@ -1,8 +1,8 @@
 /***************** GENERAL RULES OF SECTION ***************/
 /* fond degradé gris / bleu, une section sur 2 */ 
 
-section {
-    padding:$pad2 0;
+section:not(.single-work){
+    padding: $pad2 0;
     position: relative; // pour les backgrounds .wave
     * {
         z-index: 1;
@@ -48,7 +48,7 @@ section {
     gap: 2%;
 }
 
-.bg {
+section.bg, header.bg, main.bg {
     background-color: unset;
     padding: 0;
 }

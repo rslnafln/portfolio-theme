@@ -14,8 +14,12 @@
     }
     //SECTION GROW & STAND OUT
     
-    .grow-and-standout{        
+    .grow-and-standout{     
+        .wrapper{
+            margin-top: 4vh;
+        }
         .wide{
+            
             @include tablette {
                 
                 flex-direction: column-reverse;
