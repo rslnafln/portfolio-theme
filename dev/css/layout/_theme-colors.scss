@@ -1,0 +1,17 @@
+header, main, section, nav {
+    transition: all .3s ease-in-out;
+    &.--airbg, &.section-even {
+        background: $grey_to_white;
+        &.core { background: $ultra_light; }
+        &>aside.widgets {background: $dark_to_white}
+    }
+    &.--waterbg, &.section-odd {
+        background: $dark_to_white;
+        &.core { background: $ultra_light; }
+        &>aside.widgets {background: $grey_to_white}
+    }
+    &.--darkbg:not(.bg) {
+        background: $dark_to_vivid;
+        &>aside.widgets {background: $grey_to_white}
+    }
+}

@@ -17,11 +17,22 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "mozjpeg": "^8.0.0",
+    "optipng-bin": "^9.0.0",
+    "pngquant-bin": "^8.0.1",
     "sass": "^1.47.0"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "choreographer-js": "^1.1.0",
+    "countup": "^1.8.2",
+    "gifsicle": "^7.0.0",
     "imagemin": "^8.0.1",
     "install": "^0.13.0",
-    "rename": "^1.0.4"
+    "rename": "^1.0.4",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.1.5"
   }
 }

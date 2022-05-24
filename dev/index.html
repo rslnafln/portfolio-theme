@@ -8,53 +8,54 @@
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
-<body>
+<body class="page-home">
   <!-- HEADER HERE -->
-  <header>
+  <header class="bg --darkbg">
     <!-- NAVIGATION -->
     <nav class="nav">
-      <a href="index.html" class="nav__logo"><img src="img/logosimple-darkbg.png"></a>
+      <a href="index.html" class="nav__logo"><img src="img/logosimple-lightbg.png"></a>
       <div class="nav__menu">
         <a href="index.html">Accueil</a>
         <a href="services.html">Services</a>
         <a href="works.html">Projets</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
       </div>
-
+      
       <!-- BURGER MENU -->
       <div class="burger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-
+      
     </nav>
     <!-- HEADER CONTENT -->
     <div class="header">
-      <img src="img/screenshot.gif">
+      <img class="plongescroll" src="img/screenshot.gif">
     </div>
     <div class="white waves animated"></div>
   </header>
   <!-- SECTION ABOUT US -->
-  <section class="about-us">
+  <section class="about-us --airbg" id="anchor">
     <div class="wrapper">
       <div class="about">
         <div class="about__image">
-          <img alt="about" src="img/about-me.jpg">
+          <img data-aos="fade-up" data-aos-duration="3000" alt="about" src="img/about-me.jpg">
         </div>
         <div class="about__text">
           <h3>About Me</h3>
           <h1>My Name is Arnaud.</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget ante vitae arcu condimentum vehicula efficitur pulvinar orci. Maecenas vitae risus ultrices, vestibulum eros non, varius justo. Nunc convallis, lacus a aliquet consequat, lorem odio placerat augue, sit amet gravida felis enim sit amet tellus. Phasellus varius malesuada justo non iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ut quam sed metus convallis convallis ut in justo. Vestibulum ut augue rhoncus, mattis odio vel, pharetra nisl.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget ante vitae arcu condimentum vehicula efficitur pulvinar orci. Maecenas vitae risus ultrices, vestibulum eros non, varius justo. Nunc convallis, lacus a aliquet consequat, lorem odio placerat augue, sit amet gravida felis enim sit amet tellus. Phasellus varius malesuada justo non iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ut quam sed metus convallis convallis ut in justo. Vestibulum ut augue rhoncus, mattis odio vel, pharetra nisl.</p>
-          <button class="button button--pink"><a href="#">Learn More</a></button>
+          <button data-aos="fade-up" data-aos-duration="2600" class="button button--pink"><a href="about.html">Learn More</a></button>
         </div>
       </div>
     </div>
   </section>
   <!-- SECTION EXPERIENCES -->
-  <section class="experiences">
+  <section class="experiences --waterbg">
     <div class="blue waves"></div>
     <div class="wrapper">
       <div class="heading">
@@ -63,7 +64,7 @@
       </div>
       <div class="experiences__all">
         <!-- EXP 01 -->
-        <div class="exp">
+        <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="exp">
           <!-- Colonne 001 -->
           <div class="exp__logo">
             <h5>Jan 2018 - Present</h5>
@@ -90,7 +91,7 @@
           </div>
         </div>
         <!-- EXP 02 -->
-        <div class="exp">
+        <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2400" class="exp">
           <!-- Colonne 001 -->
           <div class="exp__logo">
             <h5>Jan 2018 - Present</h5>
@@ -117,7 +118,7 @@
           </div>
         </div>
         <!-- EXP 03 -->
-        <div class="exp">
+        <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2600" class="exp">
           <!-- Colonne 001 -->
           <div class="exp__logo">
             <h5>Jan 2018 - Present</h5>
@@ -145,11 +146,11 @@
         </div>
         <!-- fin des single expériences -->
       </div>
-        </div>
     </div>
+  </div>
 </section>
 <!-- SECTION SKILLS -->
-<section class="skills">
+<section class="skills --airbg">
   <div class="purple waves"></div>
   <div class="wrapper">
     <div class="heading">
@@ -159,25 +160,25 @@
     <div class="skills__block">
       <div class="percentage">
         <!-- PERCENTAGE 01 -->
-        <div class="percentage__block">
-          <div class="percentage__number">
-            <div>75 %</div>
+        <div data-aos="fade-up" data-aos-duration="1200" class="percentage__block">
+          <div class="percentage__number counterup">
+            <div class="counter-text" data-number="75"></div>%
           </div>
           <h6>Photography</h6>
           <p>That I learned while I was <br><span>Senior Project Manager</span></p>
         </div>
         <!-- PERCENTAGE 02 -->
-        <div class="percentage__block">
-          <div class="percentage__number">
-            <div>51 %</div>
+        <div data-aos="fade-up" data-aos-duration="1400" class="percentage__block">
+          <div class="percentage__number counterup">
+            <div class="counter-text" data-number="51"></div>%
           </div>
           <h6>Composition</h6>
           <p>That I learned while I was <br><span>Creative associate</span></p>
         </div>
         <!-- PERCENTAGE 03 -->
-        <div class="percentage__block">
-          <div class="percentage__number">
-            <div>17 %</div>
+        <div data-aos="fade-up" data-aos-duration="1600" class="percentage__block">
+          <div class="percentage__number counterup">
+            <div class="counter-text" data-number="17"></div>%
           </div>
           <h6>Wordpress</h6>
           <p>That I learned while I was <br><span>Political columnist</span></p>
@@ -186,7 +187,7 @@
     </div>
     <div class="skills__colonne">
       <!-- Colonne de gauche -->
-      <div class="skills__left">
+      <div data-aos="zoom-out-right" data-aos-duration="2600" class="skills__left">
         <div class="skills__title">
           <h2>Coding</h2>
         </div>
@@ -196,33 +197,33 @@
             <div class="coding__text">
               <div class="coding__name">HTML</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-75"></div>
           </div>
           <!-- CODING 02 -->
           <div class="coding__block">
             <div class="coding__text">
               <div class="coding__name">CSS</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-25"></div>
           </div>
           <!-- CODING 03 -->
           <div class="coding__block">
             <div class="coding__text">
               <div class="coding__name">JS</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-30"></div>
           </div>
           <!-- CODING 04 -->
           <div class="coding__block">
             <div class="coding__text">
               <div class="coding__name">PHP</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-45"></div>
           </div>
         </div>
       </div>
       <!-- Colonne de droite -->
-      <div class="skills__right">
+      <div data-aos="zoom-out-left" data-aos-duration="2600" class="skills__right">
         <div class="skills__title">
           <h2>Photo</h2>
         </div>
@@ -232,41 +233,42 @@
             <div class="coding__text">
               <div class="coding__name">Digital Imaging</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-33"></div>
           </div>
           <!-- CODING 02 -->
           <div class="coding__block">
             <div class="coding__text">
               <div class="coding__name">ISO Speeds</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-80"></div>
           </div>
           <!-- CODING 03 -->
           <div class="coding__block">
             <div class="coding__text">
               <div class="coding__name">DSLR</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-40"></div>
           </div>
           <!-- CODING 04 -->
           <div class="coding__block">
             <div class="coding__text">
               <div class="coding__name">Portrait Photography</div>
             </div>
-            <div class="coding__rod"></div>
+            <div class="coding__rod coding-60"></div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </div>
+</div>
 </section>
 <!-- SECTION OUR SERVICES -->
-<section class="our-services">
+<section class="our-services --waterbg">
   <div class="blue waves"></div>
   <div class="wrapper">
     <div class="services">
-      <div class="services__marketing">
+      <!-- PALIER ANIMATION 2600 -->
+      <div data-aos="fade-up" data-aos-duration="2600" class="services__marketing">
         <!-- MARKETING 01 -->
         <div class="marketing__block">
           <img class="marketing__image" src="img/service1.jpeg">
@@ -275,7 +277,7 @@
             <img src="img/check.png">
           </div>
           <p>Cras vitae magna in lorem ullamcorper aliquam nec ut turpis. Vivamus dignissim neque quis ex sagittis efficitur. Mauris nisl neque, molestie in consequat sodales, finibus non erat.</p>
-          <button class="button button--blue"><a href="#">Learn More</a></button>
+          <button class="button button--blue"><a href="services.html">Learn More</a></button>
         </div>
         <!-- MARKETING 02 -->
         <div class="marketing__block">
@@ -285,7 +287,7 @@
             <img src="img/check.png">
           </div>
           <p>Cras vitae magna in lorem ullamcorper aliquam nec ut turpis. Vivamus dignissim neque quis ex sagittis efficitur. Mauris nisl neque, molestie in consequat sodales, finibus non erat.</p>
-          <button class="button button--blue"><a href="#">Learn More</a></button>
+          <button class="button button--blue"><a href="services.html">Learn More</a></button>
         </div>
         <!-- MARKETING 03 -->
         <div class="marketing__block">
@@ -295,7 +297,7 @@
             <img src="img/check.png">
           </div>
           <p>Cras vitae magna in lorem ullamcorper aliquam nec ut turpis. Vivamus dignissim neque quis ex sagittis efficitur. Mauris nisl neque, molestie in consequat sodales, finibus non erat.</p>
-          <button class="button button--blue"><a href="#">Learn More</a></button>
+          <button class="button button--blue"><a href="services.html">Learn More</a></button>
         </div>
         <!-- MARKETING 04 -->
         <div class="marketing__block">
@@ -305,7 +307,7 @@
             <img src="img/check.png">
           </div>
           <p>Cras vitae magna in lorem ullamcorper aliquam nec ut turpis. Vivamus dignissim neque quis ex sagittis efficitur. Mauris nisl neque, molestie in consequat sodales, finibus non erat.</p>
-          <button class="button button--blue"><a href="#">Learn More</a></button>
+          <button class="button button--blue"><a href="services.html">Learn More</a></button>
         </div>
       </div>
       <div class="about__text">
@@ -313,13 +315,13 @@
         <h1>I can make <span>great stuff</span> for you</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget ante vitae arcu condimentum vehicula efficitur pulvinar orci. Maecenas vitae risus ultrices, vestibulum eros non, varius justo. Nunc convallis, lacus a aliquet consequat, lorem odio placerat augue, sit amet gravida felis enim sit amet tellus. Phasellus varius malesuada justo non iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ut quam sed metus convallis convallis ut in justo. Vestibulum ut augue rhoncus, mattis odio vel, pharetra nisl.</p>
         <p>Phasellus varius malesuada justo non iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ut quam sed metus convallis convallis ut in justo. Vestibulum ut augue rhoncus, mattis odio vel, pharetra nisl.</p>
-        <button class="button button--blue"><a href="#">All Services</a></button>
+        <button data-aos="fade-up" data-aos-duration="2600" class="button button--blue"><a href="services.html">All Services</a></button>
       </div>
     </div>
   </div>
 </section>
 <!-- SECTION FEATURED WORK -->
-<div class="work">
+<section class="work --darkbg">
   <div class="wrapper">
     <div class="heading heading--white">
       <h3>Get Inspired</h3>
@@ -327,7 +329,7 @@
       <h1>Featured Work</h1>
       <p>Lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut Enim ad minim.</p>
     </div>
-    <div class="work__image">
+    <div data-aos="fade-up" data-aos-duration="2800" class="work__image">
       <!-- WORK SINGLE 01 -->
       <div class="work__single">
         <div class="singlework__text">
@@ -361,38 +363,61 @@
         <img src="img/work4.jpeg">
       </div>
     </div>
-    <button class="button button--blue"><a href="#">Learn More</a></button>
+    <button data-aos="fade-up" data-aos-duration="2600" class="button button--blue"><a href="#">Learn More</a></button>
   </div>
-</div>
+</section>
 <!-- SECTION FEED BACK -->
-<section class="feedback">
+<section class="feedback --waterbg">
   <div class="purple waves"></div>
   <div class="wrapper">
     <div class="heading">
       <h3>Client feedback</h3>
       <h1>Don't just take my word for it.</h1>
     </div>
-    <div class="feedback__all">
-      <!-- FEEDBACK 01 -->
-      <div class="feedback__block">
-        <p>Marketing is both an art and a science, and younic is a master from both sides. Without their help, our marketing campaigns could not have reached the levels we have seen.</p>
-        <div class="feedback__subtitle">
-          <div>Shiv Krauss, Marketing Director</div>
-          <div class="feedback__star">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+    <div class="swiper">
+      <!-- swiper wrapper -->
+      <div class="swiper-wrapper">
+        <!-- FEEDBACK 01 -->
+        <div class="swiper-slide">
+          <p>Marketing is both an art and a science, and younic is a master from both sides. Without their help, our marketing campaigns could not have reached the levels we have seen.</p>
+          <div class="feedback__subtitle">
+            <div>Shiv Krauss, Marketing Director</div>
+            <div class="feedback__star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
           </div>
+          <span>Bueno</span>
         </div>
-        <span>Bueno</span>
+        <!-- FEEDBACK 02 -->
+        <div class="swiper-slide">
+          <p>Marketing is both an art and a science, and younic is a master from both sides. Without their help, our marketing campaigns could not have reached the levels we have seen.</p>
+          <div class="feedback__subtitle">
+            <div>Shiv Krauss, Marketing Director</div>
+            <div class="feedback__star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <span>Blabla</span>
+        </div>
+      </div>
+      <!-- navigation buttons -->
+      <div class="button-slider">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </div>
 </section>
 <!-- SECTION CLIENTS -->
-<section class="clients">
+<section class="clients --airbg">
   <div class="wrapper">
     <div class="heading heading--middle">
       <h3>Success stories</h3>
@@ -400,39 +425,77 @@
       <h1>Just a few of my clients</h1>
     </div>
     <div class="clients__block">
+
+
+      <div class="swiper-container">
+        <!-- swiper wrapper -->
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
       <!-- LOGO 01 -->
       <div class="clients__logos">
         <img src="img/client-jm.jpg">
       </div>
+    </div>
+
+      <div class="swiper-slide">
+
       <!-- LOGO 02 -->
       <div class="clients__logos">
         <img src="img/client-ml.jpg">
       </div>
+    </div>
+
+          <div class="swiper-slide">
+
       <!-- LOGO 03 -->
       <div class="clients__logos">
         <img src="img/client-we.png">
       </div>
+    </div>
+
+      <div class="swiper-slide">
+
       <!-- LOGO 04 -->
       <div class="clients__logos">
         <img src="img/client-waouwpics.png">
       </div>
+    </div>
+
+      <div class="swiper-slide">
+
       <!-- LOGO 05 -->
       <div class="clients__logos">
         <img src="img/client-mfl.jpg">
       </div>
+    </div>
+
+      <div class="swiper-slide">
+
       <!-- LOGO 06 -->
       <div class="clients__logos">
         <img src="img/client-luminous.png">
       </div>
+      </div>
+
+      <div class="swiper-slide">
+
       <!-- LOGO 07 -->
       <div class="clients__logos">
         <img src="img/client-fakestudio.png">
       </div>
     </div>
+
+
+    </div>
+  </div>
+
+    </div>
   </div>
 </section>
 <!-- SECTION TALK -->
-<div class="talk">
+<section class="talk bg --darkbg">
   <div class="wrapper">
     <div class="overlay">
       <div class="heading heading--white">
@@ -440,13 +503,13 @@
         <div class="border__bottom"></div>
         <h1>Your digital presence is about to take off</h1>
         <p>Lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut Enim ad minim. Lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut Enim ad minim.</p>
-        <button class="button button--pink"><a href="#">Learn More</a></button>
+        <button data-aos="fade-up" data-aos-duration="2600" class="button button--pink"><a href="#">Learn More</a></button>
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- SECTION BLOG -->
-<section class="blog">
+<section class="blog --airbg">
   <div class="purple waves"></div>
   <div class="wrapper">
     <div class="heading heading--middle">
@@ -455,38 +518,50 @@
       <h1>Same of my latest posts</h1>
       <p>Stay tuned !</p>
     </div>
-    <div class="blog__news">
+    <div data-aos="fade-up" data-aos-duration="2600" class="blog__news">
       <!-- BLOG 01 -->
       <div class="blog__block">
         <div class="blog__image">
           <img src="img/news1.jpeg">
+          <div class="blog__date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div>10/05/2022</div>
+          </div>
         </div>
         <div class="blog__text">
           <h6>Title</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
-          <button class="button button--darkblue"><a href="#">Learn More</a></button>
+          <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
         </div>
       </div>
       <!-- BLOG 02 -->
       <div class="blog__block">
         <div class="blog__image">
           <img src="img/news2.jpg">
+          <div class="blog__date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div>10/05/2022</div>
+          </div>
         </div>
         <div class="blog__text">
           <h6>Title</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
-          <button class="button button--darkblue"><a href="#">Learn More</a></button>
+          <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
         </div>
       </div>
       <!-- BLOG 03 -->
       <div class="blog__block">
         <div class="blog__image">
           <img src="img/news3.jpeg">
+          <div class="blog__date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div>10/05/2022</div>
+          </div>
         </div>
         <div class="blog__text">
           <h6>Title</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper nibh sed tellus consectetur mattis</p>
-          <button class="button button--darkblue"><a href="#">Learn More</a></button>
+          <button class="button button--darkblue"><a href="single-blog.html">Learn More</a></button>
         </div>
       </div>
     </div>
@@ -532,8 +607,14 @@
     <div class="footer">
       <div class="footer--title">Join my newsletter</div>
       <p>Lorem Impsum dolor sit amet, consectetur adipiscing elit, sed do eludsomod tempor, incididunt.</p>
-      <div class="footer--search">tiffany.milan@email.com</div>
-      <button class="button button--pink"><a href="#">Subscribe</a></button>
+      <form action="get">
+        <div class="footer--search">
+          <div class="subscribe">
+            <input type="text" name="subscribe-mail" id="subscribe-mail" placeholder="tiffany.milan@email.com">
+          </div>
+        </div>
+        <button data-aos="fade-up" data-aos-duration="2600" class="button button--pink"><a href="#">Subscribe</a></button>
+      </form>
     </div>    
   </div>
   <div class="footer__pink">
@@ -548,5 +629,18 @@
 </footer>
 <script src="js/main.min.js"></script>
 <script src="js/burger.min.js"></script>
+<script src="js/plongescroll.min.js"></script>
+<!-- COUNTER-->
+<script src="js/counter.min.js"></script>
+<!-- STICKY MENU -->
+<script src="js/stickymenu.min.js"></script>
+<!-- SWIPER  -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<!-- AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

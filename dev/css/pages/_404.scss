@@ -1,0 +1,32 @@
+.page-404 {
+    font-family: $poppins;
+    color: $light_grey;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    -webkit-tap-highlight-color: transparent;
+    padding-top: 3%
+}
+svg {
+    top: 2em;
+    width: 65vw;
+    max-width: 1280px;
+    overflow: visible;
+}
+
+#oops {
+    margin: 0;
+    font-size: calc($title1-elastic * 3);
+    font-weight: 800;
+    margin-top: -0.6em;
+}
+
+#who {
+    font-size: $title2-elastic;
+    margin: 0;
+}
+
+#wrong {
+    font-size: $sub1-elastic;
+}

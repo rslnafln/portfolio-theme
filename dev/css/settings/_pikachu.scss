@@ -1,0 +1,32 @@
+/* -------------------------------------- */
+/*                PIKACHU                 */
+/*       theme-color--pikachu_yellow      */
+/* -------------------------------------- */
+/* THEME COLOR */
+/* couleur du thème déclinée dans plusieurs
+teintes et nuances */ 
+$theme--light: #faf79d;
+$theme--vivid: #f2d200;
+$theme--dull: #f2ba00;
+$theme--dark: #333;
+$theme--black: #111;
+
+/* ACCENT COLOR */
+/* couleur liée au thème qui met les choses en
+valeur ou en contraste */ 
+$accent--dark: #833;
+$accent: #b33;
+$accent--light: #f77;
+
+/* TAINTED COLORS */
+/* couleur liée au thème marquant une
+transition avec une couleur neutre */
+$theme--tainted-grey: #fcf9e5;
+
+
+/* GRADIENTS */
+$grey_to_white: linear-gradient(70deg, $theme--tainted-grey, $white);
+$dark_to_white: linear-gradient(70deg, $theme--light, $theme--tainted-grey, $white);
+$dark_to_vivid: linear-gradient(70deg, $theme--black, $theme--dark);
+$black-to-dark: linear-gradient(-360deg, $theme--black, $theme--dark, $theme--dark);
+$accent_to_white: linear-gradient(70deg, $accent--light, $white);

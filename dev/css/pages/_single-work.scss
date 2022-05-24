@@ -1,0 +1,189 @@
+/****************** EN TÊTE DES SECTIONS ******************/
+.single-work{
+    
+    
+    //HEADING
+    header{
+        height: 100%;
+        
+    }
+    .heading{
+        align-items: unset;
+    }
+    
+    .single-work, .browse-more{
+        font-weight: 500;
+        img{
+            width: 100%;
+            border-radius: $pad2;
+            box-shadow: $ombre001;
+        }
+    }
+    // SECTION SINGLE WORK
+    .single-work{
+        padding: 0;
+        .container-sticky{
+            position: relative;
+            height: 160vh;
+            @include tablette {
+                height: 300vh;
+                
+            }
+            .sticky-one{
+                padding-top: $pad2;
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                background: $grey_to_white;
+            }
+            .sticky-one-inside{
+                margin: 8vh 10vw 0 10vw;
+                
+            }
+            .sticky-two{
+                text-align: center;
+                position: sticky;
+                top: 0;
+                z-index: 0;
+                height: 60%;
+                @include iphone12 {
+                    height: 40%;
+                    
+                }
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .content{
+            padding-bottom: 4rem;
+            
+            p{
+                color: $white;
+                
+            }
+        }
+        .single-work-inside{
+            
+            .img-top img{
+                border-radius: 0 0 $pad2 $pad2;
+            }
+            
+            img{
+                width: 100%;
+            }
+            .single-work-txt{
+                display: flex;
+                padding-bottom: 2rem;
+                @include tablette {
+                    flex-direction: column;
+                }
+                .block-info, .block-txt{
+                    width: 50%;
+                    margin-top: 1vh;
+                    @include tablette {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+    
+    // SECTION BROWSE MORE
+    .browse-more{
+        .see-more{
+            gap: 6%;
+            h3{
+                font-size: $pad2;
+                font-weight: 600;
+                margin-bottom: 0;
+                @include tablette {
+                    font-size: $pad1;
+                    
+                }
+            }
+            .article-1, .article-2{
+                width: 40%;
+                position: relative;
+                .btn-posts{
+                    position: absolute;
+                    background: $theme--vivid;
+                    top: 42%;
+                    width: 8vh;
+                    height: 8vh;
+                    padding: $pad2;
+                    border-radius: 50%;
+                    transition: .4s ease-in all;
+                    &:hover{
+                        padding: $pad3;
+                        transition: .4s ease-out all;
+                    }
+                    
+                }
+                .btn-prev{
+                    left: 0;
+                    transform: translate(-50%, -50%);
+                    
+                }
+                .btn-prev::before{
+                    font-family: "FontAwesome";
+                    content: '\f104';
+                    color: white;
+                    font-size: 3.6rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    
+                }
+                
+                .btn-next{
+                    right: 0;
+                    transform: translate(36%, -50%);
+                    
+                }
+                .btn-next::before{
+                    font-family: "FontAwesome";
+                    content: '\f105';
+                    color: white;
+                    font-size: 3.6rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    
+                }
+                img{
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                }
+                .article-txt{
+                    border-left: 5px solid $theme--dark;
+                    padding-left: $pad1;
+                    margin-left: $pad1;
+                    @include tablette {
+                        border-left: unset;
+                        padding-left: unset;
+                    }
+                    p{
+                        @include tablette {
+                            display: none;
+                        }
+                    }
+                    
+                    h3{
+                        border-left: unset;
+                        padding-left: unset;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}

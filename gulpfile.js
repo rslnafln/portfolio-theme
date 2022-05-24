@@ -52,7 +52,7 @@ gulp.task('htmlification', function(){
   .pipe(gulp.dest('prod'));
 });
 
-gulp.task('jsification', function(){
+gulp.task('jsification', function() {
   return gulp.src('dev/js/*.js')
   .pipe(uglify())
   .pipe(rename(function (path) {

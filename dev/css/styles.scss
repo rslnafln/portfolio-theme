@@ -3,22 +3,28 @@
 
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/ruslanvariables";
+
+@import "settings/carapuce";
 
 @import "components/buttons";
+@import "components/forms";
 @import "components/heading";
 @import "components/block-txtimg";
+@import "components/modifiers";
 
 @import "layout/general";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
+@import "layout/theme-colors";
 
-@import "pages/home";
 @import "pages/about";
 @import "pages/services";
 @import "pages/works";
+@import "pages/single-work";
 @import "pages/contact";
+@import "pages/single-blog";
+@import "pages/404";
 
 @import "sections/aboutus";
 @import "sections/blog";

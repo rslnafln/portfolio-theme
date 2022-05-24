@@ -1,7 +1,7 @@
 footer {
     max-width: 100%;
     height: 100%;
-    background: $blue_to_dark;
+    background: $black-to-dark;
     padding-top:50px;
 }
 
@@ -33,7 +33,6 @@ footer {
             flex-direction: column;
         }
         &--search {
-            border-bottom:1px solid white;
             padding-bottom:5px;
         }
         .info {
@@ -51,8 +50,20 @@ footer {
         }
     }
     .footer--search {
+        // overflow-x: hidden;
         @include minitablette {
             margin-bottom: $pad1;
+        }
+        .subscribe {
+            padding: 5px 0;
+            overflow-x: hidden;
+        }
+        input {
+            height: $pad3;
+            background-color: transparent;
+            &:focus {
+                background-color: rgba($color: $theme--black, $alpha: .2);
+            }
         }
     }
 }
@@ -61,7 +72,7 @@ footer {
     margin-top:100px;
     width:100%;
     height:60px;
-    background: $pink_to_white;
+    background: $accent_to_white;
     display: flex;
     justify-content: space-around;
     align-items: center;
