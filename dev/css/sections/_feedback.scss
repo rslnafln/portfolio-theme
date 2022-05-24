@@ -1,7 +1,13 @@
 /****************** FEED BACK ******************/ 
 .feedback {
     padding-top:  100px;
+    .waves{
+        background-position: unset;
+        background-size: unset;
+    }
+    
 }
+
 .swiper {
     max-width:50%!important; 
     display: flex;
