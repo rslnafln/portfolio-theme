@@ -4,7 +4,10 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
+@import "settings/carapuce";
+
 @import "components/buttons";
+@import "components/forms";
 @import "components/heading";
 @import "components/block-txtimg";
 @import "components/modifiers";
@@ -15,7 +18,6 @@
 @import "layout/navigation";
 @import "layout/theme-colors";
 
-@import "pages/home";
 @import "pages/about";
 @import "pages/services";
 @import "pages/works";

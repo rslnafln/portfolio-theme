@@ -1,48 +1,23 @@
-/*********** COLORS ************/ 
-
-/* pink */
-$dark_pink: #ad1f3e;
-$pink: #e07086;
-$light_pink: #f4bfc8;
-
-/* gray */
-$light_gray: #e4e4eb;
-$gray: #7d8285; 
-$gray_text: #737277;
-$gray_bis: #e5f3fc;
-$gray_lighter: #c4c4c4;
-
-/* blue */
-$blue_gray: #8496a5;
-$blue_lightgray: #c8ddf2;
-$blue_darkgray: #5c7287;
-$blue_water: #72a7e1;
-$blue_sky: #70a9dd;
-$blue: #2d425a;
-$darkblue : #30415a;
-$blueverydark: #02101B;
-
-/* brown*/ 
-$black_brown: #343434;
+/* GENERIC COLORS */
 
 /* white */
-$white: #ffffff;
-$light_white: #e2e2e2;
+$white: #fff;
 $ultra_light: #fdfdfd;
+$light_grey: #e4e4e4;
 
-/* DEGRADES */ 
+/* medium grey */
+$grey_lighter: #ccc;
+$grey: #888; 
+$grey_text: #777;
 
-$gray_to_white: linear-gradient(70deg, $light_gray, $white);
-$blue_to_white: linear-gradient(70deg, $blue_lightgray, $gray_bis, $white);
-$dark_to_blue: linear-gradient(70deg, $blueverydark, $blue);
-$blue_to_dark: linear-gradient(-360deg, $blueverydark, $blue, $blue);
-$pink_to_white: linear-gradient(70deg, $light_pink, $white);
+/* dark grey */ 
+$dark_grey: #333;
 
 /* OPACITY*/
 
 $black_opacity: rgba(0, 0, 0, 0.5);
 $white_opacity: rgba(255, 255, 255, 0.5);
-$gray_red_opacity:rgba(255, 255, 255, 0.523);
+$grey_red_opacity:rgba(255, 255, 255, 0.523);
 
 /* FONT */ 
 

@@ -2,7 +2,7 @@
 /* fond degradé gris / bleu, une section sur 2 */ 
 
 section:not(.single-work){
-    padding:$pad2 0;
+    padding: $pad2 0;
     position: relative; // pour les backgrounds .wave
     * {
         z-index: 1;
@@ -48,6 +48,11 @@ section:not(.single-work){
     gap: 2%;
 }
 
+section.bg, header.bg, main.bg {
+    background-color: unset;
+    padding: 0;
+}
+
 /****************** GENERAL RULES FONT ******************/
 /* tout ce qui concerne : font family, font size, font-weight, text-decoration, box-shadow, color, line-height, etc... */
 
@@ -62,7 +67,7 @@ h1 {
     }
     font-family: $poppins;
     font-weight: 400;
-    color: $black_brown;
+    color: $dark_grey;
     span {
         font-weight: 600;
     }
@@ -77,9 +82,9 @@ h2 {
 
 h3 {
     font-size: $small-elastic;
-    border-left: 5px solid $darkblue;
+    border-left: 5px solid $theme--dark;
     padding-left:calc($pad1 / 2);
-    color: $darkblue;
+    color: $theme--dark;
     font-family: $poppins;
     font-weight: 400;
 }
@@ -94,7 +99,7 @@ h5 {
     text-align: left;
     font-family: $poppins;
     font-weight: 400;
-    color: $blue_darkgray;
+    color: $theme--dull;
 }
 
 h6 {
@@ -108,7 +113,7 @@ p {
     font-family: $lora;
     letter-spacing: 1px;
     font-size: $small-elastic;
-    color: $gray_text;
+    color: $grey_text;
     line-height: $pad1;
 }
 
@@ -119,9 +124,9 @@ p {
     font-size: $exp-title;
     font-family: $poppins;
     font-weight: 400;
-    color: $black_brown;
+    color: $dark_grey;
     .exp__span {
-        color: $blue_gray;
+        color: $theme--dull;
     }
 }
 
@@ -140,7 +145,7 @@ p {
     p {
         text-align: center;
         span {
-            color: $black_brown
+            color: $dark_grey
         }
     }
 }
@@ -203,7 +208,7 @@ p {
 
 .read-more {
     a {
-        color: $blue_darkgray;
+        color: $theme--dull;
         font-family: $poppins;
         text-transform: uppercase;
         padding: 10px 0;
@@ -234,7 +239,7 @@ p {
     }
     &--search {
         font-family: $poppins;
-        color: $gray;
+        color: $grey;
         font-size:13px;
     }
     .info {
@@ -246,7 +251,7 @@ p {
 
 .footer__pink {
     .copyright {
-        color: $darkblue;
+        color: $theme--dark;
         font-family: $poppins;
         font-size: $font-mid-elastic;
     }

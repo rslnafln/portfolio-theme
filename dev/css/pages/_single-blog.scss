@@ -21,7 +21,7 @@
     bottom: 0;
     width: 100%;
     height: 70px;
-    background: $gray_red_opacity;
+    background: $grey_red_opacity;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,8 +40,8 @@
     }
     
     .__date {
-      background: $blue_darkgray;
-      color: white;
+      background: $theme--dull;
+      color: $white;
       height: 100%;
       width: 150px;
       display: flex;
@@ -134,7 +134,7 @@
     height:300px;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: $white;
     padding:$pad1;
     box-shadow: $ombre001;
     
@@ -162,7 +162,7 @@
   
   // MODIFIERS
   .--whitetxt {
-    color: white;
+    color: $white;
   }
   
   .--marginleft {

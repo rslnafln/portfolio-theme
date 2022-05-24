@@ -68,11 +68,16 @@
         }
     }
     .block-txtimg__text{
-        padding: 0 80px 0 150px;
+        padding: 0 80px 0 calc($pad2);
         @include tablette {
             padding: 0;
         }
         width: 100%;
+        p {
+            font-weight: 400;
+            font-size: $very-small-elastic;
+            line-height: 1.5em;
+        }
     }
 }
 
