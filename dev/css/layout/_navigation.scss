@@ -43,6 +43,9 @@
         @include iphone12 {
             width:100%;
         }
+        .--darkbg & {
+            filter: invert(1);
+        }
     }
     
 }

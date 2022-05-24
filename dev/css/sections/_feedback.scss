@@ -1,10 +1,6 @@
 /****************** FEED BACK ******************/ 
 .feedback {
     padding-top:  100px;
-    .waves{
-        background-position: unset;
-        background-size: unset;
-    }
     h1{
     @include tablette {
         width: 90%;
