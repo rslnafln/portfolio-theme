@@ -1,14 +1,21 @@
 /***************** GENERAL RULES OF SECTION ***************/
 /* fond degradé gris / bleu, une section sur 2 */ 
 
-section, main {
-    padding:$pad2 0;
+section:not(.single-work, .work){
+    padding: calc($pad2 * 2) 0;
     position: relative; // pour les backgrounds .wave
     * {
         position: relative;
         z-index: 2;
     }
+}
+
+section {
     overflow: hidden;
+}
+
+main {
+    min-height: 100vh;
 }
 
 /* wrapper */
@@ -47,6 +54,11 @@ section, main {
     display: flex;
     justify-content: center;
     gap: 2%;
+}
+
+section.bg, header.bg, main.bg {
+    background-color: unset;
+    padding: 0;
 }
 
 /****************** GENERAL RULES FONT ******************/

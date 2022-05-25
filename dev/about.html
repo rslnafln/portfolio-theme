@@ -73,7 +73,7 @@
     
     
     <!-- CARDS SECTION -->
-    <section class="cards  --toppad --botpad --waterbg">
+    <section class="cards --waterbg">
       <!-- TITLES -->
       <div class="__titles wrapper --toppad">
         <!-- PRE TITLE -->
@@ -84,7 +84,7 @@
       
       
       <!-- CARDS -->
-      <div class="__cards --toppad wrapper">
+      <div class="__cards --toppad --botpad wrapper">
         
         <!-- SINGLE CARD (x6) -->
         <div data-aos="zoom-out-right" data-aos-duration="2000" class="__singlecard">
@@ -202,9 +202,10 @@
       </div>
     </div>
     <!-- END OF CARDS -->
-    
+  </section>
     
     <!-- CTA SECTION -->
+  <section class="--darkbg bg">
     <div class="talk --bgreplacer">
       <div class="overlay --overlayfix">
         <div class="heading heading--white">
@@ -216,6 +217,7 @@
         </div>
       </div>
     </div>
+  </section>
     <!-- END OF CTA -->
     
     
@@ -264,8 +266,14 @@
       <div class="footer">
         <div class="footer--title">Join my newsletter</div>
         <p>Lorem Impsum dolor sit amet, consectetur adipiscing elit, sed do eludsomod tempor, incididunt.</p>
-        <div class="footer--search">tiffany.milan@email.com</div>
-        <button data-aos="fade-up" data-aos-duration="2600" class="button button--pink"><a href="#">Subscribe</a></button>
+        <form action="get">
+          <div class="footer--search">
+              <div class="subscribe">
+              <input type="text" name="subscribe-mail" id="subscribe-mail" placeholder="tiffany.milan@email.com">
+              </div>
+          </div>
+          <button data-aos="fade-up" data-aos-duration="2600" class="button button--pink"><a href="#">Subscribe</a></button>
+      </form>
       </div>    
     </div>
     <div class="footer__pink">

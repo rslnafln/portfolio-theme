@@ -10,7 +10,7 @@
     z-index: 999;
     height: $nav-height;
     font-size: 18px;
-    position: absolute;
+    position: fixed;
     top: 0;
     box-shadow: $ombre002;
     &.sticky {
@@ -43,6 +43,9 @@
         @include iphone12 {
             width:100%;
         }
+        .--darkbg & {
+            filter: invert(1);
+        }
     }
     
 }
@@ -65,10 +68,10 @@
         .--darkbg & {
             color: $white;
         }
-        .--airbg & {
+        .--airbg &, .section-even & {
             color: var(--theme--dark);
         }
-        .--waterbg & {
+        .--waterbg &, .section-odd & {
             color: var(--theme--dark);
         }
     }

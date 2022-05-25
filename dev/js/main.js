@@ -43,3 +43,4 @@ function refreshSectionsLimitsArray() {
     })
     return refreshSectionsLimits;
 }
+

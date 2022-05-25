@@ -33,7 +33,6 @@ footer {
             flex-direction: column;
         }
         &--search {
-            border-bottom:1px solid white;
             padding-bottom:5px;
         }
         .info {
@@ -51,8 +50,20 @@ footer {
         }
     }
     .footer--search {
+        // overflow-x: hidden;
         @include minitablette {
             margin-bottom: $pad1;
+        }
+        .subscribe {
+            padding: 5px 0;
+            overflow-x: hidden;
+        }
+        input {
+            height: $pad3;
+            background-color: transparent;
+            &:focus {
+                background-color: rgba($color: var(--theme--black), $alpha: .2);
+            }
         }
     }
 }
