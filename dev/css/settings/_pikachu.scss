@@ -1,4 +1,4 @@
-.theme-color--pikachu_yellow {
+body.theme-color--pikachu_yellow {
 /* -------------------------------------- */
 /*                PIKACHU                 */
 /*       theme-color--pikachu_yellow      */
@@ -9,7 +9,10 @@ teintes et nuances */
 --theme--light: #fefde5;
 --theme--vivid: #ffca45;
 --theme--dull: #f4e664;
---theme--dark: #333;
+
+/* couleur sombre qui se marie avec la couleur
+principale du thème sans l'éclipser */
+--theme--dark: #383b46;
 --theme--black: #0e0f0f;
 
 /* ACCENT COLOR */

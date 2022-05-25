@@ -1,32 +1,30 @@
+.theme-color--bulbizarre_green {
 /* -------------------------------------- */
 /*                BULBIZARRE              */
 /*      theme-color--bulbizarre_green     */
 /* -------------------------------------- */
-/* THEME COLOR */
-/* couleur du thème déclinée dans plusieurs
-teintes et nuances */
-// var(--theme--light:) #c8ddf2;
-// var(--theme--vivid:) #70a9dd;
-// var(--theme--dull:) #5d81a2;
-// var(--theme--dark:) #30415a;
-// var(--theme--black:) #02101B;
+// /* THEME COLOR */
+// /* couleur du thème déclinée dans plusieurs
+// teintes et nuances */
+--theme--light: #d9eccf;
+--theme--vivid: #b5d0ab;
+--theme--dull: #8bb77a;
 
-/* ACCENT COLOR */
-/* couleur liée au thème qui met les choses en
-valeur ou en contraste */ 
-// var(--accent--dark:) #ad1f3e;
-// $accent: #e07086;
-// var(--accent--light:) #f4bfc8;
+/* couleur sombre qui se marie avec la couleur
+principale du thème sans l'éclipser */
+--theme--dark: #02698c;
+--theme--black: #013446;
 
-/* TAINTED COLORS */
-/* couleur liée au thème marquant une
-transition avec une couleur neutre */
-// var(--theme--tainted-grey:) #e5f3fc;
+// /* ACCENT COLOR */
+// /* couleur liée au thème qui met les choses en
+// valeur ou en contraste */ 
+--accent--light: #82d7ec;
+--accent--medium: #4891af;
+--accent--dark: #1f4d67;
 
-
-/* GRADIENTS */
-// $accent-taint_to_white: linear-gradient(70deg, $light_grey, $white);
-// $theme_to_white: linear-gradient(70deg, var(--theme--light), var(--theme--tainted-grey), $white);
-// $dark_to_vivid: linear-gradient(70deg, var(--theme--black), var(--theme--dark));
-// $black_to_dark: linear-gradient(-360deg, var(--theme--black), var(--theme--dark), var(--theme--dark));
-// $accent_to_white: linear-gradient(70deg, var(--accent--light), $white);
+// /* TAINTED COLORS */
+// /* couleur liée au thème marquant une
+// transition avec une couleur neutre */
+--theme--tainted-grey: #dde8d7;
+--accent--tainted-grey: #bfdbdf;
+}
