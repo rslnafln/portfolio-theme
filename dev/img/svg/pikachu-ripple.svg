@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="1921"
+   height="782.854"
+   viewBox="0 0 1921 782.854"
+   id="svg2"
+   version="1.1">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3860"
+       x1="1.014"
+       y1="0.906"
+       x2="0.389"
+       y2="0.886"
+       gradientUnits="objectBoundingBox">
+      <stop
+         style="stop-color:#ffc423;stop-opacity:1"
+         offset="0"
+         stop-color="#8cb9e8"
+         id="stop3862" />
+      <stop
+         style="stop-color:#ffc938;stop-opacity:0"
+         offset="1"
+         stop-color="#b6cfe9"
+         stop-opacity="0"
+         id="stop3864" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="objectBoundingBox"
+       y2="0.886"
+       x2="0.389"
+       y1="0.906"
+       x1="1.014"
+       id="linearGradient3868">
+      <stop
+         id="stop3870"
+         stop-color="#8cb9e8"
+         offset="0"
+         style="stop-color:#d3a529;stop-opacity:1" />
+      <stop
+         id="stop3872"
+         stop-opacity="0"
+         stop-color="#b6cfe9"
+         offset="1"
+         style="stop-color:#d3a529;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient
+       id="linear-gradient"
+       x1="1.0140001"
+       y1="0.90600002"
+       x2="0.389"
+       y2="0.88599998"
+       gradientUnits="objectBoundingBox"
+       xlink:href="#linearGradient3868">
+      <stop
+         offset="0"
+         stop-color="#8cb9e8"
+         id="stop7" />
+      <stop
+         offset="1"
+         stop-color="#b6cfe9"
+         stop-opacity="0"
+         id="stop9" />
+    </linearGradient>
+    <linearGradient
+       id="linear-gradient-2"
+       x1="-0.014"
+       y1="0.90600002"
+       x2="0.611"
+       y2="0.88599998"
+       xlink:href="#linearGradient3860" />
+    <linearGradient
+       xlink:href="#linearGradient3860"
+       id="linearGradient3866"
+       x1="-2792.8264"
+       y1="2594.1362"
+       x2="-2009.3444"
+       y2="2600.0056"
+       gradientTransform="scale(1.5664754,0.63837582)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient3860"
+       id="linearGradient3874"
+       x1="-0.014"
+       y1="0.90600002"
+       x2="0.611"
+       y2="0.88599998" />
+    <linearGradient
+       xlink:href="#linearGradient3860"
+       id="linearGradient3876"
+       gradientUnits="userSpaceOnUse"
+       x1="-1532.1696"
+       y1="2594.1362"
+       x2="-2298.6196"
+       y2="2569.6098"
+       gradientTransform="matrix(1.5664754,0,0,0.63837582,4349,542.23097)" />
+    <linearGradient
+       xlink:href="#linearGradient3860"
+       id="linearGradient3882"
+       gradientUnits="userSpaceOnUse"
+       x1="-1339.5084"
+       y1="2667.7412"
+       x2="-2009.582"
+       y2="2646.2988"
+       gradientTransform="matrix(1.7917811,0,0,0.5581039,4349,726.73098)" />
+    <linearGradient
+       xlink:href="#linearGradient3868"
+       id="linearGradient3876-6"
+       gradientUnits="userSpaceOnUse"
+       x1="-1532.1696"
+       y1="2594.1362"
+       x2="-2298.6196"
+       y2="2569.6099"
+       gradientTransform="matrix(1.5664754,0,0,0.63837582,4348,-946.76903)" />
+    <linearGradient
+       xlink:href="#linearGradient3860"
+       id="linearGradient3915"
+       x1="-2414.8726"
+       y1="1107.5994"
+       x2="-3833.793"
+       y2="1143.9819"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="Motifs"
+     transform="translate(-1 -1489)"
+     opacity="0.75">
+    <path
+       id="Tracé_475"
+       data-name="Tracé 475"
+       d="m 1.00002,2064.02 c 328.075,-143.527 766.98,-140.444 766.98,-140.444 0,0 406.13798,-29.037 650.18498,-87.6 C 1662.212,1777.413 1922,1489 1922,1489 l 0,782.853 -1920.99998,0 z"
+       style="opacity:0.33000004;fill:url(#linearGradient3876);fill-opacity:1.0" />
+    <path
+       id="Tracé_474"
+       data-name="Tracé 474"
+       d="m 0.999965,2113.002 c 328.074995,-109.7 766.979995,-107.345 766.979995,-107.345 0,0 406.13804,-22.194 650.18504,-66.952 C 1662.212,1893.947 1922,1673.5 1922,1673.5 l 0,598.353 -1921.000035,0 z"
+       style="opacity:0.33000004;fill:url(#linearGradient3882);fill-opacity:1.0" />
+    <path
+       id="Tracé_478"
+       data-name="Tracé 478"
+       d="m -2427,1521.789 c -328.075,-143.527 -766.98,-140.444 -766.98,-140.444 -448.9203,-30.2746 -831.6837,-85.8282 -1154.02,-434.576 l 0,782.853 1921,0 z"
+       transform="translate(4349,542.231)"
+       style="opacity:0.33000004;fill:url(#linearGradient3866);fill-opacity:1.0" />
+    <path
+       id="Tracé_473"
+       data-name="Tracé 473"
+       d="M-4348,1279.24c328.075-82.986,766.98-81.2,766.98-81.2s406.138-16.789,650.185-50.648S-2427,946.769-2427,946.769v452.638H-4348Z"
+       transform="translate(4349 872.446)"
+       style="fill-opacity:1.0;color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.33000004;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:url(#linearGradient3915);fill-rule:nonzero;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter-blend-mode:normal;filter-gaussianBlur-deviation:0;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       fill="url(#linear-gradient)"
+       opacity="0.33" />
+    <path
+       id="Tracé_477"
+       data-name="Tracé 477"
+       d="M-2427,1279.24c-328.075-82.986-766.98-81.2-766.98-81.2s-406.138-16.789-650.185-50.648S-4348,946.769-4348,946.769v452.638h1921Z"
+       transform="translate(4349 872.446)"
+       style="fill-opacity:1.0"
+       fill="url(#linear-gradient-2)"
+       opacity="0.33" />
+    <path
+       transform="translate(4349 726.731)"
+       opacity="0.33"
+       fill="url(#linear-gradient-2)"
+       id="Tracé_476"
+       data-name="Tracé 476"
+       d="M-2427,1386.271c-328.075-109.7-766.98-107.345-766.98-107.345s-406.138-22.194-650.185-66.952S-4348,946.769-4348,946.769v598.353h1921Z"
+       style="fill-opacity:1.0;fill:url(#linearGradient3874)" />
+  </g>
+</svg>

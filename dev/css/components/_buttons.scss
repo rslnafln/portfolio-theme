@@ -11,12 +11,12 @@
         color: white;
     }
     &--pink {
-        background-color: $accent;
+        background-color: var(--accent--medium);
     }
     &--blue {
-        background-color: $theme--vivid;
+        background-color: var(--theme--vivid);
     }
     &--darkblue{
-        background-color: $theme--dark;
+        background-color: var(--theme--dark);
     }
 }

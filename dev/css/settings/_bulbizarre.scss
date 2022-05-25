@@ -1,32 +1,30 @@
+.theme-color--bulbizarre_green {
 /* -------------------------------------- */
 /*                BULBIZARRE              */
 /*      theme-color--bulbizarre_green     */
 /* -------------------------------------- */
-/* THEME COLOR */
-/* couleur du thème déclinée dans plusieurs
-teintes et nuances */
-// $theme--light: #c8ddf2;
-// $theme--vivid: #70a9dd;
-// $theme--dull: #5d81a2;
-// $theme--dark: #30415a;
-// $theme--black: #02101B;
+// /* THEME COLOR */
+// /* couleur du thème déclinée dans plusieurs
+// teintes et nuances */
+--theme--light: #d9eccf;
+--theme--vivid: #b5d0ab;
+--theme--dull: #8bb77a;
 
-/* ACCENT COLOR */
-/* couleur liée au thème qui met les choses en
-valeur ou en contraste */ 
-// $accent--dark: #ad1f3e;
-// $accent: #e07086;
-// $accent--light: #f4bfc8;
+/* couleur sombre qui se marie avec la couleur
+principale du thème sans l'éclipser */
+--theme--dark: #02698c;
+--theme--black: #013446;
 
-/* TAINTED COLORS */
-/* couleur liée au thème marquant une
-transition avec une couleur neutre */
-// $theme--tainted-grey: #e5f3fc;
+// /* ACCENT COLOR */
+// /* couleur liée au thème qui met les choses en
+// valeur ou en contraste */ 
+--accent--light: #82d7ec;
+--accent--medium: #4891af;
+--accent--dark: #1f4d67;
 
-
-/* GRADIENTS */
-// $grey_to_white: linear-gradient(70deg, $light_grey, $white);
-// $dark_to_white: linear-gradient(70deg, $theme--light, $theme--tainted-grey, $white);
-// $dark_to_vivid: linear-gradient(70deg, $theme--black, $theme--dark);
-// $black-to-dark: linear-gradient(-360deg, $theme--black, $theme--dark, $theme--dark);
-// $accent_to_white: linear-gradient(70deg, $accent--light, $white);
+// /* TAINTED COLORS */
+// /* couleur liée au thème marquant une
+// transition avec une couleur neutre */
+--theme--tainted-grey: #dde8d7;
+--accent--tainted-grey: #bfdbdf;
+}

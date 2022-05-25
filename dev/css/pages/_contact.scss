@@ -13,5 +13,7 @@
   .form-englober{
     width: 90%;
     margin: 0 auto;
+    position: relative; // à mettre ailleurs + tard
+    z-index: 2;
   }
 }

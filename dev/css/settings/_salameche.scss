@@ -1,32 +1,30 @@
-/* -------------------------------------- */
-/*                SALAMÈCHE               */
-/*       theme-color--salameche_red       */
-/* -------------------------------------- */
-/* THEME COLOR */
-/* couleur du thème déclinée dans plusieurs
-teintes et nuances */ 
-// $theme--light: #c8ddf2;
-// $theme--vivid: #70a9dd;
-// $theme--dull: #5d81a2;
-// $theme--dark: #30415a;
-// $theme--black: #02101B;
+// .theme-color--salameche_red {
+// /* -------------------------------------- */
+// /*                SALAMÈCHE               */
+// /*       theme-color--salameche_red       */
+// /* -------------------------------------- */
+// /* THEME COLOR */
+// /* couleur du thème déclinée dans plusieurs
+// teintes et nuances */
+// --theme--light: #fefde5;
+// --theme--vivid: #ffca45;
+// --theme--dull: #f4e664;
 
-/* ACCENT COLOR */
-/* couleur liée au thème qui met les choses en
-valeur ou en contraste */ 
-// $accent--dark: #ad1f3e;
-// $accent: #e07086;
-// $accent--light: #f4bfc8;
+/* couleur sombre qui se marie avec la couleur
+principale du thème sans l'éclipser */
+// --theme--dark: #383b46;
+// --theme--black: #0e0f0f;
 
-/* TAINTED COLORS */
-/* couleur liée au thème marquant une
-transition avec une couleur neutre */
-// $theme--tainted-grey: #e5f3fc;
+// /* ACCENT COLOR */
+// /* couleur liée au thème qui met les choses en
+// valeur ou en contraste */ 
+// --accent--dark: #d3a529;
+// --accent--medium: #f2c44c;
+// --accent--light: #f9e0a2;
 
-
-/* GRADIENTS */
-// $grey_to_white: linear-gradient(70deg, $light_grey, $white);
-// $dark_to_white: linear-gradient(70deg, $theme--light, $theme--tainted-grey, $white);
-// $dark_to_vivid: linear-gradient(70deg, $theme--black, $theme--dark);
-// $black-to-dark: linear-gradient(-360deg, $theme--black, $theme--dark, $theme--dark);
-// $accent_to_white: linear-gradient(70deg, $accent--light, $white);
+// /* TAINTED COLORS */
+// /* couleur liée au thème marquant une
+// transition avec une couleur neutre */
+// --theme--tainted-grey: #fcf9e5;
+// --accent--tainted-grey: #fde6b0;
+// }

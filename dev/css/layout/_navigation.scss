@@ -22,7 +22,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        background: $theme--black;
+        background: var(--theme--black);
         height: 100vh;
         opacity: 0.9;
     }
@@ -69,10 +69,10 @@
             color: $white;
         }
         .--airbg &, .section-even & {
-            color: $theme--dark;
+            color: var(--theme--dark);
         }
         .--waterbg &, .section-odd & {
-            color: $theme--dark;
+            color: var(--theme--dark);
         }
     }
 }
@@ -97,7 +97,7 @@
         position: absolute;
         top: 23%;
         left: 7%;
-        border-bottom: 3px solid $theme--dark;
+        border-bottom: 3px solid var(--theme--dark);
         transition: 0.3s all ease-in-out;
         &:nth-of-type(2) {
             opacity: 1;
@@ -105,14 +105,14 @@
             position: absolute;
             top: 47%;
             left: 7%;
-            border-bottom: 3px solid $theme--dark;
+            border-bottom: 3px solid var(--theme--dark);
         }
         &:nth-of-type(3){
             width: 90%; 
             position: absolute;
             top: 70%;
             left: 7%;
-            border-bottom: 3px solid $theme--dark;
+            border-bottom: 3px solid var(--theme--dark);
         }
     }
     &.active {
@@ -120,17 +120,17 @@
         border-radius: 20px;
         span {
             &:nth-of-type(1) {
-                border-bottom: 6px solid $theme--dark;
+                border-bottom: 6px solid var(--theme--dark);
                 border-radius: 20px;
                 transition: 0.3s all ease-in-out;
             }
             &:nth-of-type(2) {
-                border-bottom: 6px solid $theme--dark;
+                border-bottom: 6px solid var(--theme--dark);
                 border-radius: 20px;
                 transition: 0.3s all ease-in-out;
             }
             &:nth-of-type(3){
-                border-bottom: 6px solid $theme--dark;
+                border-bottom: 6px solid var(--theme--dark);
                 border-radius: 20px;
                 transition: 0.3s all ease-in-out;
             }

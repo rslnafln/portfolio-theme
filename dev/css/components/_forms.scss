@@ -39,7 +39,7 @@
     }
     input, textarea {
         &:focus {
-            background-color: rgba($color: $theme--tainted-grey, $alpha: .5);
+            background-color: rgba($color: var(--theme--tainted-grey), $alpha: .5);
         }
     }
 }
@@ -64,7 +64,7 @@ textarea {
     &:focus {
         outline: none;
         // border-bottom: 3px solid $accent;
-        box-shadow: 0 3px 0 0 $accent;
+        box-shadow: 0 3px 0 0 var(--accent--medium);
         border-bottom: 1px solid transparent;
         color: $white;
     }
