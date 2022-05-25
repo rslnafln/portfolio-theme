@@ -4,7 +4,7 @@
 section:not(.single-work, .work){
     padding: calc($pad2 * 2) 0;
     position: relative; // pour les backgrounds .wave
-    * {
+    &>* {
         position: relative;
         z-index: 2;
     }

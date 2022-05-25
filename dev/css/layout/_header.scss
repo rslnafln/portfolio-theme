@@ -1,19 +1,24 @@
 /* HEADER GENERAL RULES */ 
+body.custom-background-emulate {
+    background-image: url(../img/bg-home.png);
+}
+
 header {
     max-width: 100%;
     .page-home & {
         height:100vh;
+        @media screen and (orientation:portrait) {
+            height:50vh;
+        }
     }
     position: relative;
     overflow: hidden;
-    @media screen and (orientation:portrait) {
-        height:50vh;
-    }
     .nav__menu a {
         font-weight: 500;
     }
     &.bg {
-        background-image: url(../img/bg-home.png);
+        background-image: inherit;
+        background-size: cover;
     }
 }
 
