@@ -1,7 +1,7 @@
 /***************** GENERAL RULES OF SECTION ***************/
 /* fond degradé gris / bleu, une section sur 2 */ 
 
-section:not(.single-work, .work){
+section:not(.single-work, .work, .core){
     padding: calc($pad2 * 2) 0;
     position: relative; // pour les backgrounds .wave
     &>* {
@@ -267,3 +267,33 @@ p {
         color:black;
     }
 }
+
+// modifiers
+  // MODIFIERS
+  .--whitetxt {
+    color: $white;
+  }
+  
+  .--marginleft {
+    margin-left: 30px;
+  }
+  
+  .--padbot {
+    padding-bottom: 50px;
+  }
+  
+  .--littlepadbot {
+    padding-bottom: 10px;
+  }
+  
+  .--marginbot {
+    margin-bottom: 30px;
+  }
+  
+  .--padtopbot {
+    padding: 5px 0;
+  }
+  
+  .--colorblack {
+    color: black;
+  }
