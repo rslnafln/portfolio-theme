@@ -1,0 +1,125 @@
+.widget_block { // classe wordpress
+    list-style: none;
+    overflow-x: hidden;
+    li {
+        list-style: none;
+    }
+    aside & {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $pad1;
+        max-width: 350px;
+        h1, h2, h3, h4, h5 {
+            font-size: $title2-elastic;
+            color: var(--theme--dark);
+            border-left: 5px solid var(--theme--dark);
+            padding-left: 0.5rem;
+        }
+    }
+    a {
+        // copie du css de .full__tag
+        font-family: $poppins;
+        display: flex;
+        padding: 5px $pad1;
+        margin-right: $pad2;
+        box-shadow: $ombre001;
+        border: 1px solid transparent;
+        width: fit-content;
+        border-radius: 20px;
+        color: var(--theme--dark);
+        transition: all .2s ease-in-out;
+        &::before {
+            font-family: FontAwesome;
+            margin-right: $pad0-5;
+        }
+        .wp-block-group & {
+            font-size: $font-elastic !important;
+        }
+        &:hover {
+            color: var(--accent--dark);
+            background: linear-gradient(to right, rgba($color: $white, $alpha: .5), rgba($color: $white, $alpha: 0));
+        }
+    }
+    .wp-block-search {
+        position: relative;
+        input {
+            background-color: rgba($color: $white, $alpha: .3);
+            color: var(--theme--dark);
+            margin-bottom: $pad2;
+        }
+        &::after {
+            content: '\f002';
+            position: absolute;
+            font-family: FontAwesome;
+            right: $pad1;
+            top: 10px;
+            z-index: 1;
+            transition: all .2s ease-in-out;
+        }
+        label {
+            display: none;
+        }
+        button {
+            position: absolute;
+            right: 0;
+            height: 40px;
+            top: 0;
+            cursor: pointer;
+            background-color: transparent;
+            border: transparent;
+            color: transparent;
+            z-index: 2;
+        }
+        &:hover {
+            color: var(--accent--medium);
+            input {
+                background-color: rgba($color: $white, $alpha: .5);
+            }
+        }
+    }
+    .wp-block-group { // classe wordpress
+        ul {
+            padding: 0 .2rem;
+        }
+        .wp-block-categories-list { // classe wordpress
+            a::before{
+                content: '\f02c';
+            }
+        }
+        .wp-block-archives-list { // classe wordpress
+            a::before{
+                content: '\f07c';
+            }
+        }
+    }
+    .wp-block-tag-cloud { // classe wordpress
+        display: flex;
+        flex-flow: row wrap;
+        a {
+            transform: scale(1.2);
+            margin: calc($pad1 * .6) calc($pad1 * 1.2);
+            &::before {
+                content: '\f292';
+            }
+        }
+    }
+    // widget articles récents
+    .wp-block-latest-posts { // classe wordpress
+        display: flex;
+        flex-flow: column nowrap;
+        a {
+            box-sizing: content-box;
+            border-radius: 0;
+            box-shadow: none;
+            // border-bottom: 1px solid var(--theme--dark);
+            width: calc(100% - $pad1 * 2);
+            transition: all .2s ease-in-out;
+            padding: $pad1;
+            &:hover {
+                color: var(--accent--dark);
+                border-left: 5px solid var(--accent--dark);
+                background: linear-gradient(to right, rgba($color: $white, $alpha: .5), rgba($color: $white, $alpha: 0));
+            }
+        }
+    }
+}

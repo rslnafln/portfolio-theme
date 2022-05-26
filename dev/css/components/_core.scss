@@ -28,7 +28,11 @@
 
     .widgets {
         width: 30%;
-
+        h2, h3, h4, h5, .blog__block2 {
+            max-width: 350px;
+            margin: auto;
+            margin-bottom: $pad2;
+        }
         .articles {
             padding: 50px 0;
         }
@@ -40,11 +44,8 @@
 
     // BLOCKS
     .blog__block2 {
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
         border-radius: $pad2;
-        height: 300px;
+        aspect-ratio: 4/3;
         display: flex;
         align-items: center;
         background-color: $white;
@@ -53,7 +54,7 @@
 
         .blog__image {
             width: 850px;
-            height: 90%;
+            // height: 90%;
 
             img {
                 width: 100%;
@@ -70,7 +71,10 @@
             h6 {
                 margin: 0;
             }
-
+            p {
+                height: 5.5em;
+                overflow: hidden;
+            }
             .button {
                 margin-top: 5px;
             }
@@ -115,4 +119,5 @@
     .--bigtitle {
         font-size: $title2-elastic;
     }
+
 }

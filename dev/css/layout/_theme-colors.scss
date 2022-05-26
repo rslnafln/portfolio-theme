@@ -1,3 +1,7 @@
+:root {
+    --swiper-theme-color: $white;
+}
+
 header, main, section, nav {
     transition: all .3s ease-in-out;
     &.--airbg, &.section-even {
