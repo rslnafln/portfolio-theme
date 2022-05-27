@@ -22,6 +22,7 @@
         display: flex;
         padding: 5px $pad1;
         margin-right: $pad2;
+        margin-bottom: $pad0-5;
         box-shadow: $ombre001;
         border: 1px solid transparent;
         width: fit-content;
@@ -46,6 +47,8 @@
             background-color: rgba($color: $white, $alpha: .3);
             color: var(--theme--dark);
             margin-bottom: $pad2;
+            font-family: $poppins;
+            border: 0;
         }
         &::after {
             content: '\f002';

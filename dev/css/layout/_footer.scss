@@ -91,3 +91,21 @@ footer {
         margin:0 5px;
     }
 }
+
+.footer__menu, .footer__menu ul {
+    list-style: none;
+    padding: 0;
+    li {
+        margin-bottom: $pad0-5;
+    }
+}
+
+.footer {
+    .widget_block {
+        list-style: none;
+        overflow-x: visible;
+    }
+    .widget_block a {
+        box-shadow: none;
+    }
+}
