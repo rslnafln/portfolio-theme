@@ -45,7 +45,7 @@
     img {
         @include tablette {
             width:100%;
-            .--darkbg & {
+            nav.--darkbg & {
                 filter: invert(1);
             }
         }
@@ -106,9 +106,8 @@
         top: 23%;
         left: 7%;
         border-bottom: .3rem solid var(--theme--dark);
-        nav.--darkbg &,
-        nav.active & {
-            border-bottom: .3rem solid $white;
+        nav.--darkbg & {
+            border-color: $white;
         }
         transition: 0.3s all ease-in-out;
         &:nth-of-type(2) {
@@ -128,8 +127,5 @@
             border-radius: 20px;
             transition: 0.3s all ease-in-out;
         }
-    }
-    &:hover span, &:active span {
-        border-color: $white;
     }
 }
