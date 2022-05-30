@@ -32,6 +32,9 @@
         }
         .singlework__text {
             opacity: 0;
+            @include tablette {
+                opacity: 1;
+            }
             transition: opacity .5s ease-in-out;
         }
         img {
@@ -65,6 +68,25 @@
         }
         p {
             color: $white;
+        }
+    }
+    @include tablette {
+        .singlework__text {
+            opacity: 100%;
+            position: absolute;
+            bottom:0%;
+            background-color: $black_opacity;
+            width:100%;
+            left:50%;
+            transform: translate(-50%, -0%);
+            z-index: 1;
+            padding:calc($pad1 / 2) $pad1;
+            h1 {
+                color: $white;
+            }
+            p {
+                color: $white;
+            }
         }
     }
 }
