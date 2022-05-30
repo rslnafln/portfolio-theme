@@ -19,22 +19,22 @@
     }
     @include tablette {
         transition: 0.8s left ease-in-out;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
         position: fixed;
         top: 0;
-        left: -100%;
+        left: -120%;
         background: var(--theme--black);
         height: 100vh;
         opacity: 0.9;
+        padding: 1.5rem calc($pad2 * 2) $pad2;
         a {
             color: $white;
         }
     }
     &.active{
         left: 0;
-        align-items: flex-end;
-        flex-direction: column;
-        padding: 1.5rem calc($pad2 * 2) $pad2;
-        justify-content: flex-start;
     }
 }
 
@@ -43,12 +43,14 @@
         display: flex;
     }
     img {
-        @include iphone12 {
-            width:100%;
+        @include tablette {
+            width:50%;
+            nav.--darkbg & {
+                filter: invert(1);
+            }
         }
-        nav.--darkbg &,
-        nav.active & {
-            filter: invert(1);
+        @include phone {
+            width: 100%;
         }
     }
     
@@ -107,9 +109,8 @@
         top: 23%;
         left: 7%;
         border-bottom: .3rem solid var(--theme--dark);
-        nav.--darkbg &,
-        nav.active & {
-            filter: invert(1);
+        nav.--darkbg & {
+            border-color: $white;
         }
         transition: 0.3s all ease-in-out;
         &:nth-of-type(2) {
@@ -129,8 +130,5 @@
             border-radius: 20px;
             transition: 0.3s all ease-in-out;
         }
-    }
-    &:hover span, &:active span {
-        border-color: $white;
     }
 }

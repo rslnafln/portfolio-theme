@@ -35,6 +35,12 @@
             i {
                 color: var(--accent--medium);
                 padding:0 5px;
+                @include tablette {
+                    padding: 0;
+                    &::after {
+                        font-size: smaller;
+                    }
+                }
             }
             i:nth-of-type(-n+3) {
                 color: var(--accent--dark);
