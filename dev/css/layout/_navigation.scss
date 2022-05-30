@@ -44,10 +44,13 @@
     }
     img {
         @include tablette {
-            width:100%;
+            width:50%;
             nav.--darkbg & {
                 filter: invert(1);
             }
+        }
+        @include phone {
+            width: 100%;
         }
     }
     
