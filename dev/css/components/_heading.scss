@@ -28,6 +28,9 @@
         h1, h2 {
             color:white;
             width:100%;
+            @include phone {
+                width: 80%;
+            }
         }
         p {
             color:white;

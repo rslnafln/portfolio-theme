@@ -14,11 +14,11 @@ $grey_text: #777;
 $dark_grey: #333;
 
 /* GRADIENTS */
-$accent-taint_to_white: linear-gradient(70deg, var(--accent--tainted-grey), $white);
-$theme_to_white: linear-gradient(70deg, var(--theme--light), var(--theme--tainted-grey), $white);
+$accent-taint_to_white: linear-gradient(70deg, var(--accent--tainted-grey), var(--accent--white));
+$theme_to_white: linear-gradient(70deg, var(--theme--light), var(--theme--tainted-grey), var(--accent--white));
 $dark_to_vivid: linear-gradient(70deg, var(--theme--black), var(--theme--dark));
 $black_to_dark: linear-gradient(70deg, var(--theme--black), var(--theme--dark), var(--theme--dark));
-$accent_to_white: linear-gradient(70deg, var(--accent--light), $white);
+$accent_to_white: linear-gradient(70deg, var(--accent--light), var(--accent--white));
 
 /* OPACITY*/
 

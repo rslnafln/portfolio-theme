@@ -50,6 +50,9 @@
         nav.active & {
             filter: invert(1);
         }
+        :not(header).--darkbg & {
+            filter: invert(1);
+        }
     }
     
 }
