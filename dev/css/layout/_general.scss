@@ -76,7 +76,7 @@ h1 {
     }
     font-family: $poppins;
     font-weight: 400;
-    color: $dark_grey;
+
     span {
         font-weight: 600;
     }
@@ -89,7 +89,7 @@ h2 {
     font-weight: 400;
 }
 
-h3 {
+h3, .page-archives h1 {
     font-size: $small-elastic;
     border-left: 5px solid var(--theme--dark);
     padding-left:calc($pad1 / 2);
@@ -239,11 +239,12 @@ p {
     a {
         font-family: $poppins;
     }
-    &--title {
+    &--title, & h4, & h5 {
         color:white;
         font-family: $poppins;
         font-weight: 600;
         font-size: $pad1;
+        margin-top: 0;
         // margin-bottom:30px;
     }
     &--search {

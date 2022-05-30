@@ -2,7 +2,7 @@ footer {
     max-width: 100%;
     height: 100%;
     background: $black_to_dark;
-    padding-top:50px;
+    padding-top: $pad2;
     text-align: initial;
 }
 
@@ -44,6 +44,7 @@ footer {
             }
             i {
                 margin:calc($pad1 / 2) 0;
+                margin-right: $pad1;
             }
         }
         .button {
@@ -107,5 +108,8 @@ footer {
     }
     .widget_block a {
         box-shadow: none;
+    }
+    li {
+        list-style: none;
     }
 }
