@@ -19,14 +19,21 @@
     margin:50px 0;
     overflow: hidden;
     padding-right: $pad0-5;
+    @include tablette {
+        flex-wrap: wrap;
+    }
     @include phone {
         flex-direction: column;
+        padding-right: 0;
     }
     .work__single {
         width:25%;
         height:550px;
         position: relative;
         overflow: hidden;
+        @include tablette {
+            width: 50%;
+        }
         @include phone {
             width:100%;
         }

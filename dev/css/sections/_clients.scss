@@ -35,6 +35,9 @@
 // Carousel
 .swiper-container {
     width: 20vw;
+    @include tablette {
+        width: 40vw;
+    }
     height: 19vh;
     margin-top: 4vh;
 } 
