@@ -1,10 +1,10 @@
 /***************** GENERAL RULES OF SECTION ***************/
 /* fond degradé gris / bleu, une section sur 2 */ 
 
-section:not(.single-work, .work){
+section:not(.single-work, .work, .core){
     padding: calc($pad2 * 2) 0;
     position: relative; // pour les backgrounds .wave
-    * {
+    &>* {
         position: relative;
         z-index: 2;
     }
@@ -66,6 +66,7 @@ section.bg, header.bg, main.bg {
 
 a {
     text-decoration: none;
+    color: var(--theme--dark);
 }
 
 h1 {
@@ -75,7 +76,7 @@ h1 {
     }
     font-family: $poppins;
     font-weight: 400;
-    color: $dark_grey;
+
     span {
         font-weight: 600;
     }
@@ -88,7 +89,7 @@ h2 {
     font-weight: 400;
 }
 
-h3 {
+h3, .page-archives h1 {
     font-size: $small-elastic;
     border-left: 5px solid var(--theme--dark);
     padding-left:calc($pad1 / 2);
@@ -238,11 +239,12 @@ p {
     a {
         font-family: $poppins;
     }
-    &--title {
+    &--title, & h4, & h5 {
         color:white;
         font-family: $poppins;
         font-weight: 600;
         font-size: $pad1;
+        margin-top: 0;
         // margin-bottom:30px;
     }
     &--search {
@@ -267,3 +269,33 @@ p {
         color:black;
     }
 }
+
+// modifiers
+  // MODIFIERS
+  .--whitetxt {
+    color: $white;
+  }
+  
+  .--marginleft {
+    margin-left: 30px;
+  }
+  
+  .--padbot {
+    padding-bottom: 50px;
+  }
+  
+  .--littlepadbot {
+    padding-bottom: 10px;
+  }
+  
+  .--marginbot {
+    margin-bottom: 30px;
+  }
+  
+  .--padtopbot {
+    padding: 5px 0;
+  }
+  
+  .--colorblack {
+    color: black;
+  }

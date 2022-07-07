@@ -2,6 +2,7 @@
 
 .clients {
     width:100%;
+    min-height: 75vh;
 }
 
 .clients__block {
@@ -19,11 +20,14 @@
         display: flex;
         justify-content: center;
         width:100%;
-        height:100px;
+        height:30vh;
         position: relative;
+        border-radius: $pad1;
+        padding: $pad1;
         img {
-            object-fit: cover;
+            object-fit: scale-down;
             margin: 0 auto;
+            border-radius: 1rem;
         }
     }
 }
@@ -31,6 +35,9 @@
 // Carousel
 .swiper-container {
     width: 20vw;
+    @include tablette {
+        width: 40vw;
+    }
     height: 19vh;
     margin-top: 4vh;
 } 

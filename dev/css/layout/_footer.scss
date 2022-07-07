@@ -2,7 +2,8 @@ footer {
     max-width: 100%;
     height: 100%;
     background: $black_to_dark;
-    padding-top:50px;
+    padding-top: $pad2;
+    text-align: initial;
 }
 
 .col {
@@ -43,6 +44,7 @@ footer {
             }
             i {
                 margin:calc($pad1 / 2) 0;
+                margin-right: $pad1;
             }
         }
         .button {
@@ -88,5 +90,26 @@ footer {
     }
     a {
         margin:0 5px;
+    }
+}
+
+.footer__menu, .footer__menu ul {
+    list-style: none;
+    padding: 0;
+    li {
+        margin-bottom: $pad0-5;
+    }
+}
+
+.footer {
+    .widget_block {
+        list-style: none;
+        overflow-x: visible;
+    }
+    .widget_block a {
+        box-shadow: none;
+    }
+    li {
+        list-style: none;
     }
 }

@@ -7,16 +7,65 @@
     margin-top:$pad1;
     width: fit-content;
     cursor: pointer;
-    a {
-        color: white;
+    transition: all .3s ease-in-out;
+    &:hover {
+        animation: hover-button .3s ease-in-out forwards;
+        transform: scale(1.1);
     }
+    &:active {
+        animation: click-button .5s ease-out;
+    }
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    a {
+        color: $white;
+        transition: all .3s ease-in-out;
+    }
+    border: 3px solid transparent;
     &--pink {
         background-color: var(--accent--medium);
+        
+        &:hover {
+            border: 3px solid var(--accent--medium);
+            a {
+                color: var(--accent--medium);
+            }
+        }
     }
     &--blue {
         background-color: var(--theme--vivid);
+        transition: all .3s ease-in-out;
+        &:hover {
+            border: 3px solid var(--theme--vivid);
+            a {
+                color: var(--theme--vivid);
+            }
+        }
     }
     &--darkblue{
         background-color: var(--theme--dark);
+        transition: all .3s ease-in-out;
+        &:hover {
+            border: 3px solid var(--theme--dark);
+            a {
+                color: var(--theme--dark);
+            }
+        }
+    }
+}
+
+@keyframes hover-button {
+    50% {
+        // background-color: rgba($color: $light_grey, $alpha: 1);
+        transform: scale(1.2);
+    }
+    100% {
+        background-color: rgba($color: $white, $alpha: .3);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes click-button {
+    to {
+        transform: scale(1.5);
     }
 }
